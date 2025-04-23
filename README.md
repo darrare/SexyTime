@@ -1,2 +1,1 @@
-https://darrare.github.io/FlamePuzzle  
-https://darrare.github.io/FloorPuzzle
+GitHub pages site that hosts an app.
