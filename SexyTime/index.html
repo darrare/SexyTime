@@ -1,0 +1,327 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="SexyTime">
+    <title>Sex Quiz for Couples - Sexy Time</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="site.js"></script>
+    <link rel="stylesheet" href="site.css" />
+
+    <link rel="shortcut icon" type="image/png" href="Images/favicon.png">
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+        <div class="container-lg">
+            <a class="navbar-brand py-1" href="/">
+                <img src="Images/LogoShort.png" height="50" />
+            </a>
+        </div>
+    </nav>
+
+    <!-- Intro and anatomy/start button -->
+    <div class="py-5 text-center bg-primary curved-bottom" style="--bs-bg-opacity: .2">
+        <div class="container-lg">
+            <div class="d-block display-4 mb-3">❤️</div>
+            <h1 class="display-5 fw-bold">Get in Sync. Get it on!</h1>
+            <p class="lead">Explore your sexual desires without those awkward moments 😳</p>
+            <p class="lead mb-5">Ready to heat things up? Take the quiz, share it with your partner, and uncover the kinks you crave together.</p>
+        </div>
+        <div class="container-lg px-md-3 px-0">
+            <div class="bg-white p-4 card shadow mb-neg">
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-6">
+                        <label>
+                            <b>Anatomy <i class="fa-solid fa-circle-question" data-bs-toggle="tooltip" aria-label="Certain questions can only be done to or by a person with specific anatomy." data-bs-original-title="Certain questions can only be done to or by a person with specific anatomy."></i></b>
+                        </label>
+                        <div class="row">
+                            <div class="col pe-1">
+                                <input class="btn-check fs-5" required id="_male" type="radio" name="anatomy" value="male">
+                                <label class="btn btn-outline-primary btn fs-3 w-100 me-2" data-bs-toggle="tooltip" for="_male" style="--bs-bg-opacity: .3" data-bs-original-title="Penis">🍆</label>
+                            </div>
+                            <div class="col ps-1">
+                                <input class="btn-check fs-5" required id="_female" type="radio" name="anatomy" value="female">
+                                <label class="btn btn-outline-primary btn fs-3 w-100" data-bs-toggle="tooltip" for="_female" style="--bs-bg-opacity: .3" data-bs-original-title="Vagina">🍑</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center text-center mt-4">
+                    <div class="col-md-7 col-lg-6">
+                        <button class="btn btn-primary btn-lg d-block mx-auto w-100 my-2" onclick="onStartQuizClick()">Start Quiz <i class="fa-solid fa-play"></i></button>
+                        <div class="row">
+                            <div class="col-6">
+                                <span class="badge rounded-pill bg-primary" style="--bs-bg-opacity: .8">
+                                    <i class="fa-solid fa-clipboard-question"></i> <span id="_question-count"></span>
+                                </span>
+                            </div>
+                            <div class="col-6">
+                                <span class="badge rounded-pill bg-primary" style="--bs-bg-opacity: .8">
+                                    <i class="fa-solid fa-stopwatch"></i> 10 minutes
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Curved line break -->
+    <svg width="100%" height="80" viewBox="0 0 450 80" preserveAspectRatio="none">
+        <path d="M0,0 L0,40 Q250,80 450,40 L450,0 Z" fill="rgba(var(--bs-primary-rgb), .2)"></path>
+    </svg>
+
+    <!-- Details -->
+    <div class="container-lg mt-home mb-5">
+        <p><b>UNLOCK INTIMACY, TOGETHER</b></p>
+        <p class="display-6"><b>A sex quiz for couples to build better chemistry.</b></p>
+        <div class="row">
+            <div class="col-12 col-md-3 mt-5 d-flex">
+                <div>
+                    <h3 class="fw-bold mb-3">🤑 Totally Free! </h3>
+                    <p>
+                        So many other sex quizzes bait you to take the quiz and then drop a paywall to get your full results.
+                        I dislike that dishonesty so I created this site to give people a better option to find freaky kinks to explore with their partner.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 mt-5 d-flex">
+                <div>
+                    <h3 class="fw-bold mb-3">🕙 Takes Only 10min</h3>
+                    <p>
+                        Questions were curated from a number of other sex quiz/compatability sites, and you can always <a href="mailto:darrare@hotmail.com">email me</a> if you have any suggestions! 
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mt-5 d-flex">
+                <div>
+                    <h3 class="fw-bold mb-3">💑 Play a Sex Game With Your Results!</h3>
+                    <p>
+                        Let's face it, we've all tried at least one card or dice based sex game that ends up being an awkward dissapointment because the first card you draw says, "stick it in her ass!" and she really isn't about that.
+                        With my background in game design and development, I've created a sex game where the options are fed directly by the common kinks shared by you and your partner! Every roll is fun!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <!-- How it works -->
+    <div class="bg-primary py-5" style="--bs-bg-opacity: .10;">
+        <div class="container-lg">
+            <p><b>HOW IT WORKS</b></p>
+            <p class="display-6"><b>Take the quiz separately. Fuse to show only common interests.</b></p>
+
+            <div class="row mt-5">
+                <div class="col-md-8">
+                    <div class="mb-4">
+                        <h3 class="fw-bold mb-3">1. Take the the quiz separately</h3>
+                        <p>
+                            Take the quiz separately to get a personal results URL encoded with your preferences.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="fw-bold mb-3">2. Fuse results with your partner</h3>
+                        <p>
+                            Input your partner's personal URL into a field available on your personal results page.
+                            The couple's results URL will be provided that can be stored as a bookmark for later fun!
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="fw-bold mb-3">3. See your matches together</h3>
+                        <p>
+                            The couple's results URL will show your shared sexual desires! <u>The questions you don't match on will remain hidden.</u>
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="fw-bold mb-3">4. Play the sex game specifically designed for you</h3>
+                        <p>
+                            The couple's results URL implements a sex game hand crafted with your common kinks so you can jump right in and play!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="Images/CuteCoupleSilhouette.png" class="img-fluid" alt="Couple embracing" style="max-height: 400px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="container-lg mt-5">
+        <p><b>FREQUENTLY ASKED QUESTIONS</b></p>
+        <p class="display-6"><b>Everything you need to know</b></p>
+
+        <p>If there's anything I've missed or you have a suggestion, please <a href="mailto:darrare@hotmail.com">get in touch.</a></p>
+        <div class="container-lg px-0 mb-5">
+            <div class="accordion accordion-flush">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                            What is SexyTime?
+                        </button>
+                    </h2>
+                    <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="Images/LogoSquare.png" class="img-fluid" />
+                                </div>
+                                <div class="col-md-8">
+                                    <p>
+                                        SexyTime was created to offer couples out there a way to explore their sexual fantasies without the awkward moments when they cross a line that is uncomfortable for their partner.
+                                    </p>
+                                    <p>
+                                        <b>You take the quiz separately.</b>
+                                        Your answers are only revealed to your partner if you match on a question, so you can be totally honest without fear of embarrassment.
+                                    </p>
+                                    <p class="mb-0">
+                                        Quiz results feed into a sex game that allows you and your partner to explore your wild sides within a realm of comfortablity!
+                                        No more will you suffer from the sex games that ask you to cross a line of your partners as each action recommended by the game is taken directly from your shared kinks!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                            What will my partner see?
+                        </button>
+                    </h2>
+                    <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2">
+                        <div class="accordion-body">
+                            <p>
+                                You and your partner will only see each other's answer if you both indicated interest in it.
+                            </p>
+                            <p>
+                                There are 5 options for each question:
+                            </p>
+                            <ul>
+                                <li>🤮 (absolutely not)</li>
+                                <li>😕 (probably not)</li>
+                                <li>🤷 (if my partner is into it)</li>
+                                <li>😀 (yeah)</li>
+                                <li>😍 (fuck yeah!)</li>
+                            </ul>
+                            <p class="mb-0">
+                                If either of you answers 😕, 🤮, or leaves a question blank, that answer will be completely excluded from the results page. This ensures that neither of you will feel embarrassed, upset, or uncomfortable if one person answers 🤮 and the other answers 😍.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading2pointfive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2pointfive" aria-expanded="false" aria-controls="flush-collapse2pointfive">
+                            What constitutes a "match"?
+                        </button>
+                    </h2>
+                    <div id="flush-collapse2pointfive" class="accordion-collapse collapse" aria-labelledby="flush-heading2pointfive">
+                        <div class="accordion-body">
+                            <p>
+                                A question is considered a match if you and your partner both answer 🤷, 😀, or 😍. Any combination will count as a match. For example, if you answer 😍 and your partner answers 🤷, it will show up in the results.
+                            </p>
+                            <p class="mb-0">
+                                If either of you answers 😕, 🤮, or leaves a question blank, that answer will be completely excluded from the results page.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                            How long is the quiz?
+                        </button>
+                    </h2>
+                    <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3">
+                        <div class="accordion-body">
+                            The quiz takes just 10-15 minutes per person.
+                            You and your partner can take the quiz at the same time as you will generate individual personal URLs.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading8">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapse8">
+                            Could my partner cheat on the quiz?
+                        </button>
+                    </h2>
+                    <div id="flush-collapse8" class="accordion-collapse collapse" aria-labelledby="flush-heading8" style="">
+                        <div class="accordion-body">
+                            It's possible—your partner could answer 😍 to every single question, revealing all the fantasies you selected. However, if your partner is cheating on a simple quiz, you have bigger problems in your relationship.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading30">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse30" aria-expanded="false" aria-controls="flush-collapse30">
+                            Can we see answers we did not match on?
+                        </button>
+                    </h2>
+                    <div id="flush-collapse30" class="accordion-collapse collapse" aria-labelledby="flush-heading30">
+                        <div class="accordion-body">
+                            No. The purpose of this quiz is to offer couples an opportunity to express their interests without judgement and embarassment. If you want to share the answers with your partner, take the quiz together!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading20">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse20" aria-expanded="false" aria-controls="flush-collapse20">
+                            Is the quiz free?
+                        </button>
+                    </h2>
+                    <div id="flush-collapse20" class="accordion-collapse collapse" aria-labelledby="flush-heading20">
+                        <div class="accordion-body">
+                            Yes! 100% of the quiz is free, unlike other sites out there that bait you in but hit you with a paywall right after you've finished your quiz.
+                            If some how, some way this site gets traction and I start getting a ton of traffic I might partner with sexual wellness stores to advertise their products, but it will always be in the background and completely optional!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading9">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false" aria-controls="flush-collapse9">
+                            Is my information private?
+                        </button>
+                    </h2>
+                    <div id="flush-collapse9" class="accordion-collapse collapse" aria-labelledby="flush-heading9">
+                        <div class="accordion-body">
+                            <p>
+                                Yes! I don't even collect any of your information!
+                                I created this site using only HTML, JavaScript, and CSS and there is no server or back-end involved, period.
+                            </p>
+                            <p>
+                                Running a server would be an expense, whereas hosting on github is free! Because the logic is written in JavaScript, your personal computer (or phone) does all of the heavy lifting so I don't need to!
+                                Your results are encoded into the URL provided at the end of the quiz as a digital signature, not in any database anywhere.
+                                If you lose the URLs, you will have to take the quiz again.
+                                If I make significant changes to the site, you may also have to take the quiz again - but hey, maybe you and your partners kinks have altered since the last time!
+                            </p>
+                        </div>
+                    </div>
+                </div> <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading10">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse10" aria-expanded="false" aria-controls="flush-collapse10">
+                            What are the rules to the game?
+                        </button>
+                    </h2>
+                    <div id="flush-collapse10" class="accordion-collapse collapse" aria-labelledby="flush-heading10">
+                        <div class="accordion-body">
+                            TODO - Note to self, probably put these rules in a shared file somewhere as I might list them in a couple spots.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+    </footer>
+</body>
+</html>

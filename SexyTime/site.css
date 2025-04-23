@@ -1,0 +1,22 @@
+:root {
+    --st-primary: 255, 170, 225;
+    --st-primary-hex: #FFAAE1;
+    --st-secondary: 255, 130, 217;
+    --st-secondary-hex: #FF82D9;
+    --bs-primary-rgb: var(--st-primary);
+}
+
+.btn-outline-primary {
+    --bs-btn-active-bg: var(--st-primary-hex);
+    --bs-btn-border-color: var(--st-primary-hex);
+    --bs-btn-active-border-color: var(--st-primary-hex);
+}
+
+.btn-primary {
+    --bs-btn-active-bg: var(--st-primary-hex);
+    --bs-btn-bg: var(--st-primary-hex);
+    --bs-btn-hover-bg: var(--st-secondary-hex);
+    --bs-btn-border-color: var(--st-primary-hex);
+    --bs-btn-active-border-color: var(--st-primary-hex);
+    --bs-btn-hover-border-color: var(--st-primary-hex);
+}
