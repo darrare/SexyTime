@@ -1,0 +1,290 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="SexyTime">
+    <title>Sex Quiz for Couples - Sexy Time</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Javascript/quiz.js"></script>
+    <script src="Javascript/quiz_templater.js"></script>
+    <link rel="stylesheet" href="site.css" />
+
+    <link rel="shortcut icon" type="image/png" href="Images/favicon.png">
+</head>
+<body>
+    <!-- Instructions Modal -->
+    <div class="modal fade" id="instructions" tabindex="-1" aria-labelledby="modelLabel" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="btn-close m-2 mb-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="px-3 text-center">
+                    <div class="modal-body">
+                        <h3>Uncover hidden desires</h3>
+                        <p>that you share... while keeping the rest secret!</p>
+
+                        <hr>
+
+                        <p>There are 5 options for each question:</p>
+                        <div class="text-start">
+                            <p>🤮 - No means no</p>
+                            <p>😕 - Probably not, but maybe on my partner's birthday</p>
+                            <p>🤷 - If my partner is into it</p>
+                            <p>😀 - Yeah! I'd like to give this a try</p>
+                            <p>😍 - Fuck yeah! I want to do this all night long</p>
+                        </div>
+
+                        <hr>
+
+                        <p style="margin-bottom: 0"><small>When you finish, each participant will be given a URL their partner can input into their results page to merge into a couple's results URL.</small></p>
+                        <p><small><b>Tip:</b> Bookmark these URLs to save them for later!</small></p>
+                        <p><small>🤮 and 😕 will not show up in your match results, so your partner will know where the line is and you can avoid those awkward moments!</small></p>
+                        <p style="margin-bottom: 0"><small>😕 won't show in your couple's results, but it will show up in the game labeled as an experiment if it is something your partner loves.</small></p>
+                        <p><small><b>Tip:</b> If you're not feeling it at the time, you can skip and reroll!</small></p>
+                        <p><small>Take your quizzes separately, no peeking😉!</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+        <div class="container-lg">
+            <a class="navbar-brand py-1" href="/">
+                <img src="Images/LogoShort.png" height="50" />
+            </a>
+        </div>
+    </nav>
+
+    <div id="_basic-questions">
+        <!-- Header -->
+        <div class="px-4 py-5 bg-primary" style="--bs-bg-opacity: .3">
+            <div class="text-center container-lg mt-4">
+                <h1>😘 Basics</h1>
+                <h6>Just the Basic Stuff</h6>
+            </div>
+        </div>
+
+        <!-- Form -->
+        <div class="container-lg mt-4">
+            <p>We will cover the most common stuff here. Don't be afraid to say yes!</p>
+            <div class="d-flex justify-content-between align-items-end mb-2">
+                <h2 class="m-0">Questions (16)</h2>
+                <div>
+                    <a class="btn btn-info" href="" data-bs-toggle="modal" data-bs-target="#instructions">Instructions</a>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 11.111111111111%">1 of 9</div>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item px-md-3 px-0">
+                    <div class="row">
+                        <div class="col-md pt-md-2">
+                            Give a sensual massage to asd?
+                        </div>
+                        <div class="col-md">
+                            <div class="row gx-1">
+                                <div class="col">
+                                    <input class="btn-check" type="radio" id="11" name="answers[1]" value="1">
+                                    <label title="EW!" class="btn btn-outline-primary btn-lg w-100 fs-6" data-bs-toggle="tooltip" for="11">🤮</label>
+                                </div>
+                                <div class="col">
+                                    <input class="btn-check" type="radio" id="12" name="answers[1]" value="2">
+                                    <label title="No" class="btn btn-outline-primary btn-lg w-100 fs-6" data-bs-toggle="tooltip" for="12">😕</label>
+                                </div>
+                                <div class="col">
+                                    <input class="btn-check" type="radio" id="13" name="answers[1]" value="3">
+                                    <label title="If Asd wants to" class="btn btn-outline-primary btn-lg w-100 fs-6" data-bs-toggle="tooltip" for="13">🤷</label>
+                                </div>
+                                <div class="col">
+                                    <input class="btn-check" type="radio" id="14" name="answers[1]" value="4">
+                                    <label title="Yes" class="btn btn-outline-primary btn-lg w-100 fs-6" data-bs-toggle="tooltip" for="14">😀</label>
+                                </div>
+                                <div class="col">
+                                    <input class="btn-check" type="radio" id="15" name="answers[1]" value="5">
+                                    <label title="OH YES!" class="btn btn-outline-primary btn-lg w-100 fs-6" data-bs-toggle="tooltip" for="15">😍</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item px-md-3 px-0">
+                    <div class="row">
+                        <div class="col-md pt-md-2">
+                            Get a sensual massage from asd?
+                        </div>
+                        <div class="col-md">
+                            <div class="row gx-1">
+                                <div class="col">
+                                    <input class="btn-check" type="radio" id="21" name="answers[2]" value="1">
+                                    <label title="EW!" class="btn btn-outline-primary btn-lg w-100 fs-6" data-bs-toggle="tooltip" for="21">🤮</label>
+                                </div>
+                                <div class="col">
+                                    <input class="btn-check" type="radio" id="22" name="answers[2]" value="2">
+                                    <label title="No" class="btn btn-outline-primary btn-lg w-100 fs-6" data-bs-toggle="tooltip" for="22">😕</label>
+                                </div>
+                                <div class="col">
+                                    <input class="btn-check" type="radio" id="23" name="answers[2]" value="3">
+                                    <label title="If Asd wants to" class="btn btn-outline-primary btn-lg w-100 fs-6" data-bs-toggle="tooltip" for="23">🤷</label>
+                                </div>
+                                <div class="col">
+                                    <input class="btn-check" type="radio" id="24" name="answers[2]" value="4">
+                                    <label title="Yes" class="btn btn-outline-primary btn-lg w-100 fs-6" data-bs-toggle="tooltip" for="24">😀</label>
+                                </div>
+                                <div class="col">
+                                    <input class="btn-check" type="radio" id="25" name="answers[2]" value="5">
+                                    <label title="OH YES!" class="btn btn-outline-primary btn-lg w-100 fs-6" data-bs-toggle="tooltip" for="25">😍</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 11.111111111111%">1 of 9</div>
+            </div>
+
+            <div class="row mt-4" id="bottom">
+                <div class="col-md-auto col" id="bottom">
+                    <button class="btn btn-success btn-lg w-100" type="submit" onclick="window.onbeforeunload = null; return true;">Continue <i class="fa-solid fa-caret-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="_role-play" hidden>
+        <!-- Header -->
+        <div class="px-4 py-5 bg-primary" style="--bs-bg-opacity: .3">
+            <div class="text-center container-lg mt-4">
+                <h1>🧙🏼‍♂️ Role Play</h1>
+                <h6>Adult pretend playtime</h6>
+            </div>
+        </div>
+
+        <!-- Form -->
+        <div class="container-lg mt-4">
+            <p>
+                I'll play the bass, you'll play the angler.
+            </p>
+
+            <div class="d-flex justify-content-between align-items-end mb-2">
+                <h2 class="m-0">Questions (18)</h2>
+                <div>
+                    <a class="btn btn-info" href="" data-bs-toggle="modal" data-bs-target="#instructions">Instructions</a>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 22.222222222222%">2 of 9</div>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item px-md-3 px-0">
+                    <div class="row">
+                        <div class="col-md pt-md-2">
+                            Role-play or wear costumes during sex?
+
+                        </div>
+                        <div class="col-md">
+                            <div class="row gx-1">
+                                <div class="col">
+                                    <input class="btn-check" type="radio" id="341" name="answers[34]" value="1">
+                                    <label class="btn btn-outline-primary btn-lg w-100 fs-6" data-bs-toggle="tooltip" for="341" data-bs-original-title="EW!">🤮</label>
+                                </div>
+                                <div class="col">
+                                    <input class="btn-check" type="radio" id="342" name="answers[34]" value="2">
+                                    <label class="btn btn-outline-primary btn-lg w-100 fs-6" data-bs-toggle="tooltip" for="342" data-bs-original-title="No">😕</label>
+                                </div>
+                                <div class="col">
+                                    <input class="btn-check" type="radio" id="343" name="answers[34]" value="3">
+                                    <label class="btn btn-outline-primary btn-lg w-100 fs-6" data-bs-toggle="tooltip" for="343" data-bs-original-title="If Asd wants to">🤷</label>
+                                </div>
+                                <div class="col">
+                                    <input class="btn-check" type="radio" id="344" name="answers[34]" value="4">
+                                    <label class="btn btn-outline-primary btn-lg w-100 fs-6" data-bs-toggle="tooltip" for="344" data-bs-original-title="Yes">😀</label>
+                                </div>
+                                <div class="col">
+                                    <input class="btn-check" type="radio" id="345" name="answers[34]" value="5">
+                                    <label class="btn btn-outline-primary btn-lg w-100 fs-6" data-bs-toggle="tooltip" for="345" data-bs-original-title="OH YES!">😍</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item px-md-3 px-0">
+                    <div class="row">
+                        <div class="col-md pt-md-2">
+                            Engage in Consensual Non-Consent?
+
+                            <span class="text-primary" role="button" data-bs-toggle="tooltip" aria-label="Consensual Non-Consent: a form of roleplay that two or more people engage in that emulates some form of forced activity." data-bs-original-title="Consensual Non-Consent: a form of roleplay that two or more people engage in that emulates some form of forced activity."><i class="fa-solid fa-circle-question"></i></span>
+
+                        </div>
+                        <div class="col-md">
+                            <div class="row gx-1">
+                                <div class="col">
+                                    <input class="btn-check" type="radio" id="591" name="answers[59]" value="1">
+                                    <label class="btn btn-outline-primary btn-lg w-100 fs-6" data-bs-toggle="tooltip" for="591" data-bs-original-title="EW!">🤮</label>
+                                </div>
+                                <div class="col">
+                                    <input class="btn-check" type="radio" id="592" name="answers[59]" value="2">
+                                    <label class="btn btn-outline-primary btn-lg w-100 fs-6" data-bs-toggle="tooltip" for="592" data-bs-original-title="No">😕</label>
+                                </div>
+                                <div class="col">
+                                    <input class="btn-check" type="radio" id="593" name="answers[59]" value="3">
+                                    <label class="btn btn-outline-primary btn-lg w-100 fs-6" data-bs-toggle="tooltip" for="593" data-bs-original-title="If Asd wants to">🤷</label>
+                                </div>
+                                <div class="col">
+                                    <input class="btn-check" type="radio" id="594" name="answers[59]" value="4">
+                                    <label class="btn btn-outline-primary btn-lg w-100 fs-6" data-bs-toggle="tooltip" for="594" data-bs-original-title="Yes">😀</label>
+                                </div>
+                                <div class="col">
+                                    <input class="btn-check" type="radio" id="595" name="answers[59]" value="5">
+                                    <label class="btn btn-outline-primary btn-lg w-100 fs-6" data-bs-toggle="tooltip" for="595" data-bs-original-title="OH YES!">😍</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 22.222222222222%">2 of 9</div>
+            </div>
+
+            <div class="row mt-4" id="bottom">
+                <div class="col-md-auto col-4">
+                    <a class="btn btn-primary btn-lg w-100" href="1"><i class="fa-solid fa-caret-left"></i> Back</a>
+                </div>
+                <div class="col-md-auto col" id="bottom">
+                    <button class="btn btn-success btn-lg w-100" type="submit" onclick="window.onbeforeunload = null; return true;">Continue <i class="fa-solid fa-caret-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-white bg-primary mt-5">
+        <div class="container-lg">
+            <section class="text-center mb-4  pt-4">
+                <img src="Images/LogoSquare.png" class="img-fluid" style="max-height: 150px;" />
+            </section>
+            <section class="mb-4">
+                <div class="row d-flex justify-content-center">
+                    <p class="mb-0"><i class="fa-solid fa-lock"></i> <b>Privacy Guaranteed</b></p>
+                    <p class="small mt-0">Everything is done on the front end, so we do not ever even have access to your information!</p>
+                    <p class="mb-0">❤️💦😘😍🍆🍑😉🔥🍍🤐🍩👌</p>
+                </div>
+            </section>
+        </div>
+        <div class="bg-dark">
+            <div class="p-3 bg-primary bg-opacity-75">
+                <small>© 2025 darrare.github.io/SexyTime. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

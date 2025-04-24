@@ -3,6 +3,7 @@
     --st-primary-hex: #FFAAE1;
     --st-secondary: 255, 130, 217;
     --st-secondary-hex: #FF82D9;
+    --st-primary-subtle-hex: #FFEDF9;
     --bs-primary-rgb: var(--st-primary);
 }
 
@@ -19,4 +20,10 @@
     --bs-btn-border-color: var(--st-primary-hex);
     --bs-btn-active-border-color: var(--st-primary-hex);
     --bs-btn-hover-border-color: var(--st-primary-hex);
+}
+
+.accordion {
+    --bs-accordion-active-color: var(--st-secondary-hex);
+    --bs-accordion-active-bg: var(--st-primary-subtle-hex);
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--st-primary), .5);
 }

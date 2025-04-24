@@ -1,0 +1,50 @@
+{
+  "sections": [
+    {
+      "id": "_quizSectionBasics",
+      "title": "😘 Basics",
+      "slogan": "Just the Basic Stuff",
+      "description": "We will cover the most common stuff here. Don't be afraid to say yes!",
+      "questions": [
+        {
+          "id": "100",
+          "helpPrompt": "",
+          "promptHeSees": "Give a sensual massage to your partner?",
+          "promptSheSees": "Give a sensual massage to your partner?"
+        },
+        {
+          "id": "101",
+          "helpPrompt": "",
+          "promptHeSees": "Get a sensual message from your partner?",
+          "promptSheSees": "Get a sensual message from your partner?"
+        },
+        {
+          "id": "103",
+          "helpPrompt": "",
+          "promptHeSees": "Have your partner swallow your cum?",
+          "promptSheSees": "Swallow your partners cum?"
+        }
+      ]
+    },
+    {
+      "id": "_quizSectionRolePlay",
+      "title": "🧙🏼‍♂️ Role Play",
+      "slogan": "Adult pretend playtime",
+      "description": "I'll play the bass, you'll play the angler.",
+      "questions": [
+        {
+          "id": "200",
+          "helpPrompt": "",
+          "promptHeSees": "Role-play or wear costumes during sex?",
+          "promptSheSees": "Role-play or wear costumes during sex?"
+        },
+        {
+          "id": "201",
+          "helpPrompt": "Consensual Non-Consent: a form of roleplay that two or more people engage in that emulates some form of forced activity.",
+          "promptHeSees": "Engage in Consensual Non-Consent?",
+          "promptSheSees": "Engage in Consensual Non-Consent?"
+        }
+      ]
+    }
+  ]
+}
