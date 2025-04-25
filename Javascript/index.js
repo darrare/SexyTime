@@ -33,8 +33,11 @@ function onStartQuizClick() {
         return;
     }
 
+    const basePath = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/') + 1);
+    const baseUrl = `${window.location.origin}${basePath}`;
+
     if (gender === "male" || gender === "female") {
-        window.location.href = new URL(`quiz.html?gender=${gender}`, window.location.origin).href;
+        window.location.href = new URL(`quiz.html?gender=${gender}`, baseUrl).href;
     } else {
         showNotice("Somehow an invalid gender got through. Please reload the page.");
     }

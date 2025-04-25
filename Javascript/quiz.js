@@ -70,7 +70,10 @@ function finishQuiz() {
     var base64String = packArrayToBase64(selectedRadios)
     var queryString = `data=${sanitizeBase64ToQueryString(base64String)}`;
 
-    window.location.href = new URL(`personalResults.html?${queryString}`, window.location.origin).href;
+    const basePath = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/') + 1);
+    const baseUrl = `${window.location.origin}${basePath}`;
+
+    window.location.href = new URL(`personalResults.html?${queryString}`, baseUrl).href;
 }
 
 /*
