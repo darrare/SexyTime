@@ -1,15 +1,4 @@
 ﻿/*
-  Reads the JSON file and returns the JSON object.
- */
-async function readQuizSectionsJson(path) {
-    const response = await fetch(path);
-    if (!response.ok) {
-    throw new Error(`HTTP error when loading ${path}: ${response.status}`);
-    }
-    return await response.json();
-}
-
-/*
   Generates the entirety of all quiz questions in HTML format easy to add to the html page.
  */
 function generateQuizHtml(quizSections, gender) {
@@ -25,7 +14,7 @@ function generateQuizHtml(quizSections, gender) {
  */
 function generateQuizHtmlSection(quizSection, gender, currentIndex, maxIndex) {
     var content = [];
-    content.push(`<div id="${quizSection.id}"${currentIndex != 0 ? "hidden" : ""}>`);
+    content.push(`<div id="${quizSection.id}" class="quizSection" ${currentIndex != 0 ? 'style="display:none;"' : ''}>`);
     content.push(generateQuizSectionHeader(quizSection));
     content.push(generateQuizSectionQuestions(quizSection, gender, currentIndex, maxIndex));
     content.push(`</div>`);
@@ -77,17 +66,17 @@ function generateQuizSectionQuestions(quizSection, gender, currentIndex, maxInde
 
     if (currentIndex != 0) {
         content.push(`        <div class="col-md-auto col-4">`);
-        content.push(`            <a class="btn btn-primary btn-lg w-100" href="1"><i class="fa-solid fa-caret-left"></i> Back</a>`);
+        content.push(`            <a class="btn btn-primary btn-lg w-100" onclick="previousSection()"><i class="fa-solid fa-caret-left"></i> Back</a>`);
         content.push(`        </div>`);
     }
 
     if (currentIndex != maxIndex - 1) {
         content.push(`        <div class="col-md-auto col" id="bottom">`);
-        content.push(`            <button class="btn btn-success btn-lg w-100" type="submit" onclick="window.onbeforeunload = null; return true;">Continue <i class="fa-solid fa-caret-right"></i></button>`);
+        content.push(`            <button class="btn btn-success btn-lg w-100" onclick="nextSection()">Continue <i class="fa-solid fa-caret-right"></i></button>`);
         content.push(`        </div>`);
     } else {
         content.push(`        <div class="col-md-auto col" id="bottom">`);
-        content.push(`            <button class="btn btn-success btn-lg w-100" type="submit" onclick="event.preventDefault();" data-bs-toggle="modal" data-bs-target="#finish_modal">Finish Quiz <i class="fa-solid fa-share"></i></button>`);
+        content.push(`            <button class="btn btn-success btn-lg w-100" onclick="finishQuiz()">Finish Quiz <i class="fa-solid fa-share"></i></button>`);
         content.push(`        </div>`);
     }
 
@@ -122,7 +111,7 @@ function generateQuizSectionQuestion(quizSectionQuestion, gender) {
     content.push(`                            <label title="Probably not" class="btn btn-outline-primary btn-lg w-100 fs-6" data-bs-toggle="tooltip" for="${quizSectionQuestion.id}_2">😕</label>`);
     content.push(`                        </div>`);
     content.push(`                        <div class="col">`);
-    content.push(`                            <input class="btn-check" type="radio" id="${quizSectionQuestion.id}_3" name="answers[${quizSectionQuestion.id}]" value="3">`);
+    content.push(`                            <input class="btn-check" type="radio" id="${quizSectionQuestion.id}_3" name="answers[${quizSectionQuestion.id}]" value="3" checked="checked">`);
     content.push(`                            <label title="If my partner wants to" class="btn btn-outline-primary btn-lg w-100 fs-6" data-bs-toggle="tooltip" for="${quizSectionQuestion.id}_3">🤷</label>`);
     content.push(`                        </div>`);
     content.push(`                        <div class="col">`);
