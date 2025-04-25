@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="Javascript/site.js"></script>
     <script src="Javascript/personal_results.js"></script>
     <link rel="stylesheet" href="site.css" />
@@ -27,6 +28,60 @@
 
     <!-- Page Content -->
     <div id="_personalResults">
+        <!--
+        Thanks!
+        Here is your URL to share with your partner
+        Got your partner's URL, paste it here! Here is the box to copy your partner's URL
+        Personal Results
+          "Freak Score"
+          For each section
+            Display in a bar the number of points / total number of points to see what section is most appealing
+        
+        Final thank you and link for feedback
+        -->
+
+        <!-- Urls and thanks --> 
+        <div>
+        
+        </div>
+
+        <!-- Freak Score-->
+        <div class="bg-primary" style="--bs-bg-opacity: .2;">
+            <div class="row">
+                <h2 class="mt-5 mb-3 d-flex justify-content-center">🍦 Freak Score 🌶️</h2>
+                <p class="d-flex justify-content-center">Your freak score is measured by how open you are to different sexual activities</p>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="col-md-4 col-9">
+                    <canvas id="_freakGraph"></canvas>
+                </div>
+            </div>
+            <p class="text-center p-3"><b>You are <span id="_freakPercentage"></span>% freaky 😝</b></p>
+        </div>
+
+
+        <!-- Preferences -->
+         <div>
+            <div class="row">
+                <h2 id="preferences" class="mt-5 mb-3 d-flex justify-content-center">😍 Preferences</h2>
+                <p class="d-flex justify-content-center">You can see what kind of categories you vibed with, and those you didn't!</p>
+             </div>
+             <div class="d-flex justify-content-center">
+                <div class="col-md-4 col-9">
+                    <canvas id="_preferencesGraph"></canvas>
+                </div>
+            </div>
+         </div>
+
+
+
+
+
+
+
+
+
+        <script src="Javascript/graphs.js"></script>
 
     </div>
     <!-- Footer -->

@@ -33,10 +33,8 @@ function onStartQuizClick() {
         return;
     }
 
-    if (gender === "male") {
-
-    } else if (gender === "female") {
-
+    if (gender === "male" || gender === "female") {
+        window.location.href = new URL(`quiz.html?gender=${gender}`, window.location.origin).href;
     } else {
         showNotice("Somehow an invalid gender got through. Please reload the page.");
     }

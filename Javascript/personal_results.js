@@ -3,9 +3,29 @@ $(document).ready(async function () {
     var quizSectionsJson = await readQuizSectionsJson("Configs/QuizSections.json");
     var usefulData = buildUsefulDataCollectionFromResults(originalDataArray, quizSectionsJson);
     var fullHtml = "";
-    $('#_personalResults').html(fullHtml);
+    //$('#_personalResults').html(fullHtml);
+    drawFreakScoreGraph(getFreakScoreGraphData(usefulData));
+    drawPreferencesGraph(getPreferencesGraphData(usefulData));
     enableAllTooltips();
 });
+
+function getFreakScoreGraphData(usefulData) {
+    var voteValues = usefulData.sections.flatMap(section => 
+        section.questions.map(question => question.voteValue)
+    );
+    return (voteValues.reduce((sum, voteValue) => sum + voteValue, 0) / voteValues.length / 4 * 100).toFixed(2);
+}
+
+function getPreferencesGraphData(usefulData) {
+    var labels = usefulData.sections.flatMap(section => section.title);
+    var data = [];
+    usefulData.sections.forEach(section => {
+        const questionValues = section.questions.map(q => parseInt(q.voteValue));
+        const averageId = questionValues.reduce((sum, voteValue) => sum + voteValue, 0) / questionValues.length;
+        data.push(averageId);
+      });
+    return { labels: labels,  data: data };
+}
 
 /*
 Due to overhead on tooltips, they are disabled by default.
@@ -36,6 +56,7 @@ function buildUsefulDataCollectionFromResults(originalDataArray, quizSectionsJso
             index++;
         });
     });
+    return quizSectionsJson;
 }
 
 /*

@@ -39,6 +39,7 @@ function nextSection() {
             next.toggle();
         }
     }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 /*
@@ -55,6 +56,7 @@ function previousSection() {
             next.toggle();
         }
     }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 /*
@@ -69,20 +71,6 @@ function finishQuiz() {
     var queryString = `data=${sanitizeBase64ToQueryString(base64String)}`;
 
     window.location.href = new URL(`personalResults.html?${queryString}`, window.location.origin).href;
-}
-
-/*
- Encode the int array into a binary string.
- */
-function encodeIntArray(arr) {
-    const typedArray = new Uint16Array(arr);
-
-    const binary = String.fromCharCode(...new Uint8Array(typedArray.buffer));
-
-    const base64 = btoa(binary);
-
-    // Make it URL-safe (replace +, /, =)
-    return base64.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
 }
 
 /*
