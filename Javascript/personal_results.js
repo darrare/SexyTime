@@ -1,14 +1,18 @@
+var originalDataArray;
+var quizSectionsJson;
 $(document).ready(async function () {
-    var originalDataArray = readPersonalResultsQueryString();
-    var quizSectionsJson = await readQuizSectionsJson("Configs/QuizSections.json");
+    originalDataArray = readQueryStringDataAndGetResult(window.location.href, "data").dataArray;
+    quizSectionsJson = await readQuizSectionsJson("Configs/QuizSections.json");
     var usefulData = buildUsefulDataCollectionFromResults(originalDataArray, quizSectionsJson);
-    var fullHtml = "";
-    //$('#_personalResults').html(fullHtml);
     drawFreakScoreGraph(getFreakScoreGraphData(usefulData));
     drawPreferencesGraph(getPreferencesGraphData(usefulData));
+    initializeStaticUrlInput($("#_personalResultUrl"));
     enableAllTooltips();
 });
 
+/*
+Reads from the json to get the data useful for drawing the freak score graph.
+*/
 function getFreakScoreGraphData(usefulData) {
     var voteValues = usefulData.sections.flatMap(section => 
         section.questions.map(question => question.voteValue)
@@ -16,6 +20,9 @@ function getFreakScoreGraphData(usefulData) {
     return (voteValues.reduce((sum, voteValue) => sum + voteValue, 0) / voteValues.length / 4 * 100).toFixed(2);
 }
 
+/*
+Reads from the json to get the data useful for drawing the preferences graph.
+*/
 function getPreferencesGraphData(usefulData) {
     var labels = usefulData.sections.flatMap(section => section.title);
     var data = [];
@@ -28,27 +35,14 @@ function getPreferencesGraphData(usefulData) {
 }
 
 /*
-Due to overhead on tooltips, they are disabled by default.
-The following code will enable all tooltips on the page automatically.
-*/
-function enableAllTooltips() {
-   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-   tooltipTriggerList.map(function (tooltipTriggerEl) {
-       return new bootstrap.Tooltip(tooltipTriggerEl)
-   })
-}
-
-/*
 Takes the query string data and the quiz sections json to create a usable map.
 */
 function buildUsefulDataCollectionFromResults(originalDataArray, quizSectionsJson) {
-    var questionIds = quizSectionsJson.sections.flatMap(section => 
-        section.questions.map(question => question.id)
-      );
+    var questionIds = getQuestionIdsMapped(quizSectionsJson);
     if (originalDataArray.length != questionIds.length) {
         throw "Query string invalid";
     }
-
+  
     var index = 0;
     quizSectionsJson.sections.forEach(section => {
         section.questions.forEach(question => {
@@ -57,62 +51,54 @@ function buildUsefulDataCollectionFromResults(originalDataArray, quizSectionsJso
         });
     });
     return quizSectionsJson;
-}
+  }
 
 /*
-Reads the query string and builds an int array that is the answer to all questions
+Calculate the couples results and redirects to that page.
 */
-function readPersonalResultsQueryString() {
-    var queryParams = new URLSearchParams(window.location.search);
-    var queryString = queryParams.get('data');
-    var originalBase64String = convertSanitizedQueryStringToBase64(queryString);
-    var originalDataArray = decodeBase64ToArray(originalBase64String);
-    return originalDataArray;
- }
+function validateEntryAndRedirectToCouplesResultsPage() {
+    try {
+        if (!isValidUrl($("#_partnersResultUrl").val())) { throw "Partner's URL is invalid.";}
 
- /*
-Decode a base64 string into an int array.
-Specifically in a scenario where the array can only hold values 0-4
-*/
-function decodeBase64ToArray(base64Str) {
-    // Step 1: Decode the Base64 string to a byte array
-    const byteString = atob(base64Str);
-    const byteArray = Array.from(byteString, char => char.charCodeAt(0));
-
-    // Step 2: Unpack the byte array back into the original array of integers
-    let result = [];
-    let currentBits = 0;
-    let bitCount = 0;
-
-    for (let i = 0; i < byteArray.length; i++) {
-        // Add the byte to the current bits accumulator
-        currentBits = (currentBits << 8) | byteArray[i];
-        bitCount += 8;
-
-        // Extract 3-bit chunks from the current bits
-        while (bitCount >= 3) {
-            // Extract the 3-bit value
-            const value = (currentBits >> (bitCount - 3)) & 0x7; // 0x7 is binary 111
-
-            // If we find a value of 7, it means we should stop because this is our exit condition.
-            if (value === 7) { return result;}
-            
-            result.push(value);
-
-            // Remove the extracted bits
-            bitCount -= 3;
+        var partnersDataArray = readQueryStringDataAndGetResult($("#_partnersResultUrl").val(), "data").dataArray;
+    
+        //validate
+        if (originalDataArray.length != partnersDataArray.length) {
+            throw "Your URL and your parnter's URL contain data of different lengths. " +
+                "This is likely due to the URL being generated on different versions of the app " +
+                "or a mistake when copying or pasting your partner's URL."
         }
-    }
 
-    return result;
+        computeQueryStringAndRedirect($("#_personalResultUrl").val(), $("#_partnersResultUrl").val());
+    } catch (error) {
+        showNotice(error);
+    }
 }
 
 /*
-Takes the sanitiezed query string and turns it back into a basic base64 string.
+Get the appropriate query string for the couples responses
 */
-function convertSanitizedQueryStringToBase64(base64url) {
-    // Pad with `=` to restore correct length
-    const padLength = (4 - (base64url.length % 4)) % 4;
-    const base64 = base64url.replace(/-/g, '+').replace(/_/g, '/') + '='.repeat(padLength);
-    return base64;
+function computeQueryStringAndRedirect(yourUrl, partnersUrl)
+{
+    const params = new URLSearchParams({
+        y: new URL(yourUrl).searchParams.get('data'),
+        t: new URL(partnersUrl).searchParams.get('data')
+    });
+
+    const basePath = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/') + 1);
+    const baseUrl = `${window.location.origin}${basePath}`;
+
+    window.location.href = new URL(`couplesResults.html?${params.toString()}`, baseUrl).href;
+}
+
+/*
+Check to see if a URL is valid
+*/
+function isValidUrl(string) {
+    try {
+        new URL(string);
+        return true; // The URL is valid
+    } catch (e) {
+        return false; // Invalid URL
+    }
 }

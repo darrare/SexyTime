@@ -4,17 +4,6 @@ $(document).ready(function () {
 });
 
 /*
- Due to overhead on tooltips, they are disabled by default.
- The following code will enable all tooltips on the page automatically.
- */
-function enableAllTooltips() {
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl)
-    })
-}
-
-/*
  Gets the number of questions that will be answered during the quiz.
  */
 function populateQuestionsCount() {
@@ -41,11 +30,4 @@ function onStartQuizClick() {
     } else {
         showNotice("Somehow an invalid gender got through. Please reload the page.");
     }
-}
-
-/*
- Shows a notice to the user. Will eventually be changed to be cleaner than just alert.
- */
-function showNotice(message) {
-    alert(message);
 }

@@ -1,0 +1,158 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="SexyTime">
+    <title>Sex Quiz for Couples - Sexy Time</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="Javascript/site.js"></script>
+    <script src="Javascript/matches_templater.js"></script>
+    <script src="Javascript/couples_results.js"></script>
+    <link rel="stylesheet" href="site.css" />
+
+    <link rel="shortcut icon" type="image/png" href="Images/favicon.png">
+</head>
+
+<body>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+        <div class="container-lg">
+            <a class="navbar-brand py-1" href="/">
+                <img src="Images/LogoShort.png" height="50" />
+            </a>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div id="_personalResults">
+        <!--
+        Thanks!
+        Results
+          "Freak Score" - Insert monologue about expanding your horizon and trying new things
+          Preferences - Focus in on areas you have common interests, or perhaps explore an interest of your partner's that you might not be quite in-tune with!
+          Shared Desires
+        Final thank you and link for feedback
+        -->
+
+        <!-- Urls and thanks -->
+        <div class="container">
+            <div class="row">
+                <h2 class="mt-5 mb-3 d-flex justify-content-center">🥁 Drumroll please.......</h2>
+                <p class="d-flex justify-content-center">The numbers have been ran, so let's see how you and your partner can get freaky 😉</p>
+                <p class="d-flex justify-content-center">But first... Make sure to bookmark this URL so that you can come back to it tomorrow night! And the next night, and the next night, and the next night 😜</p>
+                <div class="input-group col-md-4 col-9 justify-content-center">
+                    <span class="input-group-text" id="link"><i class="fa-solid fa-link"></i></span>
+                    <input style="flex: 0 1 50%;" type="text" class="form-control form-control-lg" readonly value="" id="_couplesResultsUrl" data-bs-toggle="tooltip" data-bs-placement="top">
+                </div>
+                <p class="d-flex justify-content-center mt-3">Now tell me where those freaks at 🤪</p>
+            </div>
+        </div>
+
+        <!-- Freak Score-->
+        <div class="bg-primary" style="--bs-bg-opacity: .2;">
+            <div class="container">
+                <div class="row">
+                    <h2 class="mt-5 mb-3 d-flex justify-content-center">🍦 Freak Score 🌶️</h2>
+                    <p class="d-flex justify-content-center">Your freak score is measured by how open you are to different sexual activities</p>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-6 col-9">
+                        <div class="d-flex justify-content-center">
+                            <div class="col-6">
+                                <canvas id="_freakGraphY"></canvas>
+                            </div>
+                        </div>
+                        <p class="text-center p-3"><b>You are <span id="_freakPercentageY"></span>% freaky 😝</b></p>
+                    </div>
+                    <div class="col-md-6 col-9">
+                        <div class="d-flex justify-content-center">
+                            <div class="col-6">
+                                <canvas id="_freakGraphT"></canvas>
+                            </div>
+                        </div>
+                        <p class="text-center p-3"><b>They are <span id="_freakPercentageT"></span>% freaky 😝</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Preferences -->
+        <div>
+            <div class="row">
+                <h2 id="preferences" class="mt-5 mb-3 d-flex justify-content-center">😍 Preferences</h2>
+                <p class="d-flex justify-content-center">You can see what kind of categories you vibed with, and those you didn't!</p>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="col-md-6 col-9">
+                    <canvas id="_preferencesGraph"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shared Desires -->
+        <div>
+            <div class="row">
+                <h2 id="preferences" class="mt-5 mb-3 d-flex justify-content-center">🔥 Shared Desires</h2>
+                <p class="d-flex justify-content-center">Green flags, permission is granted, take action now! These are your matched desires!</p>
+            </div>
+            <div class="container-lg px-0">
+                <div class="accordion accordion-flush border" id="_coupleResultsAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading1">
+                            <button class="accordion-button open collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                                <span class="h3">😘 Basics <i><span style="font-size:1rem;">(13 matches) </span></i></span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1">
+                            <div class="accordion-body p-0">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <p><b>Question:</b> Give a sensual massage to Ornery trex? / Get a sensual massage from Dummy?</p>
+                                        <div class="row">
+                                            <p class="col-6 mb-0"><b>Dummy: </b>😍</p>
+                                            <p class="col-6 mb-0"><b>Ornery trex: </b>😍</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="Javascript/couples_results_graphs.js"></script>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="text-center text-white bg-primary mt-5">
+        <div class="container-lg">
+            <section class="text-center mb-4  pt-4">
+                <img src="Images/LogoSquare.png" class="img-fluid" style="max-height: 150px;" />
+            </section>
+            <section class="mb-4">
+                <div class="row d-flex justify-content-center">
+                    <p class="mb-0"><i class="fa-solid fa-lock"></i> <b>Privacy Guaranteed</b></p>
+                    <p class="small mt-0">Everything is done on the front end, so we do not ever even have access to your information!</p>
+                    <p class="mb-0">❤️💦😘😍🍆🍑😉🔥🍍🤐🍩👌</p>
+                </div>
+            </section>
+        </div>
+        <div class="bg-dark">
+            <div class="p-3 bg-primary bg-opacity-75">
+                <small>© 2025 darrare.github.io/SexyTime. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

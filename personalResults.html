@@ -28,21 +28,22 @@
 
     <!-- Page Content -->
     <div id="_personalResults">
-        <!--
-        Thanks!
-        Here is your URL to share with your partner
-        Got your partner's URL, paste it here! Here is the box to copy your partner's URL
-        Personal Results
-          "Freak Score"
-          For each section
-            Display in a bar the number of points / total number of points to see what section is most appealing
-        
-        Final thank you and link for feedback
-        -->
-
         <!-- Urls and thanks --> 
         <div>
-        
+            <div class="row">
+                <h2 class="mt-5 mb-3 d-flex justify-content-center">🎉 You made it!</h2>
+                <p class="d-flex justify-content-center">Here is your personalized results URL!</p>
+                <div class="input-group col-md-4 col-9 justify-content-center">
+                    <span class="input-group-text" id="link"><i class="fa-solid fa-link"></i></span>
+                    <input style="flex: 0 1 50%;" type="text" class="form-control form-control-lg" readonly value="" id="_personalResultUrl" data-bs-toggle="tooltip" data-bs-placement="top">
+                </div>
+                <p class="d-flex justify-content-center mt-3">Send this URL to your partner, and have them send you theirs to input in the field below to calculate your match results!</p>
+                <div class="input-group col-md-4 col-9 justify-content-center">
+                    <input style="flex: 0 1 50%;" type="text" class="form-control form-control-lg" value="http://127.0.0.1:5500/personalResults.html?data=AAU4CnAU4CnAU4CnAU4CnAU4CnAUnAU4CnAU4CnAU4CnAU4CnAU4CnAU4CnAU4CnAU4CnAU4CnAU4CnAfw" id="_partnersResultUrl" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Paste your partner's url here!">
+                    <button class="input-group-text" id="link" onclick="validateEntryAndRedirectToCouplesResultsPage()"><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+                <p class="d-flex justify-content-center mt-3">🍻 Here's to many sexy experiences ahead!</p>
+            </div>
         </div>
 
         <!-- Freak Score-->
@@ -59,7 +60,6 @@
             <p class="text-center p-3"><b>You are <span id="_freakPercentage"></span>% freaky 😝</b></p>
         </div>
 
-
         <!-- Preferences -->
          <div>
             <div class="row">
@@ -72,17 +72,7 @@
                 </div>
             </div>
          </div>
-
-
-
-
-
-
-
-
-
-        <script src="Javascript/graphs.js"></script>
-
+        <script src="Javascript/personal_results_graphs.js"></script>
     </div>
     <!-- Footer -->
     <footer class="text-center text-white bg-primary mt-5">
