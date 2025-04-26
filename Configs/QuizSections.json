@@ -5,7 +5,7 @@
       "title": "💋 Foreplay",
       "slogan": "Tease, please, and set the mood!",
       "description": "Build anticipation, deepening connection, and explore each other’s desires.",
-	  "isMatchable": "true",
+	    "isMatchable": "true",
       "questions": [
         {
           "id": "1",
@@ -34,14 +34,14 @@
         {
           "id": "5",
           "helpPrompt": "",
-          "promptHeSees": "Be explored by your partner's hands?",
+          "promptHeSees": "Do you want to explore your partner with your hands?",
           "promptSheSees": "Do you want to be explored with your partner's hands?"
         },
         {
           "id": "6",
           "helpPrompt": "",
           "promptHeSees": "Do you want to be explored with your partner's hands?",
-          "promptSheSees": "Be explored by your partner's hands?"
+          "promptSheSees": "Do you want to explore your partner with your hands?"
         },
         {
           "id": "7",
@@ -62,7 +62,7 @@
       "title": "😘 Basics",
       "slogan": "Just the Basic Stuff",
       "description": "We will cover the most common stuff here. Don't be afraid to say yes!",
-	  "isMatchable": "true",
+	    "isMatchable": "true",
       "questions": [
         {
           "id": "9",
@@ -163,44 +163,44 @@
         {
           "id": "25",
           "helpPrompt": "",
-          "promptHeSees": "Have sex without using protection?",
-          "promptSheSees": "Have sex without using protection?"
+          "promptHeSees": "Receive oral sex?",
+          "promptSheSees": "Give your partner oral sex?"
         },
         {
           "id": "26",
           "helpPrompt": "",
-          "promptHeSees": "Cum inside your partner?",
-          "promptSheSees": "Have your partner cum inside you?"
+          "promptHeSees": "Give your partner oral sex?",
+          "promptSheSees": "Receive oral sex?"
         },
         {
           "id": "27",
-          "helpPrompt": "",
-          "promptHeSees": "Cum on your partner's face?",
-          "promptSheSees": "Have your partner cum on your face?"
-        },
-        {
-          "id": "28",
-          "helpPrompt": "",
-          "promptHeSees": "Cum on your partner's chest and stomach?",
-          "promptSheSees": "Have your partner cum on your chest and stomach?"
-        },
-        {
-          "id": "29",
           "helpPrompt": "",
           "promptHeSees": "Titty fuck your partner?",
           "promptSheSees": "Have your partner titty fuck you?"
         },
         {
+          "id": "28",
+          "helpPrompt": "",
+          "promptHeSees": "Have sex without using protection?",
+          "promptSheSees": "Have sex without using protection?"
+        },
+        {
+          "id": "29",
+          "helpPrompt": "",
+          "promptHeSees": "Cum inside your partner?",
+          "promptSheSees": "Have your partner cum inside you?"
+        },
+        {
           "id": "30",
           "helpPrompt": "",
-          "promptHeSees": "Receive oral sex?",
-          "promptSheSees": "Give your partner oral sex?"
+          "promptHeSees": "Cum on your partner's face?",
+          "promptSheSees": "Have your partner cum on your face?"
         },
         {
           "id": "31",
           "helpPrompt": "",
-          "promptHeSees": "Give your partner oral sex?",
-          "promptSheSees": "Receive oral sex?"
+          "promptHeSees": "Cum on your partner's chest and stomach?",
+          "promptSheSees": "Have your partner cum on your chest and stomach?"
         },
         {
           "id": "32",
@@ -233,7 +233,7 @@
       "title": "🧙🏼‍♂️ Role Play",
       "slogan": "Adult pretend playtime",
       "description": "I'll play the bass, you'll play the angler.",
-	  "isMatchable": "true",
+	    "isMatchable": "true",
       "questions": [
         {
           "id": "36",
@@ -350,7 +350,7 @@
       "title": "🧘‍♀️ Positions",
       "slogan": "Kama Sutra Anyone?",
       "description": "If you can think it, you can find a way to get in it!",
-	  "isMatchable": "true",
+	    "isMatchable": "true",
       "questions": [
         {
           "id": "54",
@@ -391,14 +391,14 @@
         {
           "id": "60",
           "helpPrompt": "",
-          "promptHeSees": "Do it with partner on top during sex?",
+          "promptHeSees": "Do it with your partner on top during sex?",
           "promptSheSees": "Be on top during sex?"
         },
         {
           "id": "61",
           "helpPrompt": "",
           "promptHeSees": "Be on top during sex?",
-          "promptSheSees": "Do it with partner on top during sex?"
+          "promptSheSees": "Do it with your partner on top during sex?"
         },
         {
           "id": "62",
@@ -447,18 +447,6 @@
           "helpPrompt": "",
           "promptHeSees": "Make a sexual to-do list?",
           "promptSheSees": "Make a sexual to-do list?"
-        },
-        {
-          "id": "70",
-          "helpPrompt": "",
-          "promptHeSees": "Have your partner stimulate you sexually while you watch an erotic scene in VR?",
-          "promptSheSees": "Stimulate your partner sexually while they watch an erotic scene in VR?"
-        },
-        {
-          "id": "71",
-          "helpPrompt": "",
-          "promptHeSees": "Stimulate your partner sexually while they watch an erotic scene in VR?",
-          "promptSheSees": "Have your partner stimulate you sexually while you watch an erotic scene in VR?"
         }
       ]
     },
@@ -467,52 +455,52 @@
       "title": "🍩 Butt Stuff",
       "slogan": "Anal Play",
       "description": "Questions about butt stuff! We've got your back.",
-	  "isMatchable": "true",
+	    "isMatchable": "true",
       "questions": [
         {
-          "id": "72",
+          "id": "70",
           "helpPrompt": "",
           "promptHeSees": "Have anal sex?",
           "promptSheSees": "Have anal sex?"
         },
         {
-          "id": "73",
+          "id": "71",
           "helpPrompt": "",
           "promptHeSees": "Finger your partner anally?",
           "promptSheSees": "Be anally fingered by your partner?"
         },
         {
-          "id": "74",
+          "id": "72",
           "helpPrompt": "",
           "promptHeSees": "Be anally fingered by your partner?",
           "promptSheSees": "Finger your partner anally?"
         },
         {
-          "id": "75",
+          "id": "73",
           "helpPrompt": "An oral and anal sex act in which a person stimulates the anus of another by using the tongue and lips.",
           "promptHeSees": "Give your partner analingus?",
           "promptSheSees": "Have your partner give you analingus?"
         },
         {
-          "id": "76",
+          "id": "74",
           "helpPrompt": "An oral and anal sex act in which a person stimulates the anus of another by using the tongue and lips.",
           "promptHeSees": "Have your partner give you analingus?",
           "promptSheSees": "Give your partner analingus?"
         },
         {
-          "id": "77",
+          "id": "75",
           "helpPrompt": "Sex act that consists of a woman wearing a dildo with a strap-on harness and performing anal sex.",
           "promptHeSees": "Get Pegged by your partner?",
           "promptSheSees": "Peg your partner?"
         },
         {
-          "id": "78",
+          "id": "76",
           "helpPrompt": "",
           "promptHeSees": "Explore anally simulating your parner?",
           "promptSheSees": "Explore having your partner anally stimulate you?"
         },
         {
-          "id": "79",
+          "id": "77",
           "helpPrompt": "",
           "promptHeSees": "Explore having your partner anally stimulate you?",
           "promptSheSees": "Explore anally simulating your parner?"
@@ -524,196 +512,196 @@
       "title": "🤐 BDSM",
       "slogan": "Bondage, Discipline, Submission and Masochism",
       "description": "What's so sexy about BDSM? Beats me.",
-	  "isMatchable": "true",
+	    "isMatchable": "true",
       "questions": [
         {
-          "id": "80",
+          "id": "78",
           "helpPrompt": "",
           "promptHeSees": "Be rougher towards your partner in the bedroom?",
           "promptSheSees": "Have your partner be rougher towards you in the bedroom?"
         },
         {
-          "id": "81",
+          "id": "79",
           "helpPrompt": "",
           "promptHeSees": "Have your partner be rougher towards you in the bedroom?",
           "promptSheSees": "Be rougher towards your partner in the bedroom?"
         },
         {
-          "id": "82",
+          "id": "80",
           "helpPrompt": "",
           "promptHeSees": "Pull your partner's hair during sex?",
           "promptSheSees": "Have your hair pulled during sex?"
         },
         {
-          "id": "83",
+          "id": "81",
           "helpPrompt": "",
           "promptHeSees": "Have your hair pulled during sex?",
           "promptSheSees": "Pull your partner's hair during sex?"
         },
         {
-          "id": "84",
+          "id": "82",
           "helpPrompt": "",
           "promptHeSees": "Bite your partner during sex?",
           "promptSheSees": "Be bitten during sex?"
         },
         {
-          "id": "85",
+          "id": "83",
           "helpPrompt": "",
           "promptHeSees": "Be bitten during sex?",
           "promptSheSees": "Bite your partner during sex?"
         },
         {
-          "id": "86",
+          "id": "84",
           "helpPrompt": "",
           "promptHeSees": "Choke your partner during sex?",
           "promptSheSees": "Be choked during sex?"
         },
         {
-          "id": "87",
+          "id": "85",
           "helpPrompt": "",
           "promptHeSees": "Be choked during sex?",
           "promptSheSees": "Choke your partner during sex?"
         },
         {
-          "id": "88",
+          "id": "86",
           "helpPrompt": "",
           "promptHeSees": "Scratch your partner during sex?",
           "promptSheSees": "Be scratched during sex?"
         },
         {
-          "id": "89",
+          "id": "87",
           "helpPrompt": "",
           "promptHeSees": "Be scratched during sex?",
           "promptSheSees": "Scratch your partner during sex?"
         },
         {
-          "id": "90",
+          "id": "88",
           "helpPrompt": "",
           "promptHeSees": "Tie-up or handcuff your partner during sex?",
           "promptSheSees": "Be tied-up or handcuffed during sex?"
         },
         {
-          "id": "91",
+          "id": "89",
           "helpPrompt": "",
           "promptHeSees": "Be tied-up or handcuffed during sex?",
           "promptSheSees": "Tie-up or handcuff your partner during sex?"
         },
         {
-          "id": "92",
+          "id": "90",
           "helpPrompt": "",
           "promptHeSees": "Explore your submissive side with your partner?",
           "promptSheSees": "Have your partner explore their submissive side with you?"
         },
         {
-          "id": "93",
+          "id": "91",
           "helpPrompt": "",
           "promptHeSees": "Have your partner explore their submissive side with you?",
           "promptSheSees": "Explore your submissive side with your partner?"
         },
         {
-          "id": "94",
+          "id": "92",
           "helpPrompt": "",
           "promptHeSees": "Have your mouth covered or gagged during sex?",
           "promptSheSees": "Have your partner's mouth covered or gagged during sex?"
         },
         {
-          "id": "95",
+          "id": "93",
           "helpPrompt": "",
           "promptHeSees": "Have your partner's mouth covered or gagged during sex?",
           "promptSheSees": "Have your mouth covered or gagged during sex?"
         },
         {
-          "id": "96",
+          "id": "94",
           "helpPrompt": "",
           "promptHeSees": "Force your partner to orgasm?",
           "promptSheSees": "Be forced to orgasm by your partner?"
         },
         {
-          "id": "97",
+          "id": "95",
           "helpPrompt": "",
           "promptHeSees": "Be forced to orgasm by your partner?",
           "promptSheSees": "Force your partner to orgasm?"
         },
         {
-          "id": "98",
+          "id": "96",
           "helpPrompt": "",
           "promptHeSees": "Edge your partner?",
           "promptSheSees": "Have your partner edge you?"
         },
         {
-          "id": "99",
+          "id": "97",
           "helpPrompt": "",
           "promptHeSees": "Have your partner edge you?",
           "promptSheSees": "Edge your partner?"
         },
         {
-          "id": "100",
+          "id": "98",
           "helpPrompt": "",
           "promptHeSees": "Be blind folded during sex?",
           "promptSheSees": "Blind fold your partner during sex?"
         },
         {
-          "id": "101",
+          "id": "99",
           "helpPrompt": "",
           "promptHeSees": "Blind fold your partner during sex?",
           "promptSheSees": "Be blind folded during sex?"
         },
         {
-          "id": "102",
+          "id": "100",
           "helpPrompt": "",
           "promptHeSees": "Use handcuffs during sex?",
           "promptSheSees": "Use handcuffs during sex?"
         },
         {
-          "id": "103",
+          "id": "101",
           "helpPrompt": "",
           "promptHeSees": "Participate in impact play during sex? (whip, paddle, ...)",
           "promptSheSees": "Participate in impact play during sex? (whip, paddle, ...)"
         },
         {
-          "id": "104",
+          "id": "102",
           "helpPrompt": "",
           "promptHeSees": "Spank or slap your partner during sex?",
           "promptSheSees": "Have your partner spank or slap you during sex?"
         },
         {
-          "id": "105",
+          "id": "103",
           "helpPrompt": "",
           "promptHeSees": "Have your partner spank or slap you during sex?",
           "promptSheSees": "Spank or slap your partner during sex?"
         },
         {
-          "id": "106",
+          "id": "104",
           "helpPrompt": "",
           "promptHeSees": "Have your partner wear leather or latex?",
           "promptSheSees": "Wear leather or latex during sex?"
         },
         {
-          "id": "107",
+          "id": "105",
           "helpPrompt": "",
           "promptHeSees": "Wear leather or latex during sex?",
           "promptSheSees": "Have your partner wear leather or latex?"
         },
         {
-          "id": "108",
+          "id": "106",
           "helpPrompt": "",
           "promptHeSees": "Pee on your partner?",
           "promptSheSees": "Be peed on by your partner?"
         },
         {
-          "id": "109",
+          "id": "107",
           "helpPrompt": "",
           "promptHeSees": "Be peed on by your partner?",
           "promptSheSees": "Pee on your partner?"
         },
         {
-          "id": "110",
+          "id": "108",
           "helpPrompt": "",
           "promptHeSees": "Explore your dominant side with your partner?",
           "promptSheSees": "Have your partner explore their dominant side with you?"
         },
         {
-          "id": "111",
+          "id": "109",
           "helpPrompt": "",
           "promptHeSees": "Have your partner explore their dominant side with you?",
           "promptSheSees": "Explore your dominant side with your partner?"
@@ -725,142 +713,142 @@
       "title": "✈️ Frequency & Location",
       "slogan": "When, Where, and How Often",
       "description": "Where should we meet up? See you at the library ;)",
-	  "isMatchable": "true",
+	    "isMatchable": "true",
       "questions": [
         {
-          "id": "112",
+          "id": "110",
           "helpPrompt": "",
           "promptHeSees": "Take nude or semi-nude pics of your partner?",
           "promptSheSees": "Have your partner take nude or semi-nude pics of you?"
         },
         {
-          "id": "113",
+          "id": "111",
           "helpPrompt": "",
           "promptHeSees": "Have your partner take nude or semi-nude pics of you?",
           "promptSheSees": "Take nude or semi-nude pics of your partner?"
         },
         {
-          "id": "114",
+          "id": "112",
           "helpPrompt": "",
           "promptHeSees": "Make a private sex tape together?",
           "promptSheSees": "Make a private sex tape together?"
         },
         {
-          "id": "115",
+          "id": "113",
           "helpPrompt": "",
           "promptHeSees": "Watch porn together?",
           "promptSheSees": "Watch porn together?"
         },
         {
-          "id": "116",
+          "id": "114",
           "helpPrompt": "",
           "promptHeSees": "Use porn to show each other things you like?",
           "promptSheSees": "Use porn to show each other things you like?"
         },
         {
-          "id": "117",
+          "id": "115",
           "helpPrompt": "",
           "promptHeSees": "Have shower sex?",
           "promptSheSees": "Have shower sex?"
         },
         {
-          "id": "118",
+          "id": "116",
           "helpPrompt": "",
           "promptHeSees": "Have sex when your partner is menstruating?",
           "promptSheSees": "Have sex when you are menstruating?"
         },
         {
-          "id": "119",
+          "id": "117",
           "helpPrompt": "",
           "promptHeSees": "Have sex more often?",
           "promptSheSees": "Have sex more often?"
         },
         {
-          "id": "120",
+          "id": "118",
           "helpPrompt": "",
           "promptHeSees": "Schedule sex?",
           "promptSheSees": "Schedule sex?"
         },
         {
-          "id": "121",
+          "id": "119",
           "helpPrompt": "",
           "promptHeSees": "Have sex multiple times in a row?",
           "promptSheSees": "Have sex multiple times in a row?"
         },
         {
-          "id": "122",
+          "id": "120",
           "helpPrompt": "",
           "promptHeSees": "Have morning sex?",
           "promptSheSees": "Have morning sex?"
         },
         {
-          "id": "123",
+          "id": "121",
           "helpPrompt": "",
           "promptHeSees": "Have sex outside?",
           "promptSheSees": "Have sex outside?"
         },
         {
-          "id": "124",
+          "id": "122",
           "helpPrompt": "",
           "promptHeSees": "Have sex in a public place?",
           "promptSheSees": "Have sex in a public place?"
         },
         {
-          "id": "125",
+          "id": "123",
           "helpPrompt": "",
           "promptHeSees": "Have sex in a car?",
           "promptSheSees": "Have sex in a car?"
         },
         {
-          "id": "126",
+          "id": "124",
           "helpPrompt": "Oral sex performed on the driver of a vehicle.",
           "promptHeSees": "Receive road head?",
           "promptSheSees": "Give road head?"
         },
         {
-          "id": "127",
+          "id": "125",
           "helpPrompt": "",
           "promptHeSees": "Do sexual stuff while driving?",
           "promptSheSees": "Do sexual stuff while driving?"
         },
         {
-          "id": "128",
+          "id": "126",
           "helpPrompt": "",
           "promptHeSees": "Have sex in a library?",
           "promptSheSees": "Have sex in a library?"
         },
         {
-          "id": "129",
+          "id": "127",
           "helpPrompt": "",
           "promptHeSees": "Post your private photos or videos online?",
           "promptSheSees": "Post your private photos or videos online?"
         },
         {
-          "id": "130",
+          "id": "128",
           "helpPrompt": "",
           "promptHeSees": "Go to a strip club together?",
           "promptSheSees": "Go to a strip club together?"
         },
         {
-          "id": "131",
+          "id": "129",
           "helpPrompt": "",
           "promptHeSees": "Have sex around the house?",
           "promptSheSees": "Have sex around the house?"
         },
         {
-          "id": "132",
+          "id": "130",
           "helpPrompt": "",
           "promptHeSees": "Have phone sex?",
           "promptSheSees": "Have phone sex?"
         },
         {
-          "id": "133",
+          "id": "131",
           "helpPrompt": "",
           "promptHeSees": "Have your partner send you nude photos?",
           "promptSheSees": "Send your partner nude photos?"
         },
         {
-          "id": "134",
+          "id": "132",
           "helpPrompt": "",
           "promptHeSees": "Send your partner nude photos?",
           "promptSheSees": "Have your partner send you nude photos?"
@@ -872,67 +860,79 @@
       "title": "🧸 Toys & Devices",
       "slogan": "Toys for Playtime",
       "description": "What toys sound interesting? Shopping online together is fun!",
-	  "isMatchable": "true",
+	    "isMatchable": "true",
       "questions": [
         {
-          "id": "135",
+          "id": "133",
           "helpPrompt": "",
           "promptHeSees": "Use a butt plug during sex?",
           "promptSheSees": "Have your partner use a butt plug during sex?"
         },
         {
-          "id": "136",
+          "id": "134",
           "helpPrompt": "",
           "promptHeSees": "Have your partner use a butt plug during sex?",
           "promptSheSees": "Use a butt plug during sex?"
         },
         {
-          "id": "137",
+          "id": "135",
           "helpPrompt": "",
           "promptHeSees": "Use long distance sex toys?",
           "promptSheSees": "Use long distance sex toys?"
         },
         {
-          "id": "138",
+          "id": "136",
           "helpPrompt": "",
           "promptHeSees": "Shop at a sex store or webstore together?",
           "promptSheSees": "Shop at a sex store or webstore together?"
         },
         {
-          "id": "139",
+          "id": "137",
           "helpPrompt": "",
           "promptHeSees": "Use toys during sex?",
           "promptSheSees": "Use toys during sex?"
         },
         {
-          "id": "140",
+          "id": "138",
           "helpPrompt": "",
           "promptHeSees": "Use a cock ring during sex?",
           "promptSheSees": "Use a cock ring during sex?"
         },
         {
-          "id": "141",
+          "id": "139",
           "helpPrompt": "",
           "promptHeSees": "Use a strap-on during sex?",
           "promptSheSees": "Use a strap-on during sex?"
         },
         {
-          "id": "142",
+          "id": "140",
           "helpPrompt": "",
           "promptHeSees": "Use a dildo during sex?",
           "promptSheSees": "Use a dildo during sex?"
         },
         {
-          "id": "143",
+          "id": "141",
           "helpPrompt": "",
           "promptHeSees": "Use nipple clamps?",
           "promptSheSees": "Use nipple clamps?"
         },
         {
-          "id": "144",
+          "id": "142",
           "helpPrompt": "",
           "promptHeSees": "Use a vibrator during sex?",
           "promptSheSees": "Use a vibrator during sex?"
+        },
+        {
+          "id": "143",
+          "helpPrompt": "",
+          "promptHeSees": "Have your partner stimulate you sexually while you watch an erotic scene in VR?",
+          "promptSheSees": "Stimulate your partner sexually while they watch an erotic scene in VR?"
+        },
+        {
+          "id": "144",
+          "helpPrompt": "",
+          "promptHeSees": "Stimulate your partner sexually while they watch an erotic scene in VR?",
+          "promptSheSees": "Have your partner stimulate you sexually while you watch an erotic scene in VR?"
         }
       ]
     },
@@ -941,7 +941,7 @@
       "title": "🍍 Swingers",
       "slogan": "Swingers and Group Stuff",
       "description": "Sharing is caring! The more the merrier!",
-	  "isMatchable": "true",
+	    "isMatchable": "true",
       "questions": [
         {
           "id": "145",
@@ -1010,7 +1010,7 @@
       "title": "❤ Emotion & Connection",
       "slogan": "Bonding, not bondage",
       "description": "It's not just about what you do, but how you feel and connect while doing it. ",
-	  "isMatchable": "true",
+	    "isMatchable": "true",
       "questions": [
         {
           "id": "155",
