@@ -1,8 +1,13 @@
-﻿const matchIdLowestValueToDictateMatch = 2;
+﻿/*********************************************************
+THIS IS ALL FOR MATCHES
+**********************************************************/
+const matchIdLowestValueToDictateMatch = 2;
 function generateMatchesHtml(usableDataJson, gender) {
     var content = [];
     for (let i = 0; i < usableDataJson.sections.length; i++) {
-        content.push(generateSectionHtml(usableDataJson.sections[i], gender));
+        if (usableDataJson.sections[i].isMatchable == "true") {
+            content.push(generateSectionHtml(usableDataJson.sections[i], gender));
+        }
     }
     return content.join("");
 }
@@ -66,6 +71,83 @@ function generateQuestionString(usableDataQuestion, gender) {
         return `${usableDataQuestion.promptHeSees} / ${usableDataQuestion.promptSheSees}`;
     }
 }
+
+/*********************************************************
+THIS IS ALL FOR NON MATCHABLE SECTIONS
+**********************************************************/
+function generateNonMatchableSections(usableDataJson, gender) {
+    var content = [];
+    content.push(generateBodyImageHtml(usableDataJson.sections.find(t => t.id === "_quizSectionBodyPreferences"), gender));
+    return content.join("");
+}
+
+function generateBodyImageHtml(usableDataSection, gender) {
+    var content = [];
+    content.push(generateBodyImageHeaderHtml(usableDataSection));
+    content.push(generateBodyImageBodyHtml(usableDataSection, gender));
+
+    return content.join("");
+}
+
+function generateBodyImageHeaderHtml(usableDataSection) {
+    var content = [];
+    content.push(`<div class="container">`);
+    content.push(`    <div class="row">`);
+    content.push(`        <h2 id="preferences" class="mt-5 mb-3 d-flex justify-content-center">${usableDataSection.title}</h2>`);
+    content.push(`        <p class="d-flex justify-content-center">${usableDataSection.detailedDescription}</p>`);
+    content.push(`    </div>`);
+    content.push(`</div>`);
+    return content.join("");
+}
+
+function generateBodyImageBodyHtml(usableDataSection, gender) {
+    var content = [];
+    content.push(`<div class="container-lg">`);
+    content.push(`  <div class="row">`);
+    content.push(`      <div class="col-6">`);
+    content.push(`          <h3 class="d-flex justify-content-center">Your Answers</h3>`);
+    content.push(`      </div>`);
+    content.push(`      <div class="col-6">`);
+    content.push(`          <h3 class="d-flex justify-content-center">Their Answers</h3>`);
+    content.push(`      </div>`);
+    content.push(`  </div>`);
+    for (let i = 0; i < usableDataSection.questions.length; i++) {
+        content.push(generateBodyImageQuestionHtml(usableDataSection.questions[i], gender));
+    }
+
+    content.push(`</div>`);
+
+    return content.join("");
+}
+
+function generateBodyImageQuestionHtml(usableDataQuestion, gender) {
+    var content = [];
+    var partnerGender = gender == "female" ? "male" : "female";
+    content.push(`<div class="row">`)
+    content.push(`    <div class="col-6">`);
+    content.push(`        <p><b>Question:</b> ${generateBodyImageQuestionString(usableDataQuestion, gender)}</p>`);
+    content.push(`        <p class="d-flex justify-content-center">${matchIdMap(usableDataQuestion.yourVote)}</p>`);
+    content.push(`    </div>`);
+    content.push(`    <div class="col-6">`);
+    content.push(`        <p><b>Question:</b> ${generateBodyImageQuestionString(usableDataQuestion, partnerGender)}</p>`);
+    content.push(`        <p class="d-flex justify-content-center">${matchIdMap(usableDataQuestion.theirVote)}</p>`);
+    content.push(`    </div>`);
+    content.push(`</div>`);
+    return content.join("");
+}
+
+function generateBodyImageQuestionString(usableDataQuestion, gender) {
+    if (gender == "female") {
+        return `${usableDataQuestion.promptSheSees}`;
+    } else {
+        return `${usableDataQuestion.promptHeSees}`;
+    }
+}
+
+
+/*********************************************************
+THIS IS ALL COMMON STUFF
+**********************************************************/
 
 function matchIdMap(matchId) {
     switch (matchId) {

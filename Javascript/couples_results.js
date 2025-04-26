@@ -9,8 +9,8 @@ $(document).ready(async function () {
   initializeStaticUrlInput($('#_couplesResultsUrl'));
   drawCoupleFreakScoreGraph(getCoupleFreakScoreGraphData(usefulData));
   drawCouplePreferencesGraph(getCouplePreferencesGraphData(usefulData));
-  var fullHtml = generateMatchesHtml(usefulData, gender);
-  $('#_coupleResultsAccordion').html(fullHtml);
+  $('#_coupleResultsAccordion').html(generateMatchesHtml(usefulData, gender));
+  $('#_nonMatchableSections').html(generateNonMatchableSections(usefulData, gender));
   enableAllTooltips();
 });
 
