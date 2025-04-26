@@ -1,14 +1,14 @@
-$(document).ready(function () {
+$(document).ready(async function () {
+    var quizSectionsJson = await readQuizSectionsJson("Configs/QuizSections.json");
     enableAllTooltips();
-    populateQuestionsCount();
+    populateQuestionsCount(getQuestionIdsMapped(quizSectionsJson).length);
 });
 
 /*
  Gets the number of questions that will be answered during the quiz.
  */
-function populateQuestionsCount() {
-    // TODO: Pull from the actual data to get the total number of questions.
-    $('#_question-count').html("100 Questions");
+function populateQuestionsCount(value) {
+    $('#_question-count').html(`${value} Questions`);
 }
 
 /*
