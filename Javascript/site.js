@@ -93,6 +93,12 @@ function readQueryStringDataAndGetResult(url, paramName) {
   }
 }
 
+function isQueryParamAvailable(url, paramName) {
+  var queryParams = new URL(url).searchParams;
+  var queryString = queryParams.get(paramName);
+  return queryString != null;
+}
+
 /*
 Takes the sanitiezed query string and turns it back into a basic base64 string.
 */
@@ -173,4 +179,71 @@ function initializeStaticUrlInput(input) {
       }, 1500);
     });
   });
+}
+
+/*
+Takes the query string data and the quiz sections json to create a usable map.
+*/
+function buildUsefulDataCollectionFromCoupleData(yourDataArray, theirDataArray, quizSectionsJson) {
+  var questionIds = getQuestionIdsMapped(quizSectionsJson);
+  if (yourDataArray.length != theirDataArray.length && yourDataArray.length != questionIds.length) {
+    showNotice("Data lengths are inconsistent, likely due to data coming from different versions. Please retake the quiz and try again.")
+    return null;
+  }
+
+  var matchResults = compareResponses(yourDataArray, theirDataArray);
+
+  var index = 0;
+  quizSectionsJson.sections.forEach(section => {
+    section.questions.forEach(question => {
+      question.yourVote = yourDataArray[index];
+      question.theirVote = theirDataArray[index];
+      question.matchId = matchResults[index];
+      index++;
+    });
+  });
+  return quizSectionsJson;
+}
+
+/*
+Compares the users and their partners arrays to find a map of matches.
+*/
+function compareResponses(arr1, arr2) {
+  const results = [];
+
+  for (let i = 0; i < arr1.length; i++) {
+    const a = arr1[i];
+    const b = arr2[i];
+
+    // Never = 0
+    // Probably Not = 1
+    // Neutral = 2
+    // Match = 3
+    // Super Match = 4
+
+    if (a === 0 || b === 0 || (a === 1 && b === 1)) {
+      results.push(0);
+    } else if (a === 4 && b === 4) {
+      results.push(4);
+    } else if (
+      (a === 4 && b === 3) || (a === 3 && b === 4) ||
+      (a === 3 && b === 3) || (a === 2 && b === 4) ||
+      (a === 4 && b === 2) || (a === 2 && b === 3) ||
+      (a === 3 && b === 2)
+    ) {
+      results.push(3);
+    } else if (a === 2 && b === 2) {
+      results.push(2);
+    } else if (
+      (a === 1 && b === 2) || (a === 2 && b === 1) ||
+      (a === 1 && b === 3) || (a === 3 && b === 1) ||
+      (a === 1 && b === 4) || (a === 4 && b === 1)
+    ) {
+      results.push(1);
+    } else {
+      throw `Somehow an unmapped result got through: a: ${a}, b: ${b}`
+    }
+  }
+
+  return results;
 }

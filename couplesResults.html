@@ -6,6 +6,7 @@
     <meta property="og:title" content="SexyTime">
     <title>Sex Quiz for Couples - Sexy Time</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -22,12 +23,15 @@
 <body>
     <!-- NAV BAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
-        <div class="container-lg">
-            <a class="navbar-brand py-1" href="./">
-                <img src="Images/LogoShort.png" height="50" />
-            </a>
+        <div class="container-lg d-flex justify-content-between align-items-center">
+          <a class="navbar-brand py-1" href="./">
+            <img src="Images/LogoShort.png" height="50" />
+          </a>
+      
+          <a href="game.html" class="btn btn-primary btn-lg">Play Game 🎲</a>
         </div>
-    </nav>
+      </nav>
+    
 
     <!-- Page Content -->
     <div id="_personalResults">
@@ -35,13 +39,20 @@
         <div class="container">
             <div class="row">
                 <h2 class="mt-5 mb-3 d-flex justify-content-center">🥁 Drumroll please.......</h2>
-                <p class="d-flex justify-content-center">The numbers have been ran, so let's see how you and your partner can get freaky 😉</p>
-                <p class="d-flex justify-content-center">But first... Make sure to bookmark this URL so that you can come back to it tomorrow night! And the next night, and the next night, and the next night 😜</p>
+                <p class="d-flex justify-content-center">The numbers have been ran, so let's see how you and your
+                    partner can get freaky 😉</p>
+                <p class="d-flex justify-content-center">But first... Make sure to bookmark this URL so that you can
+                    come back to it tomorrow night! And the next night, and the next night, and the next night 😜</p>
                 <div class="input-group col-md-4 col-9 justify-content-center">
                     <span class="input-group-text" id="link"><i class="fa-solid fa-link"></i></span>
-                    <input style="flex: 0 1 50%;" type="text" class="form-control form-control-lg" readonly value="" id="_couplesResultsUrl" data-bs-toggle="tooltip" data-bs-placement="top">
+                    <input style="flex: 0 1 50%;" type="text" class="form-control form-control-lg" readonly value=""
+                        id="_couplesResultsUrl" data-bs-toggle="tooltip" data-bs-placement="top">
                 </div>
-                <p class="d-flex justify-content-center mt-3">Now tell me where those freaks at 🤪</p>
+                <p class="d-flex justify-content-center mt-3">Now tell me where those freaks at 🤪 play the intimacy tailored to your couples results at the link below!</p>
+                <div class="d-flex justify-content-center align-items-center mb-2">
+                    <a id="_playGameLink" href="" class="btn btn-primary">Play Game 🎲</a>
+                </div>
+
             </div>
         </div>
 
@@ -50,7 +61,8 @@
             <div class="container">
                 <div class="row">
                     <h2 class="mt-5 mb-3 d-flex justify-content-center">🍦 Freak Score 🌶️</h2>
-                    <p class="d-flex justify-content-center">Your freak score is measured by how open you are to different sexual activities</p>
+                    <p class="d-flex justify-content-center">Your freak score is measured by how open you are to
+                        different sexual activities</p>
                 </div>
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-6 col-9">
@@ -77,7 +89,8 @@
         <div>
             <div class="row">
                 <h2 id="preferences" class="mt-5 mb-3 d-flex justify-content-center">😍 Preferences</h2>
-                <p class="d-flex justify-content-center">You can see what kind of categories you vibed with, and those you didn't!</p>
+                <p class="d-flex justify-content-center">You can see what kind of categories you vibed with, and those
+                    you didn't!</p>
             </div>
             <div class="d-flex justify-content-center">
                 <div class="col-md-6 col-9">
@@ -90,11 +103,12 @@
         <div class="bg-primary pb-5" style="--bs-bg-opacity: .2;">
             <div class="row">
                 <h2 id="preferences" class="mt-5 mb-3 d-flex justify-content-center">🔥 Shared Desires</h2>
-                <p class="d-flex justify-content-center">Green flags, permission is granted, take action now! These are your matched desires!</p>
+                <p class="d-flex justify-content-center">Green flags, permission is granted, take action now! These are
+                    your matched desires!</p>
             </div>
             <div class="container-lg px-0">
                 <div class="accordion accordion-flush border" id="_coupleResultsAccordion">
-                  
+
                 </div>
             </div>
         </div>
@@ -104,13 +118,13 @@
 
         <!-- Body Preferences -->
         <div id="_nonMatchableSections">
-          
+
         </div>
 
 
         <script src="Javascript/couples_results_graphs.js"></script>
     </div>
-</div>
+    </div>
 
     <!-- Footer -->
     <footer class="text-center text-white bg-primary mt-5">
@@ -121,7 +135,8 @@
             <section class="mb-4">
                 <div class="row d-flex justify-content-center">
                     <p class="mb-0"><i class="fa-solid fa-lock"></i> <b>Privacy Guaranteed</b></p>
-                    <p class="small mt-0">Everything is done on the front end, so we do not ever even have access to your information!</p>
+                    <p class="small mt-0">Everything is done on the front end, so we do not ever even have access to
+                        your information!</p>
                     <p class="mb-0">❤️💦😘😍🍆🍑😉🔥🍍🤐🍩👌</p>
                 </div>
             </section>

@@ -5,6 +5,7 @@
     --st-secondary-hex: #FF82D9;
     --st-primary-subtle-hex: #FFEDF9;
     --bs-primary-rgb: var(--st-primary);
+    --alt_blue: #99ccff;
 }
 
 .btn-outline-primary {
@@ -27,3 +28,11 @@
     --bs-accordion-active-bg: var(--st-primary-subtle-hex);
     --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--st-primary), .5);
 }
+
+body {
+    font-family: 'Quicksand', Arial, sans-serif;
+    background-color: var(--st-primary-subtle-hex);
+    color: #333333;
+    text-align: center;
+    margin: 0;
+  }

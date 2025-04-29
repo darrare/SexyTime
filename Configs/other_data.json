@@ -1,0 +1,176 @@
+{
+  "sceneTones": {
+    "teacher_student_play": "Teacher and Student Roleplay",
+    "master_slave_play": "Master and Submissive Roleplay",
+    "stranger_play": "Strangers Meeting for the First Time",
+    "nurse_play": "Caring nurse Roleplay",
+    "repairman_play": "Repairman is here to lay some pipe.",
+    "maid_play": "The maid is here to clean up a dirty boy.",
+    "debt_play": "Someone owes some money, and they know how to pay.",
+    "boss_employee_play": "Boss and Employee Roleplay",
+    "pet_play": "Pet Play (Pet/Master Dynamic)",
+    "age_play": "Pretend you are much younger or older.",
+    "degradation_play": "Mild Degradation Play",
+    "slutty_prostitute_play": "Slutty, Confident Prostitute Play",
+    "focused_climax_play": "Focused on Making Your Partner Orgasm",
+    "possession_play": "Your partner belongs to you completely tonight.",
+    "bondage_play": "With cuffs and rope, gently restrain your partner.",
+    "music_play": "Thrust to the beat of the music."
+  },
+  "finishingMoves": {
+    "finish_creampie": "Finish inside her.",
+    "finish_chest": "Pull out and finish on her chest.",
+    "finish_stomach": "Pull out and finish on her stomach.",
+    "finish_face": "Pull out and finish on her face.",
+    "finish_mouth": "Finish inside her mouth.",
+    "edging": "Bring your partner close to climax, then back off, building unbearable tension before release."
+  },
+  "alwaysAvailableModifiers": {
+    "sensual_style": {
+      "text": "Slow down and savor every sensation.",
+      "styleCategory": ["sensual"]
+    },
+    "rough_style": {
+      "text": "Move faster, harder, with an edge of aggression.",
+      "styleCategory": ["rough"]
+    },
+    "teasing_style": {
+      "text": "Tease and deny full satisfaction, pulling away at the right moments.",
+      "styleCategory": ["teasing"]
+    },
+    "blindfold_play": {
+      "text": "Blindfold your partner to heighten their other senses.",
+      "styleCategory": ["sensual", "neutral", "rough", "teasing"]
+    },
+    "public_risky_setting": {
+      "text": "Do it somewhere risky — near a window or slightly exposed.",
+      "styleCategory": ["sensual", "neutral", "rough", "teasing"]
+    },
+    "temperature_play": {
+      "text": "Use an ice cube or something warm to tease their skin.",
+      "styleCategory": ["teasing"]
+    },
+    "dirty_talk_play": {
+      "text": "Whisper dirty words to heighten the tension.",
+      "styleCategory": ["rough", "teasing"]
+    },
+    "praise_play": {
+      "text": "Whisper praises about how good they make you feel.",
+      "styleCategory": ["sensual", "teasing"]
+    },
+    "command_play": {
+      "text": "Command your partner firmly on what to do next.",
+      "styleCategory": ["rough"]
+    },
+    "no_talking": {
+      "text": "Use no words, communicating only with your touches and sounds.",
+      "styleCategory": ["sensual", "neutral"]
+    },
+    "emotional_bonding_play": {
+      "text": "Focus on emotional connection, locking eyes, breathing together, and moving as one.",
+      "styleCategory": ["sensual"]
+    },
+    "vulnerability_play": {
+      "text": "Openly express how good it feels, allowing natural sounds and emotions to flow freely.",
+      "styleCategory": ["sensual", "neutral", "rough", "teasing"]
+    },
+    "overstimulation_play": {
+      "text": "Push your partner just slightly beyond their comfort zone of pleasure.",
+      "styleCategory": ["neutral", "rough"]
+    },
+    "emotional_bond": {
+      "text": "Talk openly about how you feel and how connected you are.",
+      "styleCategory": ["sensual"]
+    },
+    "slow_build": {
+      "text": "Skim just around their sweet spots, hinting at pleasure without truly delivering it; finally give in for a rush of pleasure.",
+      "styleCategory": ["teasing"]
+    },
+    "recording_play": {
+      "text": "Capture intimate moments on video or in pictures to heighten excitement and create lasting memories.",
+      "styleCategory": ["sensual", "neutral"]
+    }
+  },
+  "modifiers": {
+    "dominant_role": {
+      "text": "Take full control, guiding your partner’s movements firmly.",
+      "styleCategory": ["rough"]
+    },
+    "eye_contact": {
+      "text": "Maintain deep, steady eye contact throughout.",
+      "styleCategory": ["sensual"]
+    },
+    "hair_pulling": {
+      "text": "Grab your partner’s hair to assert dominance.",
+      "styleCategory": ["rough"]
+    },
+    "furniture_play": {
+      "text": "Position your partner creatively using objects like counters, couches, chairs, or beds.",
+      "styleCategory": ["neutral", "rough"]
+    },
+    "bdsm_play": {
+      "text": "Incorporate elements of BDSM, like restraint, impact, or power exchange, to heighten intensity and trust.",
+      "styleCategory": ["rough"]
+    },
+    "genitals_play": {
+      "text": "Use your hand to skillfully tease, stroke, and stimulate your partner’s most sensitive areas.",
+      "styleCategory": ["sensual", "neutral", "rough", "teasing"]
+    },
+    "breath_play": {
+      "text": "Lightly exhale hot air to stimulate the senses.",
+      "styleCategory": ["sensual", "teasing"]
+    },
+    "impact_play": {
+      "text": "Use paddles, floggers, or hands to deliver rhythmic impact play.",
+      "styleCategory": ["neutral", "rough", "teasing"]
+    },
+    "cock_ring_play": {
+      "text": "Use a cock ring to enhance stamina and intensify sensation.",
+      "styleCategory": ["sensual", "neutral", "rough", "teasing"]
+    },
+    "nipple_clamp_play": {
+      "text": "Use nipple clamps or suction devices to heighten sensitivity.",
+      "styleCategory": ["sensual", "neutral", "rough", "teasing"]
+    }
+  },
+  "modiferGroups": {
+    "mouth_things": {
+      "biting": {
+        "text": "Sink your teeth lightly into your partner’s skin, blending pain with pleasure.",
+        "styleCategory": ["rough"]
+      },
+      "licking": {
+        "text": "Use your tongue to tease, taste, and explore your partner’s body, leaving trails of wet heat along their skin.",
+        "styleCategory": ["sensual", "teasing"]
+      },
+      "lip_trailing": {
+        "text": "Let your lips trail softly without kissing, building anticipation.",
+        "styleCategory": ["sensual", "teasing"]
+      },
+      "kissing_play": {
+        "text": "Kiss your partner deeply, letting every touch of your lips build the heat between you.",
+        "styleCategory": ["sensual", "teasing"]
+      }
+    },
+    "hand_things": {
+      "scratching": {
+        "text": "Drag your nails across your partner’s skin to leave a tingling trail of sensation.",
+        "styleCategory": ["rough", "sensual"]
+      },
+      "choking": {
+        "text": "Apply light, controlled pressure around your partner’s neck to intensify submission and trust.",
+        "styleCategory": ["rough", "sensual"]
+      },
+      "exploration": {
+        "text": "Let your hands roam, discovering every secret and sensitive place.",
+        "styleCategory": ["sensual", "neutral"]
+      }
+    }
+  },
+  "mutuallyExclusiveModifiers": [
+    ["eye_contact", "blindfold_play"],
+    ["lip_trailing", "kissing_play"],
+    ["sensual_style", "rough_style", "teasing_style"],
+    ["no_talking", "dirty_talk_play", "praise_play", "command_play", "emotional_bond"]
+  ]
+}

@@ -5,37 +5,34 @@ $(document).ready(async function () {
   var gender = yourData.isFemale ? "female" : "male";
   var theirDataArray = readQueryStringDataAndGetResult(window.location.href, "t").dataArray;
   var quizSectionsJson = await readQuizSectionsJson("Configs/QuizSections.json");
-  usefulData = buildUsefulDataCollectionFromResults(yourDataArray, theirDataArray, quizSectionsJson);
+  usefulData = buildUsefulDataCollectionFromCoupleData(yourDataArray, theirDataArray, quizSectionsJson);
   initializeStaticUrlInput($('#_couplesResultsUrl'));
   drawCoupleFreakScoreGraph(getCoupleFreakScoreGraphData(usefulData));
   drawCouplePreferencesGraph(getCouplePreferencesGraphData(usefulData));
   $('#_coupleResultsAccordion').html(generateMatchesHtml(usefulData, gender));
   $('#_nonMatchableSections').html(generateNonMatchableSections(usefulData, gender));
   enableAllTooltips();
+
+  $('#_playGameLink').attr("href", "./game.html" + window.location.search);
+
+  // TESTING
+  //writeUsefulDataToFile(usefulData);
 });
 
 /*
-Takes the query string data and the quiz sections json to create a usable map.
+TEST: This is used to write the data to a file so I can pump it into ChatGPT
 */
-function buildUsefulDataCollectionFromResults(yourDataArray, theirDataArray, quizSectionsJson) {
-  var questionIds = getQuestionIdsMapped(quizSectionsJson);
-  if (yourDataArray.length != theirDataArray.length && yourDataArray.length != questionIds.length) {
-    showNotice("Data lengths are inconsistent, likely due to data coming from different versions. Please retake the quiz and try again.")
-    return;
-  }
+function writeUsefulDataToFile(usefulDataJson) {
+  const jsonStr = JSON.stringify(usefulDataJson, null, 2); // Pretty print JSON
+  const blob = new Blob([jsonStr], { type: "application/json" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = "usefulData.json";
 
-  var matchResults = compareResponses(yourDataArray, theirDataArray);
-
-  var index = 0;
-  quizSectionsJson.sections.forEach(section => {
-    section.questions.forEach(question => {
-      question.yourVote = yourDataArray[index];
-      question.theirVote = theirDataArray[index];
-      question.matchId = matchResults[index];
-      index++;
-    });
-  });
-  return quizSectionsJson;
+  // Click the link programmatically
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 }
 
 /*
@@ -66,98 +63,4 @@ function getCouplePreferencesGraphData(usefulData) {
     theirData.push(theirAverageId);
   });
   return { labels: labels, data: [yourData, theirData] };
-}
-
-/*
-Compares the users and their partners arrays to find a map of matches.
-*/
-function compareResponses(arr1, arr2) {
-  const results = [];
-
-  for (let i = 0; i < arr1.length; i++) {
-    const a = arr1[i];
-    const b = arr2[i];
-
-    // Never = 0
-    // Probably Not = 1
-    // Neutral = 2
-    // Match = 3
-    // Super Match = 4
-
-    if (a === 0 || b === 0 || (a === 1 && b === 1)) {
-      results.push(0);
-    } else if (a === 4 && b === 4) {
-      results.push(4);
-    } else if (
-      (a === 4 && b === 3) || (a === 3 && b === 4) ||
-      (a === 3 && b === 3) || (a === 2 && b === 4) ||
-      (a === 4 && b === 2) || (a === 2 && b === 3) ||
-      (a === 3 && b === 2)
-    ) {
-      results.push(3);
-    } else if (a === 2 && b === 2) {
-      results.push(2);
-    } else if (
-      (a === 1 && b === 2) || (a === 2 && b === 1) ||
-      (a === 1 && b === 3) || (a === 3 && b === 1) ||
-      (a === 1 && b === 4) || (a === 4 && b === 1)
-    ) {
-      results.push(1);
-    } else {
-      throw `Somehow an unmapped result got through: a: ${a}, b: ${b}`
-    }
-  }
-
-  return results;
-}
-
-/*
-NOT USED - This was implemented as it stores more relevant data, but
-it would cause a HUGE increase to the query string so I decided to go another route.
-Compares the users and their partners arrays to find a map of matches.
-*/
-function compareResponsesOLD(arr1, arr2, questionIdsArray) {
-  const groupedResults = {};
-
-  for (let i = 0; i < arr1.length; i++) {
-    const a = arr1[i];
-    const b = arr2[i];
-
-    let mappedResult = '';
-
-    if (a === 0 || b === 0 || (a === 1 && b === 1)) {
-      mappedResult = 'Never';
-    } else if (a === 4 && b === 4) {
-      mappedResult = 'Super Match';
-    } else if (
-      (a === 4 && b === 3) || (a === 3 && b === 4) ||
-      (a === 3 && b === 3) || (a === 2 && b === 4) ||
-      (a === 4 && b === 2) || (a === 2 && b === 3) ||
-      (a === 3 && b === 2)
-    ) {
-      mappedResult = 'Match';
-    } else if (a === 2 && b === 2) {
-      mappedResult = 'Neutral';
-    } else if (
-      (a === 1 && b === 2) || (a === 2 && b === 1) ||
-      (a === 1 && b === 3) || (a === 3 && b === 1) ||
-      (a === 1 && b === 4) || (a === 4 && b === 1)
-    ) {
-      mappedResult = 'Probably Not';
-    } else {
-      mappedResult = 'Unmapped';
-    }
-
-    if (!groupedResults[mappedResult]) {
-      groupedResults[mappedResult] = [];
-    }
-
-    groupedResults[mappedResult].push([
-      questionIdsArray[i],
-      a,
-      b
-    ]);
-  }
-
-  return groupedResults;
 }

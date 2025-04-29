@@ -14,6 +14,8 @@ function generateQuizHtml(quizSections, gender) {
  */
 function generateQuizHtmlSection(quizSection, gender, currentIndex, maxIndex) {
     var content = [];
+    // TESTING: The first is for testing by automatically putting you on the last page.
+    //content.push(`<div id="${quizSection.id}" class="quizSection" ${currentIndex != maxIndex - 1 ? 'style="display:none;"' : ''}>`);
     content.push(`<div id="${quizSection.id}" class="quizSection" ${currentIndex != 0 ? 'style="display:none;"' : ''}>`);
     content.push(generateQuizSectionHeader(quizSection));
     content.push(generateQuizSectionQuestions(quizSection, gender, currentIndex, maxIndex));
@@ -69,7 +71,6 @@ function generateQuizSectionQuestions(quizSection, gender, currentIndex, maxInde
         content.push(`            <a class="btn btn-primary btn-lg w-100" onclick="previousSection()"><i class="fa-solid fa-caret-left"></i> Back</a>`);
         content.push(`        </div>`);
     }
-
     if (currentIndex != maxIndex - 1) {
         content.push(`        <div class="col-md-auto col" id="bottom">`);
         content.push(`            <button class="btn btn-success btn-lg w-100" onclick="nextSection()">Continue <i class="fa-solid fa-caret-right"></i></button>`);
@@ -111,7 +112,7 @@ function generateQuizSectionQuestion(quizSectionQuestion, gender) {
     content.push(`                            <label title="Probably not" class="btn btn-outline-primary btn-lg w-100 fs-6" data-bs-toggle="tooltip" for="${quizSectionQuestion.id}_2">😕</label>`);
     content.push(`                        </div>`);
     content.push(`                        <div class="col">`);
-    content.push(`                            <input class="btn-check" type="radio" id="${quizSectionQuestion.id}_3" name="answers[${quizSectionQuestion.id}]" value="2" checked="checked">`);
+    content.push(`                            <input class="btn-check" type="radio" id="${quizSectionQuestion.id}_3" name="answers[${quizSectionQuestion.id}]" value="2">`);
     content.push(`                            <label title="If my partner wants to" class="btn btn-outline-primary btn-lg w-100 fs-6" data-bs-toggle="tooltip" for="${quizSectionQuestion.id}_3">🤷</label>`);
     content.push(`                        </div>`);
     content.push(`                        <div class="col">`);

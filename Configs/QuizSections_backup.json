@@ -5,55 +5,197 @@
       "title": "💋 Foreplay",
       "slogan": "Tease, please, and set the mood!",
       "description": "Build anticipation, deepening connection, and explore each other’s desires.",
-	    "isMatchable": "true",
+      "isMatchable": "true",
       "questions": [
         {
           "id": "1",
           "helpPrompt": "",
           "promptHeSees": "Do you enjoy playful, flirty banter before things turn physical?",
-          "promptSheSees": "Do you enjoy playful, flirty banter before things turn physical?"
+          "promptSheSees": "Do you enjoy playful, flirty banter before things turn physical?",
+          "enabledAtomicActions": ["flirty_Banter"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "2",
           "helpPrompt": "",
           "promptHeSees": "Do you like engaging in foreplay for a long time without rushing things?",
-          "promptSheSees": "Do you like engaging in foreplay for a long time without rushing things?"
+          "promptSheSees": "Do you like engaging in foreplay for a long time without rushing things?",
+          "enabledAtomicActions": ["passionate_kissing"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "3",
+          "helpPrompt": "",
+          "promptHeSees": "Do you like grinding against your partner to build intensity?",
+          "promptSheSees": "Do you like grinding against your partner to build intensity?",
+          "enabledAtomicActions": ["grinding"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "3",
           "helpPrompt": "",
           "promptHeSees": "Get a sensual message from your partner?",
-          "promptSheSees": "Give a sensual massage to your partner?"
+          "promptSheSees": "Give a sensual massage to your partner?",
+          "enabledAtomicActions": ["sensual_massage"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "4",
           "helpPrompt": "",
           "promptHeSees": "Give a sensual massage to your partner?",
-          "promptSheSees": "Get a sensual message from your partner?"
+          "promptSheSees": "Get a sensual message from your partner?",
+          "enabledAtomicActions": ["sensual_massage"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "4",
+          "helpPrompt": "",
+          "promptHeSees": "Spank your partner to set the mood?",
+          "promptSheSees": "Get spanked by your partner to set the mood?",
+          "enabledAtomicActions": ["light_spanking"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "4",
+          "helpPrompt": "",
+          "promptHeSees": "Get spanked by your partner?",
+          "promptSheSees": "Spank your partner?",
+          "enabledAtomicActions": ["light_spanking"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "4",
+          "helpPrompt": "Kisses, licks, playful bites, etc.",
+          "promptHeSees": "Do you want to explore your partner with your mouth?",
+          "promptSheSees": "Do you want to be explored by your partner's mouth?",
+          "enabledAtomicActions": ["neck_play", "body_worship"],
+          "enabledModifiers": ["biting", "licking", "lip_trailing", "kissing_play", "breath_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "4",
+          "helpPrompt": "Kisses, licks, playful bites, etc.",
+          "promptHeSees": "Do you want to be explored by your partner's mouth?",
+          "promptSheSees": "Do you want to explore your partner with your mouth?",
+          "enabledAtomicActions": ["neck_play", "body_worship"],
+          "enabledModifiers": ["biting", "licking", "lip_trailing", "kissing_play", "breath_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "5",
           "helpPrompt": "",
           "promptHeSees": "Do you want to explore your partner with your hands?",
-          "promptSheSees": "Do you want to be explored with your partner's hands?"
+          "promptSheSees": "Do you want to be explored with your partner's hands?",
+          "enabledAtomicActions": ["breast_chest_play", "hand_play"],
+          "enabledModifiers": ["exploration"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "6",
           "helpPrompt": "",
           "promptHeSees": "Do you want to be explored with your partner's hands?",
-          "promptSheSees": "Do you want to explore your partner with your hands?"
+          "promptSheSees": "Do you want to explore your partner with your hands?",
+          "enabledAtomicActions": ["breast_chest_play", "hand_play"],
+          "enabledModifiers": ["exploration"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "7",
           "helpPrompt": "",
           "promptHeSees": "Have your partner do a private dance for you?",
-          "promptSheSees": "Do a private dance for your partner?"
+          "promptSheSees": "Do a private dance for your partner?",
+          "enabledAtomicActions": ["lap_dance", "strip_tease"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "8",
           "helpPrompt": "",
           "promptHeSees": "Do a private dance for your partner?",
-          "promptSheSees": "Have your partner do a private dance for you?"
+          "promptSheSees": "Have your partner do a private dance for you?",
+          "enabledAtomicActions": ["lap_dance", "strip_tease"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "7",
+          "helpPrompt": "",
+          "promptHeSees": "Use a soft object or material to tease your partner?",
+          "promptSheSees": "Have your partner yease you with a soft object or material?",
+          "enabledAtomicActions": ["soft_thing_tease"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "7",
+          "helpPrompt": "",
+          "promptHeSees": "Have your partner yease you with a soft object or material?",
+          "promptSheSees": "Use a soft object or material to tease your partner?",
+          "enabledAtomicActions": ["soft_thing_tease"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "7",
+          "helpPrompt": "Use a wax candle safe for skin to massage and tease your partner.",
+          "promptHeSees": "Wax play?",
+          "promptSheSees": "Wax play?",
+          "enabledAtomicActions": ["wax_play_tease"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "7",
+          "helpPrompt": "Using an electro stimulation device is an exciting way to spice up the bedroom",
+          "promptHeSees": "Electro stimulation play?",
+          "promptSheSees": "Electro stimulation play?",
+          "enabledAtomicActions": ["electro_play_tease"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "7",
+          "helpPrompt": "",
+          "promptHeSees": "Do you enjoy having your hair played with?",
+          "promptSheSees": "Do you enjoy playing with your partner's hair?",
+          "enabledAtomicActions": ["hair_play"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "7",
+          "helpPrompt": "",
+          "promptHeSees": "Do you enjoy playing with your partner's hair?",
+          "promptSheSees": "Do you enjoy having your hair played with?",
+          "enabledAtomicActions": ["hair_play"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         }
       ]
     },
@@ -62,169 +204,247 @@
       "title": "😘 Basics",
       "slogan": "Just the Basic Stuff",
       "description": "We will cover the most common stuff here. Don't be afraid to say yes!",
-	    "isMatchable": "true",
+      "isMatchable": "true",
       "questions": [
+        {
+          "id": "10",
+          "helpPrompt": "",
+          "promptHeSees": "Do you enjoy having sensual sex?",
+          "promptSheSees": "Do you enjoy having sensual sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["sensual_style"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "10",
+          "helpPrompt": "",
+          "promptHeSees": "Do you enjoy having rough sex?",
+          "promptSheSees": "Do you enjoy having rough sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["rough_style"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "10",
+          "helpPrompt": "",
+          "promptHeSees": "Do you enjoy teasing or being teased during sex?",
+          "promptSheSees": "Do you enjoy teasing or being teased during sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["teasing_style"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "7",
+          "helpPrompt": "You can learn a lot by watching your partner pleasure themselves!",
+          "promptHeSees": "Do you enjoy watching your partner satisfy themselves?",
+          "promptSheSees": "Do you enjoy having your partner watch you satisfy yourself?",
+          "enabledAtomicActions": ["watch_and_crave", "mutual_masturbation_self"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "7",
+          "helpPrompt": "You can learn a lot by watching your partner pleasure themselves!",
+          "promptHeSees": "Do you enjoy having your partner watch you satisfy yourself?",
+          "promptSheSees": "Do you enjoy watching your partner satisfy themselves?",
+          "enabledAtomicActions": ["watch_and_crave", "mutual_masturbation_self"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
         {
           "id": "9",
           "helpPrompt": "",
           "promptHeSees": "Take the lead during sex?",
-          "promptSheSees": "Let your partner take the lead during sex?"
+          "promptSheSees": "Let your partner take the lead during sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["command_play", "dominant_role"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "10",
           "helpPrompt": "",
           "promptHeSees": "Let your partner take the lead during sex?",
-          "promptSheSees": "Take the lead during sex?"
+          "promptSheSees": "Take the lead during sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["command_play", "dominant_role"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "11",
           "helpPrompt": "",
           "promptHeSees": "Would you prefer to be the initiator of sex?",
-          "promptSheSees": "Would you prefer your partner initiate sex?"
+          "promptSheSees": "Would you prefer your partner initiate sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "12",
           "helpPrompt": "",
           "promptHeSees": "Would you prefer your partner initiate sex?",
-          "promptSheSees": "Would you prefer to be the initiator of sex?"
+          "promptSheSees": "Would you prefer to be the initiator of sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "13",
           "helpPrompt": "",
           "promptHeSees": "Listen to music while having sex?",
-          "promptSheSees": "Listen to music while having sex?"
+          "promptSheSees": "Listen to music while having sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": ["music_play"]
         },
         {
           "id": "14",
           "helpPrompt": "",
           "promptHeSees": "Talk dirty to your partner while having sex?",
-          "promptSheSees": "Have your partner talk dirty to you during sex?"
+          "promptSheSees": "Have your partner talk dirty to you during sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["dirty_talk_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "15",
           "helpPrompt": "",
           "promptHeSees": "Have your partner talk dirty to you during sex?",
-          "promptSheSees": "Talk dirty to your partner while having sex?"
+          "promptSheSees": "Talk dirty to your partner while having sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["dirty_talk_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "16",
           "helpPrompt": "",
           "promptHeSees": "Be louder and more vocal during sex?",
-          "promptSheSees": "Have your partner be louder and more vocal during sex?"
+          "promptSheSees": "Have your partner be louder and more vocal during sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["praise_play", "vulnerability_play", "emotional_bond"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "17",
           "helpPrompt": "",
           "promptHeSees": "Have your partner be louder and more vocal during sex?",
-          "promptSheSees": "Be louder and more vocal during sex?"
+          "promptSheSees": "Be louder and more vocal during sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["praise_play", "vulnerability_play", "emotional_bond"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "18",
           "helpPrompt": "Sensual massage candles or ice cubes can be an interesting way to spice up life in the bedroom.",
           "promptHeSees": "Experiencing warm or cool sensations during sex?",
-          "promptSheSees": "Experiencing warm or cool sensations during sex?"
-        },
-        {
-          "id": "19",
-          "helpPrompt": "",
-          "promptHeSees": "Be teased with soft fabrics or textures?",
-          "promptSheSees": "Tease your partner with soft fabrics or textures?"
-        },
-        {
-          "id": "20",
-          "helpPrompt": "",
-          "promptHeSees": "Tease your partner with soft fabrics or textures?",
-          "promptSheSees": "Be teased with soft fabrics or textures?"
-        },
-        {
-          "id": "21",
-          "helpPrompt": "",
-          "promptHeSees": "Pleasure yourself while your partner watches?",
-          "promptSheSees": "Watch your partner pleasure themselves?"
-        },
-        {
-          "id": "22",
-          "helpPrompt": "",
-          "promptHeSees": "Watch your partner pleasure themselves?",
-          "promptSheSees": "Pleasure yourself while your partner watches?"
+          "promptSheSees": "Experiencing warm or cool sensations during sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["temperature_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "23",
           "helpPrompt": "",
           "promptHeSees": "Have your partner uses their hands to please you sexually?",
-          "promptSheSees": "Use your hands to please your partner sexually?"
+          "promptSheSees": "Use your hands to please your partner sexually?",
+          "enabledAtomicActions": ["hand_play", "mutual_masturbation_other"],
+          "enabledModifiers": ["genitals_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "24",
           "helpPrompt": "",
           "promptHeSees": "Use your hands to please your partner sexually?",
-          "promptSheSees": "Have your partner uses their hands to please you sexually?"
-        },
-        {
-          "id": "30",
-          "helpPrompt": "",
-          "promptHeSees": "Receive oral sex?",
-          "promptSheSees": "Give your partner oral sex?"
-        },
-        {
-          "id": "31",
-          "helpPrompt": "",
-          "promptHeSees": "Give your partner oral sex?",
-          "promptSheSees": "Receive oral sex?"
-        },
-        {
-          "id": "29",
-          "helpPrompt": "",
-          "promptHeSees": "Titty fuck your partner?",
-          "promptSheSees": "Have your partner titty fuck you?"
+          "promptSheSees": "Have your partner uses their hands to please you sexually?",
+          "enabledAtomicActions": ["hand_play", "mutual_masturbation_other"],
+          "enabledModifiers": ["genitals_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "25",
           "helpPrompt": "",
-          "promptHeSees": "Have sex without using protection?",
-          "promptSheSees": "Have sex without using protection?"
+          "promptHeSees": "Receive oral sex?",
+          "promptSheSees": "Give your partner oral sex?",
+          "enabledAtomicActions": ["give_oral"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "26",
           "helpPrompt": "",
-          "promptHeSees": "Cum inside your partner?",
-          "promptSheSees": "Have your partner cum inside you?"
-        },
-        {
-          "id": "27",
-          "helpPrompt": "",
-          "promptHeSees": "Cum on your partner's face?",
-          "promptSheSees": "Have your partner cum on your face?"
+          "promptHeSees": "Give your partner oral sex?",
+          "promptSheSees": "Receive oral sex?",
+          "enabledAtomicActions": ["give_oral"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "28",
           "helpPrompt": "",
+          "promptHeSees": "Have sex without using protection?",
+          "promptSheSees": "Have sex without using protection?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "29",
+          "helpPrompt": "",
+          "promptHeSees": "Cum inside your partner?",
+          "promptSheSees": "Have your partner cum inside you?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": ["finish_creampie"],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "30",
+          "helpPrompt": "",
+          "promptHeSees": "Cum on your partner's face?",
+          "promptSheSees": "Have your partner cum on your face?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": ["finish_face"],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "31",
+          "helpPrompt": "",
           "promptHeSees": "Cum on your partner's chest and stomach?",
-          "promptSheSees": "Have your partner cum on your chest and stomach?"
+          "promptSheSees": "Have your partner cum on your chest and stomach?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": ["finish_chest", "finish_stomach"],
+          "enabledSceneTones": []
         },
         {
           "id": "32",
           "helpPrompt": "",
           "promptHeSees": "Have your partner swallow your cum?",
-          "promptSheSees": "Swallow your partners cum?"
-        },
-        {
-          "id": "33",
-          "helpPrompt": "",
-          "promptHeSees": "Do you like slower penetrative sex?",
-          "promptSheSees": "Do you like slower penetrative sex?"
-        },
-        {
-          "id": "34",
-          "helpPrompt": "",
-          "promptHeSees": "Do you like faster penetrative sex?",
-          "promptSheSees": "Do you like faster penetrative sex?"
-        },
-        {
-          "id": "35",
-          "helpPrompt": "",
-          "promptHeSees": "Do you like deep penetrative sex?",
-          "promptSheSees": "Do you like deep penetrative sex?"
+          "promptSheSees": "Swallow your partners cum?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": ["finish_mouth"],
+          "enabledSceneTones": []
         }
       ]
     },
@@ -233,115 +453,157 @@
       "title": "🧙🏼‍♂️ Role Play",
       "slogan": "Adult pretend playtime",
       "description": "I'll play the bass, you'll play the angler.",
-	    "isMatchable": "true",
+      "isMatchable": "true",
       "questions": [
-        {
-          "id": "36",
-          "helpPrompt": "",
-          "promptHeSees": "Role-play or wear costumes during sex?",
-          "promptSheSees": "Role-play or wear costumes during sex?"
-        },
         {
           "id": "37",
           "helpPrompt": "Consensual Non-Consent: a form of roleplay that two or more people engage in that emulates some form of forced activity.",
           "promptHeSees": "Engage in Consensual Non-Consent?",
-          "promptSheSees": "Engage in Consensual Non-Consent?"
+          "promptSheSees": "Engage in Consensual Non-Consent?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": ["possession_play", "master_slave_play"]
         },
         {
           "id": "38",
           "helpPrompt": "",
           "promptHeSees": "Pretend you or your partner are much older?",
-          "promptSheSees": "Pretend you or your partner are much older?"
+          "promptSheSees": "Pretend you or your partner are much older?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": ["age_play"]
         },
         {
           "id": "39",
           "helpPrompt": "",
           "promptHeSees": "Pretend you or your partner are much younger?",
-          "promptSheSees": "Pretend you or your partner are much younger?"
+          "promptSheSees": "Pretend you or your partner are much younger?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": ["age_play"]
         },
         {
           "id": "40",
           "helpPrompt": "Wear clothes or present one's self opposite to the usual gender expression",
           "promptHeSees": "Cross dress for your partner?",
-          "promptSheSees": "Have your partner cross dress for you?"
+          "promptSheSees": "Have your partner cross dress for you?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "41",
           "helpPrompt": "Wear clothes or present one's self opposite to the usual gender expression",
           "promptHeSees": "Have your partner cross dress for you?",
-          "promptSheSees": "Cross dress for your partner?"
+          "promptSheSees": "Cross dress for your partner?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "42",
-          "helpPrompt": "",
-          "promptHeSees": "Teacher role-play?",
-          "promptSheSees": "Teacher role-play?"
+          "helpPrompt": "Class is in session, and this eager student is ready to do anything for a good grade.",
+          "promptHeSees": "Teacher or student role-play?",
+          "promptSheSees": "Teacher or student role-play?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": ["teacher_student_play"]
         },
         {
           "id": "43",
-          "helpPrompt": "",
+          "helpPrompt": "This naughty nurse knows exactly how to make you feel better... and she won’t leave until you’re fully 'satisfied'.",
           "promptHeSees": "Nurse role-play?",
-          "promptSheSees": "Nurse role-play?"
+          "promptSheSees": "Nurse role-play?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": ["nurse_play"]
         },
         {
           "id": "44",
-          "helpPrompt": "",
+          "helpPrompt": "After hours in the office, the boss demands a 'special performance' to secure your next promotion.",
           "promptHeSees": "Boss role-play?",
-          "promptSheSees": "Boss role-play?"
+          "promptSheSees": "Boss role-play?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": ["boss_employee_play"]
         },
         {
           "id": "45",
-          "helpPrompt": "",
+          "helpPrompt": "The repairman is here to lay some serious pipe—and he won't leave until everything's been thoroughly 'serviced'.",
           "promptHeSees": "Repairman role-play?",
-          "promptSheSees": "Repairman role-play?"
+          "promptSheSees": "Repairman role-play?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": ["repairman_play"]
         },
         {
           "id": "46",
-          "helpPrompt": "",
+          "helpPrompt": "The maid’s here to clean up every mess... but somehow, she just keeps getting a little dirtier herself.",
           "promptHeSees": "Maid role-play?",
-          "promptSheSees": "Maid role-play?"
-        },
-        {
-          "id": "47",
-          "helpPrompt": "",
-          "promptHeSees": "Fantasy RPG role-play?",
-          "promptSheSees": "Fantasy RPG role-play?"
-        },
-        {
-          "id": "48",
-          "helpPrompt": "",
-          "promptHeSees": "Sci-fi or Space Alien role play?",
-          "promptSheSees": "Sci-fi or Space Alien role play?"
-        },
-        {
-          "id": "49",
-          "helpPrompt": "",
-          "promptHeSees": "Harry Potter role-play?",
-          "promptSheSees": "Harry Potter role-play?"
-        },
-        {
-          "id": "50",
-          "helpPrompt": "",
-          "promptHeSees": "Star Wars role-play?",
-          "promptSheSees": "Star Wars role-play?"
-        },
-        {
-          "id": "51",
-          "helpPrompt": "",
-          "promptHeSees": "Lord of the Rings role-play?",
-          "promptSheSees": "Lord of the Rings role-play?"
-        },
-        {
-          "id": "52",
-          "helpPrompt": "",
-          "promptHeSees": "Game of Thrones role-play?",
-          "promptSheSees": "Game of Thrones role-play?"
+          "promptSheSees": "Maid role-play?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": ["maid_play"]
         },
         {
           "id": "53",
-          "helpPrompt": "",
+          "helpPrompt": "Two strangers' eyes meet, the spark ignites, and the night is filled with forbidden, thrilling exploration.",
           "promptHeSees": "Pretend your partner is a complete stranger?",
-          "promptSheSees": "Pretend your partner is a complete stranger?"
+          "promptSheSees": "Pretend your partner is a complete stranger?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": ["stranger_play"]
+        },
+        {
+          "id": "53",
+          "helpPrompt": "Pet/Master dynamic.",
+          "promptHeSees": "Pet play?",
+          "promptSheSees": "Pet play?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": ["pet_play"]
+        },
+        {
+          "id": "53",
+          "helpPrompt": "Ooops! The rent is due, but I don't have any money... However will we resolve this conflict? 💦🍆💋",
+          "promptHeSees": "Pretend like you or your partner owe a debt?",
+          "promptSheSees": "Pretend like you or your partner owe a debt?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": ["debt_play", "focused_climax_play"]
+        },
+        {
+          "id": "53",
+          "helpPrompt": "Someone has to pay the bills, and with holes like these who needs a real job!",
+          "promptHeSees": "Prostitute role-play?",
+          "promptSheSees": "Prostitute role-play?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": ["slutty_prostitute_play", "focused_climax_play"]
+        },
+        {
+          "id": "53",
+          "helpPrompt": "You're nothing but my filthy little plaything tonight, and you love every humiliating second of it.",
+          "promptHeSees": "Degredation role-play?",
+          "promptSheSees": "Degredation role-play?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": ["degradation_play"]
         }
       ]
     },
@@ -350,103 +612,197 @@
       "title": "🧘‍♀️ Positions",
       "slogan": "Kama Sutra Anyone?",
       "description": "If you can think it, you can find a way to get in it!",
-	    "isMatchable": "true",
+      "isMatchable": "true",
       "questions": [
         {
           "id": "54",
           "helpPrompt": "Giving and receiving oral sex at the same time.",
           "promptHeSees": "69?",
-          "promptSheSees": "69?"
+          "promptSheSees": "69?",
+          "enabledAtomicActions": ["oral_69"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "54",
+          "helpPrompt": "A dominating position for a woman to receive oral sex.",
+          "promptHeSees": "Do you want her to sit on your face?",
+          "promptSheSees": "Do you want to sit on his face?",
+          "enabledAtomicActions": ["face_sitting"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "55",
           "helpPrompt": "",
           "promptHeSees": "Try different sexual positions?",
-          "promptSheSees": "Try different sexual positions?"
+          "promptSheSees": "Try different sexual positions?",
+          "enabledAtomicActions": ["try_something_different", "try_something_random"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "27",
+          "helpPrompt": "",
+          "promptHeSees": "Titty fuck your partner?",
+          "promptSheSees": "Have your partner titty fuck you?",
+          "enabledAtomicActions": ["titty_fucking"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "56",
           "helpPrompt": "",
           "promptHeSees": "Do it doggy-style?",
-          "promptSheSees": "Do it doggy-style?"
+          "promptSheSees": "Do it doggy-style?",
+          "enabledAtomicActions": ["doggy_style"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "57",
           "helpPrompt": "",
           "promptHeSees": "Do cowgirl?",
-          "promptSheSees": "Do cowgirl?"
+          "promptSheSees": "Do cowgirl?",
+          "enabledAtomicActions": ["cowgirl_riding"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "58",
           "helpPrompt": "",
           "promptHeSees": "Do reverse-cowgirl?",
-          "promptSheSees": "Do reverse-cowgirl?"
+          "promptSheSees": "Do reverse-cowgirl?",
+          "enabledAtomicActions": ["reverse_cowgirl_riding"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "58",
+          "helpPrompt": "",
+          "promptHeSees": "Missionary?",
+          "promptSheSees": "Missionary?",
+          "enabledAtomicActions": ["missionary"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "58",
+          "helpPrompt": "Sex while laying in the spooning position.",
+          "promptHeSees": "Spooning Sex?",
+          "promptSheSees": "Spooning Sex?",
+          "enabledAtomicActions": ["spooning_sex"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "58",
+          "helpPrompt": "",
+          "promptHeSees": "You stand while she lays on the bed?",
+          "promptSheSees": "He stands while you lay on the bed?",
+          "enabledAtomicActions": ["spooning_sex"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "59",
           "helpPrompt": "",
           "promptHeSees": "Do it with your partner's legs on your shoulder?",
-          "promptSheSees": "Do it with your legs on your partner's shoulders?"
+          "promptSheSees": "Do it with your legs on your partner's shoulders?",
+          "enabledAtomicActions": ["legs_on_shoulders"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "60",
           "helpPrompt": "",
-          "promptHeSees": "Do it with your partner on top during sex?",
-          "promptSheSees": "Be on top during sex?"
+          "promptHeSees": "Do you prefer to be on top during sex?",
+          "promptSheSees": "Do you prefer your partner be on top during sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "61",
           "helpPrompt": "",
-          "promptHeSees": "Be on top during sex?",
-          "promptSheSees": "Do it with your partner on top during sex?"
-        },
-        {
-          "id": "62",
-          "helpPrompt": "",
-          "promptHeSees": "Be face-to-face with your partner during sex?",
-          "promptSheSees": "Be face-to-face with your partner during sex?"
-        },
-        {
-          "id": "63",
-          "helpPrompt": "",
-          "promptHeSees": "Be behind your partner during sex?",
-          "promptSheSees": "Have your partner be behind you during sex?"
-        },
-        {
-          "id": "64",
-          "helpPrompt": "",
-          "promptHeSees": "Have your partner straddle you during sex?",
-          "promptSheSees": "Straddle your partner during sex?"
+          "promptHeSees": "Do you prefer your partner be on top during sex?",
+          "promptSheSees": "Do you prefer to be on top during sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "65",
           "helpPrompt": "",
           "promptHeSees": "Have partner to sit on your lap during sex?",
-          "promptSheSees": "Sit on your partner’s lap during sex?"
+          "promptSheSees": "Sit on your partner’s lap during sex?",
+          "enabledAtomicActions": ["lap_sex"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "66",
           "helpPrompt": "",
           "promptHeSees": "Haxe sex standing up?",
-          "promptSheSees": "Haxe sex standing up?"
+          "promptSheSees": "Haxe sex standing up?",
+          "enabledAtomicActions": ["standing_sex", "wall_sex"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "67",
           "helpPrompt": "",
           "promptHeSees": "Install a 'sex position of the day' app?",
-          "promptSheSees": "Install a 'sex position of the day' app?"
+          "promptSheSees": "Install a 'sex position of the day' app?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "68",
           "helpPrompt": "The Kama Sutra is an ancient Indian Sanskrit text on sexuality, eroticism and emotional fulfillment in life. Contains lots of positions.",
           "promptHeSees": "Get a copy of the Kama Sutra?",
-          "promptSheSees": "Get a copy of the Kama Sutra?"
+          "promptSheSees": "Get a copy of the Kama Sutra?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "69",
           "helpPrompt": "",
           "promptHeSees": "Make a sexual to-do list?",
-          "promptSheSees": "Make a sexual to-do list?"
+          "promptSheSees": "Make a sexual to-do list?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "69",
+          "helpPrompt": "",
+          "promptHeSees": "Make use of furniture or other objects around the house to get into creative positions?",
+          "promptSheSees": "Make use of furniture or other objects around the house to get into creative positions?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["furniture_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         }
       ]
     },
@@ -455,55 +811,87 @@
       "title": "🍩 Butt Stuff",
       "slogan": "Anal Play",
       "description": "Questions about butt stuff! We've got your back.",
-	    "isMatchable": "true",
+      "isMatchable": "true",
       "questions": [
+        {
+          "id": "70",
+          "helpPrompt": "",
+          "promptHeSees": "Have anal sex?",
+          "promptSheSees": "Have anal sex?",
+          "enabledAtomicActions": ["anal_sex"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "71",
+          "helpPrompt": "",
+          "promptHeSees": "Finger your partner anally?",
+          "promptSheSees": "Be anally fingered by your partner?",
+          "enabledAtomicActions": ["anal_teasing"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
         {
           "id": "72",
           "helpPrompt": "",
-          "promptHeSees": "Have anal sex?",
-          "promptSheSees": "Have anal sex?"
+          "promptHeSees": "Be anally fingered by your partner?",
+          "promptSheSees": "Finger your partner anally?",
+          "enabledAtomicActions": ["anal_teasing"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "73",
-          "helpPrompt": "",
-          "promptHeSees": "Finger your partner anally?",
-          "promptSheSees": "Be anally fingered by your partner?"
+          "helpPrompt": "An oral and anal sex act in which a person stimulates the anus of another by using the tongue and lips.",
+          "promptHeSees": "Give your partner analingus?",
+          "promptSheSees": "Have your partner give you analingus?",
+          "enabledAtomicActions": ["analingus"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "74",
-          "helpPrompt": "",
-          "promptHeSees": "Be anally fingered by your partner?",
-          "promptSheSees": "Finger your partner anally?"
+          "helpPrompt": "An oral and anal sex act in which a person stimulates the anus of another by using the tongue and lips.",
+          "promptHeSees": "Have your partner give you analingus?",
+          "promptSheSees": "Give your partner analingus?",
+          "enabledAtomicActions": ["analingus"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "75",
-          "helpPrompt": "An oral and anal sex act in which a person stimulates the anus of another by using the tongue and lips.",
-          "promptHeSees": "Give your partner analingus?",
-          "promptSheSees": "Have your partner give you analingus?"
+          "helpPrompt": "Sex act that consists of a woman wearing a dildo with a strap-on harness and performing anal sex.",
+          "promptHeSees": "Get Pegged by your partner?",
+          "promptSheSees": "Peg your partner?",
+          "enabledAtomicActions": ["pegging"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "76",
-          "helpPrompt": "An oral and anal sex act in which a person stimulates the anus of another by using the tongue and lips.",
-          "promptHeSees": "Have your partner give you analingus?",
-          "promptSheSees": "Give your partner analingus?"
+          "helpPrompt": "",
+          "promptHeSees": "Anally stimulate your parner with toys?",
+          "promptSheSees": "Have your partner simulate your anus with toys?",
+          "enabledAtomicActions": ["anal_toy_play"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "77",
-          "helpPrompt": "Sex act that consists of a woman wearing a dildo with a strap-on harness and performing anal sex.",
-          "promptHeSees": "Get Pegged by your partner?",
-          "promptSheSees": "Peg your partner?"
-        },
-        {
-          "id": "78",
           "helpPrompt": "",
-          "promptHeSees": "Explore anally simulating your parner?",
-          "promptSheSees": "Explore having your partner anally stimulate you?"
-        },
-        {
-          "id": "79",
-          "helpPrompt": "",
-          "promptHeSees": "Explore having your partner anally stimulate you?",
-          "promptSheSees": "Explore anally simulating your parner?"
+          "promptHeSees": "Have your partner simulate your anus with toys?",
+          "promptSheSees": "Anally stimulate your parner with toys?",
+          "enabledAtomicActions": ["anal_toy_play"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         }
       ]
     },
@@ -512,199 +900,337 @@
       "title": "🤐 BDSM",
       "slogan": "Bondage, Discipline, Submission and Masochism",
       "description": "What's so sexy about BDSM? Beats me.",
-	    "isMatchable": "true",
+      "isMatchable": "true",
       "questions": [
+        {
+          "id": "78",
+          "helpPrompt": "",
+          "promptHeSees": "Be rougher towards your partner in the bedroom?",
+          "promptSheSees": "Have your partner be rougher towards you in the bedroom?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["rough_style", "dominant_role"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "79",
+          "helpPrompt": "",
+          "promptHeSees": "Have your partner be rougher towards you in the bedroom?",
+          "promptSheSees": "Be rougher towards your partner in the bedroom?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["rough_style", "dominant_role"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
         {
           "id": "80",
           "helpPrompt": "",
-          "promptHeSees": "Be rougher towards your partner in the bedroom?",
-          "promptSheSees": "Have your partner be rougher towards you in the bedroom?"
+          "promptHeSees": "Pull your partner's hair during sex?",
+          "promptSheSees": "Have your hair pulled during sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["hair_pulling"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "81",
           "helpPrompt": "",
-          "promptHeSees": "Have your partner be rougher towards you in the bedroom?",
-          "promptSheSees": "Be rougher towards your partner in the bedroom?"
+          "promptHeSees": "Have your hair pulled during sex?",
+          "promptSheSees": "Pull your partner's hair during sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["hair_pulling"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "82",
           "helpPrompt": "",
-          "promptHeSees": "Pull your partner's hair during sex?",
-          "promptSheSees": "Have your hair pulled during sex?"
+          "promptHeSees": "Bite your partner during sex?",
+          "promptSheSees": "Be bitten during sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["biting"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "83",
           "helpPrompt": "",
-          "promptHeSees": "Have your hair pulled during sex?",
-          "promptSheSees": "Pull your partner's hair during sex?"
+          "promptHeSees": "Be bitten during sex?",
+          "promptSheSees": "Bite your partner during sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["biting"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "84",
           "helpPrompt": "",
-          "promptHeSees": "Bite your partner during sex?",
-          "promptSheSees": "Be bitten during sex?"
+          "promptHeSees": "Choke your partner during sex?",
+          "promptSheSees": "Be choked during sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["choking"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "85",
           "helpPrompt": "",
-          "promptHeSees": "Be bitten during sex?",
-          "promptSheSees": "Bite your partner during sex?"
+          "promptHeSees": "Be choked during sex?",
+          "promptSheSees": "Choke your partner during sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["choking"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "86",
           "helpPrompt": "",
-          "promptHeSees": "Choke your partner during sex?",
-          "promptSheSees": "Be choked during sex?"
+          "promptHeSees": "Scratch your partner during sex?",
+          "promptSheSees": "Be scratched during sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["scratching"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "87",
           "helpPrompt": "",
-          "promptHeSees": "Be choked during sex?",
-          "promptSheSees": "Choke your partner during sex?"
+          "promptHeSees": "Be scratched during sex?",
+          "promptSheSees": "Scratch your partner during sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["scratching"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "88",
           "helpPrompt": "",
-          "promptHeSees": "Scratch your partner during sex?",
-          "promptSheSees": "Be scratched during sex?"
+          "promptHeSees": "Tie-up or handcuff your partner during sex?",
+          "promptSheSees": "Be tied-up or handcuffed during sex?",
+          "enabledAtomicActions": ["tie_them_up"],
+          "enabledModifiers": ["bdsm_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": ["bondage_play"]
         },
         {
           "id": "89",
           "helpPrompt": "",
-          "promptHeSees": "Be scratched during sex?",
-          "promptSheSees": "Scratch your partner during sex?"
+          "promptHeSees": "Be tied-up or handcuffed during sex?",
+          "promptSheSees": "Tie-up or handcuff your partner during sex?",
+          "enabledAtomicActions": ["tie_them_up"],
+          "enabledModifiers": ["bdsm_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": ["bondage_play"]
         },
         {
           "id": "90",
           "helpPrompt": "",
-          "promptHeSees": "Tie-up or handcuff your partner during sex?",
-          "promptSheSees": "Be tied-up or handcuffed during sex?"
+          "promptHeSees": "Explore your submissive side with your partner?",
+          "promptSheSees": "Have your partner explore their submissive side with you?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["dominant_role", "bdsm_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "91",
           "helpPrompt": "",
-          "promptHeSees": "Be tied-up or handcuffed during sex?",
-          "promptSheSees": "Tie-up or handcuff your partner during sex?"
+          "promptHeSees": "Have your partner explore their submissive side with you?",
+          "promptSheSees": "Explore your submissive side with your partner?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["dominant_role", "bdsm_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "92",
           "helpPrompt": "",
-          "promptHeSees": "Explore your submissive side with your partner?",
-          "promptSheSees": "Have your partner explore their submissive side with you?"
+          "promptHeSees": "Have your mouth covered or gagged during sex?",
+          "promptSheSees": "Have your partner's mouth covered or gagged during sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["bdsm_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "93",
           "helpPrompt": "",
-          "promptHeSees": "Have your partner explore their submissive side with you?",
-          "promptSheSees": "Explore your submissive side with your partner?"
+          "promptHeSees": "Have your partner's mouth covered or gagged during sex?",
+          "promptSheSees": "Have your mouth covered or gagged during sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["bdsm_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "94",
           "helpPrompt": "",
-          "promptHeSees": "Have your mouth covered or gagged during sex?",
-          "promptSheSees": "Have your partner's mouth covered or gagged during sex?"
+          "promptHeSees": "Force your partner to orgasm?",
+          "promptSheSees": "Be forced to orgasm by your partner?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["overstimulation_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "95",
           "helpPrompt": "",
-          "promptHeSees": "Have your partner's mouth covered or gagged during sex?",
-          "promptSheSees": "Have your mouth covered or gagged during sex?"
+          "promptHeSees": "Be forced to orgasm by your partner?",
+          "promptSheSees": "Force your partner to orgasm?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["overstimulation_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "96",
           "helpPrompt": "",
-          "promptHeSees": "Force your partner to orgasm?",
-          "promptSheSees": "Be forced to orgasm by your partner?"
+          "promptHeSees": "Edge your partner?",
+          "promptSheSees": "Have your partner edge you?",
+          "enabledAtomicActions": ["forced_over_the_edge"],
+          "enabledModifiers": ["teasing_style"],
+          "enabledFinishingMoves": ["edging"],
+          "enabledSceneTones": []
         },
         {
           "id": "97",
           "helpPrompt": "",
-          "promptHeSees": "Be forced to orgasm by your partner?",
-          "promptSheSees": "Force your partner to orgasm?"
+          "promptHeSees": "Have your partner edge you?",
+          "promptSheSees": "Edge your partner?",
+          "enabledAtomicActions": ["forced_over_the_edge"],
+          "enabledModifiers": ["teasing_style"],
+          "enabledFinishingMoves": ["edging"],
+          "enabledSceneTones": []
         },
         {
           "id": "98",
           "helpPrompt": "",
-          "promptHeSees": "Edge your partner?",
-          "promptSheSees": "Have your partner edge you?"
+          "promptHeSees": "Be blind folded during sex?",
+          "promptSheSees": "Blind fold your partner during sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["blindfold_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "99",
           "helpPrompt": "",
-          "promptHeSees": "Have your partner edge you?",
-          "promptSheSees": "Edge your partner?"
-        },
-        {
-          "id": "100",
-          "helpPrompt": "",
-          "promptHeSees": "Be blind folded during sex?",
-          "promptSheSees": "Blind fold your partner during sex?"
+          "promptHeSees": "Blind fold your partner during sex?",
+          "promptSheSees": "Be blind folded during sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["blindfold_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "101",
           "helpPrompt": "",
-          "promptHeSees": "Blind fold your partner during sex?",
-          "promptSheSees": "Be blind folded during sex?"
+          "promptHeSees": "Participate in impact play during sex? (whip, paddle, ...)",
+          "promptSheSees": "Participate in impact play during sex? (whip, paddle, ...)",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["impact_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "102",
           "helpPrompt": "",
-          "promptHeSees": "Use handcuffs during sex?",
-          "promptSheSees": "Use handcuffs during sex?"
+          "promptHeSees": "Spank or slap your partner during sex?",
+          "promptSheSees": "Have your partner spank or slap you during sex?",
+          "enabledAtomicActions": ["light_spanking"],
+          "enabledModifiers": ["impact_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "103",
           "helpPrompt": "",
-          "promptHeSees": "Participate in impact play during sex? (whip, paddle, ...)",
-          "promptSheSees": "Participate in impact play during sex? (whip, paddle, ...)"
+          "promptHeSees": "Have your partner spank or slap you during sex?",
+          "promptSheSees": "Spank or slap your partner during sex?",
+          "enabledAtomicActions": ["light_spanking"],
+          "enabledModifiers": ["impact_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "104",
           "helpPrompt": "",
-          "promptHeSees": "Spank or slap your partner during sex?",
-          "promptSheSees": "Have your partner spank or slap you during sex?"
+          "promptHeSees": "Have your partner wear leather or latex?",
+          "promptSheSees": "Wear leather or latex during sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "105",
           "helpPrompt": "",
-          "promptHeSees": "Have your partner spank or slap you during sex?",
-          "promptSheSees": "Spank or slap your partner during sex?"
+          "promptHeSees": "Wear leather or latex during sex?",
+          "promptSheSees": "Have your partner wear leather or latex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "106",
           "helpPrompt": "",
-          "promptHeSees": "Have your partner wear leather or latex?",
-          "promptSheSees": "Wear leather or latex during sex?"
+          "promptHeSees": "Pee on your partner?",
+          "promptSheSees": "Be peed on by your partner?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "107",
           "helpPrompt": "",
-          "promptHeSees": "Wear leather or latex during sex?",
-          "promptSheSees": "Have your partner wear leather or latex?"
+          "promptHeSees": "Be peed on by your partner?",
+          "promptSheSees": "Pee on your partner?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "108",
           "helpPrompt": "",
-          "promptHeSees": "Pee on your partner?",
-          "promptSheSees": "Be peed on by your partner?"
+          "promptHeSees": "Explore your dominant side with your partner?",
+          "promptSheSees": "Have your partner explore their dominant side with you?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["dominant_role"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "109",
           "helpPrompt": "",
-          "promptHeSees": "Be peed on by your partner?",
-          "promptSheSees": "Pee on your partner?"
+          "promptHeSees": "Have your partner explore their dominant side with you?",
+          "promptSheSees": "Explore your dominant side with your partner?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["dominant_role"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
-          "id": "110",
-          "helpPrompt": "",
-          "promptHeSees": "Explore your dominant side with your partner?",
-          "promptSheSees": "Have your partner explore their dominant side with you?"
-        },
-        {
-          "id": "111",
+          "id": "109",
           "helpPrompt": "",
           "promptHeSees": "Have your partner explore their dominant side with you?",
-          "promptSheSees": "Explore your dominant side with your partner?"
+          "promptSheSees": "Explore your dominant side with your partner?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["dominant_role"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "109",
+          "helpPrompt": "Alright dudes, chill... This isn't an invitation to throat fuck her till she turns blue; but if you ask her nicely, just maybe?",
+          "promptHeSees": "Fuck her mouth while you control the pace and depth?",
+          "promptSheSees": "Have him fuck your mouth while he controls the pace and depth?",
+          "enabledAtomicActions": ["face_fucking_bed", "face_fucking"],
+          "enabledModifiers": ["dominant_role"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         }
       ]
     },
@@ -713,145 +1239,237 @@
       "title": "✈️ Frequency & Location",
       "slogan": "When, Where, and How Often",
       "description": "Where should we meet up? See you at the library ;)",
-	    "isMatchable": "true",
+      "isMatchable": "true",
       "questions": [
+        {
+          "id": "110",
+          "helpPrompt": "",
+          "promptHeSees": "Take nude or semi-nude pics of your partner?",
+          "promptSheSees": "Have your partner take nude or semi-nude pics of you?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["recording_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "111",
+          "helpPrompt": "",
+          "promptHeSees": "Have your partner take nude or semi-nude pics of you?",
+          "promptSheSees": "Take nude or semi-nude pics of your partner?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["recording_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
         {
           "id": "112",
           "helpPrompt": "",
-          "promptHeSees": "Take nude or semi-nude pics of your partner?",
-          "promptSheSees": "Have your partner take nude or semi-nude pics of you?"
+          "promptHeSees": "Make a private sex tape together?",
+          "promptSheSees": "Make a private sex tape together?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["recording_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "113",
           "helpPrompt": "",
-          "promptHeSees": "Have your partner take nude or semi-nude pics of you?",
-          "promptSheSees": "Take nude or semi-nude pics of your partner?"
+          "promptHeSees": "Watch porn together?",
+          "promptSheSees": "Watch porn together?",
+          "enabledAtomicActions": ["watch_porn_together"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "114",
           "helpPrompt": "",
-          "promptHeSees": "Make a private sex tape together?",
-          "promptSheSees": "Make a private sex tape together?"
+          "promptHeSees": "Use porn to show each other things you like?",
+          "promptSheSees": "Use porn to show each other things you like?",
+          "enabledAtomicActions": ["use_porn_to_show_preferences"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "115",
           "helpPrompt": "",
-          "promptHeSees": "Watch porn together?",
-          "promptSheSees": "Watch porn together?"
+          "promptHeSees": "Have shower sex?",
+          "promptSheSees": "Have shower sex?",
+          "enabledAtomicActions": ["shower_sex"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "116",
           "helpPrompt": "",
-          "promptHeSees": "Use porn to show each other things you like?",
-          "promptSheSees": "Use porn to show each other things you like?"
+          "promptHeSees": "Have sex when your partner is menstruating?",
+          "promptSheSees": "Have sex when you are menstruating?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "117",
           "helpPrompt": "",
-          "promptHeSees": "Have shower sex?",
-          "promptSheSees": "Have shower sex?"
+          "promptHeSees": "Have sex more often?",
+          "promptSheSees": "Have sex more often?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "118",
           "helpPrompt": "",
-          "promptHeSees": "Have sex when your partner is menstruating?",
-          "promptSheSees": "Have sex when you are menstruating?"
+          "promptHeSees": "Schedule sex?",
+          "promptSheSees": "Schedule sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "119",
           "helpPrompt": "",
-          "promptHeSees": "Have sex more often?",
-          "promptSheSees": "Have sex more often?"
+          "promptHeSees": "Have sex multiple times in a row?",
+          "promptSheSees": "Have sex multiple times in a row?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "120",
           "helpPrompt": "",
-          "promptHeSees": "Schedule sex?",
-          "promptSheSees": "Schedule sex?"
+          "promptHeSees": "Have morning sex?",
+          "promptSheSees": "Have morning sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "121",
           "helpPrompt": "",
-          "promptHeSees": "Have sex multiple times in a row?",
-          "promptSheSees": "Have sex multiple times in a row?"
+          "promptHeSees": "Have sex outside?",
+          "promptSheSees": "Have sex outside?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "122",
           "helpPrompt": "",
-          "promptHeSees": "Have morning sex?",
-          "promptSheSees": "Have morning sex?"
+          "promptHeSees": "Have sex in a public place?",
+          "promptSheSees": "Have sex in a public place?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["public_risky_setting"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "123",
           "helpPrompt": "",
-          "promptHeSees": "Have sex outside?",
-          "promptSheSees": "Have sex outside?"
+          "promptHeSees": "Have sex in a car?",
+          "promptSheSees": "Have sex in a car?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "124",
-          "helpPrompt": "",
-          "promptHeSees": "Have sex in a public place?",
-          "promptSheSees": "Have sex in a public place?"
+          "helpPrompt": "Oral sex performed on the driver of a vehicle.",
+          "promptHeSees": "Receive road head?",
+          "promptSheSees": "Give road head?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "125",
           "helpPrompt": "",
-          "promptHeSees": "Have sex in a car?",
-          "promptSheSees": "Have sex in a car?"
+          "promptHeSees": "Do sexual stuff while driving?",
+          "promptSheSees": "Do sexual stuff while driving?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "126",
-          "helpPrompt": "Oral sex performed on the driver of a vehicle.",
-          "promptHeSees": "Receive road head?",
-          "promptSheSees": "Give road head?"
+          "helpPrompt": "",
+          "promptHeSees": "Have sex in a library?",
+          "promptSheSees": "Have sex in a library?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "127",
           "helpPrompt": "",
-          "promptHeSees": "Do sexual stuff while driving?",
-          "promptSheSees": "Do sexual stuff while driving?"
+          "promptHeSees": "Post your private photos or videos online?",
+          "promptSheSees": "Post your private photos or videos online?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["public_risky_setting"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "128",
           "helpPrompt": "",
-          "promptHeSees": "Have sex in a library?",
-          "promptSheSees": "Have sex in a library?"
+          "promptHeSees": "Go to a strip club together?",
+          "promptSheSees": "Go to a strip club together?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "129",
           "helpPrompt": "",
-          "promptHeSees": "Post your private photos or videos online?",
-          "promptSheSees": "Post your private photos or videos online?"
+          "promptHeSees": "Have sex around the house?",
+          "promptSheSees": "Have sex around the house?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["furniture_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "130",
           "helpPrompt": "",
-          "promptHeSees": "Go to a strip club together?",
-          "promptSheSees": "Go to a strip club together?"
+          "promptHeSees": "Have phone sex?",
+          "promptSheSees": "Have phone sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "131",
           "helpPrompt": "",
-          "promptHeSees": "Have sex around the house?",
-          "promptSheSees": "Have sex around the house?"
+          "promptHeSees": "Have your partner send you nude photos?",
+          "promptSheSees": "Send your partner nude photos?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["recording_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "132",
           "helpPrompt": "",
-          "promptHeSees": "Have phone sex?",
-          "promptSheSees": "Have phone sex?"
-        },
-        {
-          "id": "133",
-          "helpPrompt": "",
-          "promptHeSees": "Have your partner send you nude photos?",
-          "promptSheSees": "Send your partner nude photos?"
-        },
-        {
-          "id": "134",
-          "helpPrompt": "",
           "promptHeSees": "Send your partner nude photos?",
-          "promptSheSees": "Have your partner send you nude photos?"
+          "promptSheSees": "Have your partner send you nude photos?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["recording_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         }
       ]
     },
@@ -860,79 +1478,97 @@
       "title": "🧸 Toys & Devices",
       "slogan": "Toys for Playtime",
       "description": "What toys sound interesting? Shopping online together is fun!",
-	    "isMatchable": "true",
+      "isMatchable": "true",
       "questions": [
+        {
+          "id": "133",
+          "helpPrompt": "",
+          "promptHeSees": "Use a butt plug during sex?",
+          "promptSheSees": "Have your partner use a butt plug during sex?",
+          "enabledAtomicActions": ["toy_tease"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "134",
+          "helpPrompt": "",
+          "promptHeSees": "Have your partner use a butt plug during sex?",
+          "promptSheSees": "Use a butt plug during sex?",
+          "enabledAtomicActions": ["toy_tease"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
         {
           "id": "135",
           "helpPrompt": "",
-          "promptHeSees": "Use a butt plug during sex?",
-          "promptSheSees": "Have your partner use a butt plug during sex?"
+          "promptHeSees": "Use long distance sex toys?",
+          "promptSheSees": "Use long distance sex toys?",
+          "enabledAtomicActions": ["toy_tease"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "136",
           "helpPrompt": "",
-          "promptHeSees": "Have your partner use a butt plug during sex?",
-          "promptSheSees": "Use a butt plug during sex?"
+          "promptHeSees": "Shop at a sex store or webstore together?",
+          "promptSheSees": "Shop at a sex store or webstore together?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "137",
-          "helpPrompt": "",
-          "promptHeSees": "Use long distance sex toys?",
-          "promptSheSees": "Use long distance sex toys?"
-        },
-        {
-          "id": "138",
-          "helpPrompt": "",
-          "promptHeSees": "Shop at a sex store or webstore together?",
-          "promptSheSees": "Shop at a sex store or webstore together?"
-        },
-        {
-          "id": "139",
-          "helpPrompt": "",
+          "helpPrompt": "Cock rings, nipple clamps, vibrators, oh my!",
           "promptHeSees": "Use toys during sex?",
-          "promptSheSees": "Use toys during sex?"
+          "promptSheSees": "Use toys during sex?",
+          "enabledAtomicActions": ["toy_tease"],
+          "enabledModifiers": ["cock_ring_play", "nipple_clamp_play", "impact_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "140",
           "helpPrompt": "",
-          "promptHeSees": "Use a cock ring during sex?",
-          "promptSheSees": "Use a cock ring during sex?"
-        },
-        {
-          "id": "141",
-          "helpPrompt": "",
-          "promptHeSees": "Use a strap-on during sex?",
-          "promptSheSees": "Use a strap-on during sex?"
+          "promptHeSees": "Use a dildo during sex?",
+          "promptSheSees": "Use a dildo during sex?",
+          "enabledAtomicActions": ["toy_tease"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "142",
           "helpPrompt": "",
-          "promptHeSees": "Use a dildo during sex?",
-          "promptSheSees": "Use a dildo during sex?"
+          "promptHeSees": "Use a vibrator during sex?",
+          "promptSheSees": "Use a vibrator during sex?",
+          "enabledAtomicActions": ["toy_tease"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "143",
           "helpPrompt": "",
-          "promptHeSees": "Use nipple clamps?",
-          "promptSheSees": "Use nipple clamps?"
+          "promptHeSees": "Have your partner stimulate you sexually while you watch an erotic scene in VR?",
+          "promptSheSees": "Stimulate your partner sexually while they watch an erotic scene in VR?",
+          "enabledAtomicActions": ["vr_experience"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "144",
           "helpPrompt": "",
-          "promptHeSees": "Use a vibrator during sex?",
-          "promptSheSees": "Use a vibrator during sex?"
-        },
-        {
-          "id": "70",
-          "helpPrompt": "",
-          "promptHeSees": "Have your partner stimulate you sexually while you watch an erotic scene in VR?",
-          "promptSheSees": "Stimulate your partner sexually while they watch an erotic scene in VR?"
-        },
-        {
-          "id": "71",
-          "helpPrompt": "",
           "promptHeSees": "Stimulate your partner sexually while they watch an erotic scene in VR?",
-          "promptSheSees": "Have your partner stimulate you sexually while you watch an erotic scene in VR?"
+          "promptSheSees": "Have your partner stimulate you sexually while you watch an erotic scene in VR?",
+          "enabledAtomicActions": ["vr_experience"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         }
       ]
     },
@@ -941,67 +1577,107 @@
       "title": "🍍 Swingers",
       "slogan": "Swingers and Group Stuff",
       "description": "Sharing is caring! The more the merrier!",
-	    "isMatchable": "true",
+      "isMatchable": "true",
       "questions": [
         {
           "id": "145",
           "helpPrompt": "",
           "promptHeSees": "Watch your partner be penetrated by another?",
-          "promptSheSees": "Be penetrated by another while your partner watches?"
+          "promptSheSees": "Be penetrated by another while your partner watches?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "146",
           "helpPrompt": "",
           "promptHeSees": "Be penetrated by another while your partner watches?",
-          "promptSheSees": "Watch your partner be penetrated by another?"
+          "promptSheSees": "Watch your partner be penetrated by another?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "147",
           "helpPrompt": "",
           "promptHeSees": "Watch your partner penetrate another?",
-          "promptSheSees": "Penetrate another while your partner watches?"
+          "promptSheSees": "Penetrate another while your partner watches?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "148",
           "helpPrompt": "",
           "promptHeSees": "Penetrate another while your partner watches?",
-          "promptSheSees": "Watch your partner penetrate another?"
+          "promptSheSees": "Watch your partner penetrate another?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "149",
           "helpPrompt": "",
           "promptHeSees": "Have a three-some?",
-          "promptSheSees": "Have a three-some?"
+          "promptSheSees": "Have a three-some?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "150",
           "helpPrompt": "This is commonly referred to as an 'orgy'.",
           "promptHeSees": "Have group sex with more than three people?",
-          "promptSheSees": "Have group sex with more than three people?"
+          "promptSheSees": "Have group sex with more than three people?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "151",
           "helpPrompt": "Sex with someone outside the relationship may be allowed sometimes or in edge cases and is discussed prior.",
           "promptHeSees": "Have a sexual 'Hall Pass' sometimes?",
-          "promptSheSees": "Have a sexual 'Hall Pass' sometimes?"
+          "promptSheSees": "Have a sexual 'Hall Pass' sometimes?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "152",
           "helpPrompt": "",
           "promptHeSees": "Go to a nudest resort together?",
-          "promptSheSees": "Go to a nudest resort together?"
+          "promptSheSees": "Go to a nudest resort together?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "153",
           "helpPrompt": "",
           "promptHeSees": "Watch your partner receive oral sex from another?",
-          "promptSheSees": "Receive oral sex while your partner watches?"
+          "promptSheSees": "Receive oral sex while your partner watches?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "154",
           "helpPrompt": "",
           "promptHeSees": "Receive oral sex while your partner watches?",
-          "promptSheSees": "Watch your partner receive oral sex from another?"
+          "promptSheSees": "Watch your partner receive oral sex from another?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         }
       ]
     },
@@ -1010,169 +1686,287 @@
       "title": "❤ Emotion & Connection",
       "slogan": "Bonding, not bondage",
       "description": "It's not just about what you do, but how you feel and connect while doing it. ",
-	    "isMatchable": "true",
+      "isMatchable": "true",
       "questions": [
+        {
+          "id": "156",
+          "helpPrompt": "",
+          "promptHeSees": "Do you enjoy communicating with your touches and sounds without speaking?",
+          "promptSheSees": "Do you enjoy communicating with your touches and sounds without speaking?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["no_talking"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
         {
           "id": "155",
           "helpPrompt": "",
           "promptHeSees": "Do you want your partner to initiate sex with direct genital touch?",
-          "promptSheSees": "Do you want to initiate sex with direct genital touch?"
+          "promptSheSees": "Do you want to initiate sex with direct genital touch?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "156",
           "helpPrompt": "",
           "promptHeSees": "Do you want to initiate sex with direct genital touch?",
-          "promptSheSees": "Do you want your partner to initiate sex with direct genital touch?"
+          "promptSheSees": "Do you want your partner to initiate sex with direct genital touch?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "157",
           "helpPrompt": "Eg. Touching neck, hips, chest, and butt.",
           "promptHeSees": "Do you want your partner to initiate sex by kissing and rubbing sensual areas?",
-          "promptSheSees": "Do you want to initiate sex by kissing and rubbing sensual areas?"
+          "promptSheSees": "Do you want to initiate sex by kissing and rubbing sensual areas?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "158",
           "helpPrompt": "Eg. Touching neck, hips, chest, and butt.",
           "promptHeSees": "Do you want to initiate sex by kissing and rubbing sensual areas?",
-          "promptSheSees": "Do you want your partner to initiate sex by kissing and rubbing sensual areas?"
+          "promptSheSees": "Do you want your partner to initiate sex by kissing and rubbing sensual areas?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "159",
           "helpPrompt": "",
           "promptHeSees": "Do you like it when your partner comes on strong?",
-          "promptSheSees": "Do you want to come on strong to your partner?"
+          "promptSheSees": "Do you want to come on strong to your partner?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "160",
           "helpPrompt": "",
           "promptHeSees": "Do you want to come on strong to your partner?",
-          "promptSheSees": "Do you like it when your partner comes on strong?"
+          "promptSheSees": "Do you like it when your partner comes on strong?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "161",
           "helpPrompt": "Eg. Little teasing things throughout the day.",
           "promptHeSees": "Do you like a slow build up to sex?",
-          "promptSheSees": "Do you like a slow build up to sex?"
+          "promptSheSees": "Do you like a slow build up to sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["slow_build"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "162",
           "helpPrompt": "",
           "promptHeSees": "Do you like it when your partner vocalizes how much they want you? ",
-          "promptSheSees": "Do you like it when your partner vocalizes how much they want you? "
+          "promptSheSees": "Do you like it when your partner vocalizes how much they want you? ",
+          "enabledAtomicActions": ["aftercare_praise", "flirty_Banter"],
+          "enabledModifiers": ["praise_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "163",
           "helpPrompt": "Eg. Running a bath, buying flowers, etc.",
           "promptHeSees": "Do you like it when your partner does romantic things for you before initiating sex?",
-          "promptSheSees": "Do you want to do romantic things for your partner before initiating sex?"
+          "promptSheSees": "Do you want to do romantic things for your partner before initiating sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "164",
           "helpPrompt": "Eg. Running a bath, buying flowers, etc.",
           "promptHeSees": "Do you want to do romantic things for your partner before initiating sex?",
-          "promptSheSees": "Do you like it when your partner does romantic things for you before initiating sex?"
+          "promptSheSees": "Do you like it when your partner does romantic things for you before initiating sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "165",
           "helpPrompt": "Eg. Lighting candles and dimming the lights. Maybe putting on some quiet background music.",
           "promptHeSees": "Do you like the mood set before sex?",
-          "promptSheSees": "Do you like the mood set before sex?"
+          "promptSheSees": "Do you like the mood set before sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": ["music_play"]
         },
         {
           "id": "166",
           "helpPrompt": "",
           "promptHeSees": "Do you enjoy cuddling before or after intimacy?",
-          "promptSheSees": "Do you enjoy cuddling before or after intimacy?"
+          "promptSheSees": "Do you enjoy cuddling before or after intimacy?",
+          "enabledAtomicActions": ["aftercare_spooning", "aftercare_kissing"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "167",
           "helpPrompt": "",
           "promptHeSees": "Do you feel most connected during slow, tender moments?",
-          "promptSheSees": "Do you feel most connected during slow, tender moments?"
+          "promptSheSees": "Do you feel most connected during slow, tender moments?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["sensual_style", "emotional_bonding_play", "vulnerability_play", "emotional_bond"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "168",
           "helpPrompt": "",
           "promptHeSees": "Do you want to feel emotionally connected before getting physical?",
-          "promptSheSees": "Do you want to feel emotionally connected before getting physical?"
+          "promptSheSees": "Do you want to feel emotionally connected before getting physical?",
+          "enabledAtomicActions": ["passionate_kissing", "aftercare_kissing"],
+          "enabledModifiers": ["slow_build"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "169",
           "helpPrompt": "",
           "promptHeSees": "Do you like spontaneous sex?",
-          "promptSheSees": "Do you like spontaneous sex?"
+          "promptSheSees": "Do you like spontaneous sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "170",
           "helpPrompt": "",
           "promptHeSees": "Do you like eye contact during initial penetration?",
-          "promptSheSees": "Do you like eye contact during initial penetration?"
+          "promptSheSees": "Do you like eye contact during initial penetration?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["emotional_bonding_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "171",
           "helpPrompt": "",
           "promptHeSees": "Do you like eye contact during sex?",
-          "promptSheSees": "Do you like eye contact during sex?"
+          "promptSheSees": "Do you like eye contact during sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["emotional_bonding_play", "eye_contact"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "172",
           "helpPrompt": "",
           "promptHeSees": "Do you like eye contact during oral?",
-          "promptSheSees": "Do you like eye contact during oral?"
+          "promptSheSees": "Do you like eye contact during oral?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["emotional_bonding_play", "eye_contact"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "173",
           "helpPrompt": "",
           "promptHeSees": "Do you like when your partner tells you what to do during sex? ",
-          "promptSheSees": "Do you like telling your partner what to do during sex?"
+          "promptSheSees": "Do you like telling your partner what to do during sex?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["command_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "174",
           "helpPrompt": "",
           "promptHeSees": "Do you like telling your partner what to do during sex?",
-          "promptSheSees": "Do you like when your partner tells you what to do during sex? "
+          "promptSheSees": "Do you like when your partner tells you what to do during sex? ",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["command_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "175",
           "helpPrompt": "",
           "promptHeSees": "Do you get turned on by hearing your partner talk about what they want?",
-          "promptSheSees": "Do you get turned on by telling your partner what you want?"
+          "promptSheSees": "Do you get turned on by telling your partner what you want?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["sensual_style", "emotional_bonding_play", "vulnerability_play", "emotional_bond"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "176",
           "helpPrompt": "",
           "promptHeSees": "Do you get turned on by telling your partner what you want?",
-          "promptSheSees": "Do you get turned on by hearing your partner talk about what they want?"
+          "promptSheSees": "Do you get turned on by hearing your partner talk about what they want?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": ["sensual_style", "emotional_bonding_play", "vulnerability_play", "emotional_bond"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "177",
           "helpPrompt": "",
           "promptHeSees": "Do you like describing what you want to do to your partner?",
-          "promptSheSees": "Do you like it when your partner describes what they want to do to you?"
+          "promptSheSees": "Do you like it when your partner describes what they want to do to you?",
+          "enabledAtomicActions": ["flirty_Banter"],
+          "enabledModifiers": ["sensual_style", "emotional_bonding_play", "vulnerability_play", "emotional_bond"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "178",
           "helpPrompt": "",
           "promptHeSees": "Do you like it when your partner describes what they want to do to you?",
-          "promptSheSees": "Do you like describing what you want to do to your partner?"
+          "promptSheSees": "Do you like describing what you want to do to your partner?",
+          "enabledAtomicActions": ["flirty_Banter"],
+          "enabledModifiers": ["sensual_style", "emotional_bonding_play", "vulnerability_play", "emotional_bond"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "179",
           "helpPrompt": "",
           "promptHeSees": "Do you like to be teased by your partner?",
-          "promptSheSees": "Do you like teasing your partner?"
+          "promptSheSees": "Do you like teasing your partner?",
+          "enabledAtomicActions": ["flirty_Banter", "strip_tease"],
+          "enabledModifiers": ["teasing_style"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "180",
           "helpPrompt": "",
           "promptHeSees": "Do you like teasing your partner?",
-          "promptSheSees": "Do you like to be teased by your partner?"
+          "promptSheSees": "Do you like to be teased by your partner?",
+          "enabledAtomicActions": ["flirty_Banter", "strip_tease"],
+          "enabledModifiers": ["teasing_style"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "181",
           "helpPrompt": "Talking about what you liked and didn't like might be awkward, but it will make every further encounter more enjoyable.",
           "promptHeSees": "Do you want to discuss the good and bad after sex?",
-          "promptSheSees": "Do you want to discuss the good and bad after sex?"
+          "promptSheSees": "Do you want to discuss the good and bad after sex?",
+          "enabledAtomicActions": ["aftercare_pillow_talk"],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         }
       ]
     },
@@ -1180,7 +1974,7 @@
       "id": "_quizSectionBodyPreferences",
       "title": "🌳💪 Body Preferences",
       "slogan": "All the finest details...",
-      "description": "If you think Chewbacca is hairy just wait till you see my wookie.",
+      "description": "If you think Chewbacca is hairy just wait till you see my wookie.<br><br>🛑NOTICE🛑: The results of this section will be visible on the matches page in it's entirety. It's ok to be honest with your partner, but you can select the middle option if you don't want to directly share your preference.",
       "detailedDescription": "Explore your individual preferences on body style, grooming choices, and physical appearance to ensure mutual understanding and satisfaction.",
       "isMatchable": "false",
       "questions": [
@@ -1188,67 +1982,111 @@
           "id": "182",
           "helpPrompt": "",
           "promptHeSees": "Would you prefer your partner to have shaved, waxed or regularly trimmed pubic hair?",
-          "promptSheSees": "Would you prefer your partner to have shaved, waxed or regularly trimmed pubic hair?"
+          "promptSheSees": "Would you prefer your partner to have shaved, waxed or regularly trimmed pubic hair?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "183",
           "helpPrompt": "Eg. nose, lip, nipple, or belly button piercings.",
           "promptHeSees": "Would you find body piercings attractive on your partner?",
-          "promptSheSees": "Would you find body piercings attractive on your partner?"
+          "promptSheSees": "Would you find body piercings attractive on your partner?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "184",
           "helpPrompt": "",
           "promptHeSees": "Would you prefer your partner wear makeup regularly?",
-          "promptSheSees": "Would you prefer your partner with facial hair?"
+          "promptSheSees": "Would you prefer your partner with facial hair?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "185",
           "helpPrompt": "",
           "promptHeSees": "Would you like it if your partner had long real or fake fingernails?",
-          "promptSheSees": "Would you prefer it if your partner styled his hair instead of wearing hats?"
+          "promptSheSees": "Would you prefer it if your partner styled his hair instead of wearing hats?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "186",
           "helpPrompt": "",
           "promptHeSees": "Would you prefer your partner have clean shaved or waxed legs?",
-          "promptSheSees": "How do you feel about your partner having body hair on the chest, back or stomach?"
+          "promptSheSees": "How do you feel about your partner having body hair on the chest, back or stomach?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "187",
           "helpPrompt": "",
           "promptHeSees": "Would you find tattoos attractive on your partner?",
-          "promptSheSees": "Would you find tattoos attractive on your partner?"
+          "promptSheSees": "Would you find tattoos attractive on your partner?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "188",
           "helpPrompt": "Eg. Regular pedicures, nail polish, and clean.",
           "promptHeSees": "Do you find the appearance of feet appealing?",
-          "promptSheSees": "Do you find the appearance of feet appealing?"
+          "promptSheSees": "Do you find the appearance of feet appealing?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "189",
           "helpPrompt": "",
           "promptHeSees": "Do you prefer your partner maintain a fit or athletic figure?",
-          "promptSheSees": "Do you prefer your partner maintain a fit or athletic figure?"
+          "promptSheSees": "Do you prefer your partner maintain a fit or athletic figure?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "190",
           "helpPrompt": "",
           "promptHeSees": "Do you prefer your partner puts in effort to look good when in public?",
-          "promptSheSees": "Do you prefer your partner puts in effort to look good when in public?"
+          "promptSheSees": "Do you prefer your partner puts in effort to look good when in public?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "191",
           "helpPrompt": "",
           "promptHeSees": "Do you like it when your partner wears perfume?",
-          "promptSheSees": "Do you like it when your partner wears cologne?"
+          "promptSheSees": "Do you like it when your partner wears cologne?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         },
         {
           "id": "192",
           "helpPrompt": "",
           "promptHeSees": "Do you prefer your partner practice good oral and body hygiene?",
-          "promptSheSees": "Do you prefer your partner practice good oral and body hygiene?"
+          "promptSheSees": "Do you prefer your partner practice good oral and body hygiene?",
+          "enabledAtomicActions": [],
+          "enabledModifiers": [],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
         }
       ]
     }

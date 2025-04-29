@@ -4,7 +4,22 @@ $(document).ready(async function () {
     var fullHtml = generateQuizHtml(quizSections, gender);
     $('#_quizContent').html(fullHtml);
     enableAllTooltips();
+
+    // TESTING!
+    //randomlySetQuizQuestionsForTesting();
 });
+
+function randomlySetQuizQuestionsForTesting() {
+    const groupNames = [...new Set($('input[type="radio"]').map(function () {
+        return $(this).attr('name');
+      }).get())];
+    
+      groupNames.forEach(name => {
+        const radios = $(`input[name="${name}"]`);
+        const randomIndex = Math.floor(Math.random() * radios.length);
+        $(radios[randomIndex]).prop('checked', true);
+      });
+}
 
 /*
  Rips the gender from the query string.
@@ -55,9 +70,22 @@ function previousSection() {
  */
 function finishQuiz() {
     var selectedRadios = [];
-    $('input[type="radio"]:checked').each(function() {
-        selectedRadios.push($(this).val());
+
+    // Default to "no means no" if they don't select something
+    const groupNames = [...new Set($('input[type="radio"]').map(function () {
+        return $(this).attr('name');
+      }).get())];
+    
+    // Check each group
+    groupNames.forEach(name => {
+        const checked = $(`input[name="${name}"]:checked`);
+        if (checked.length > 0) {
+            selectedRadios.push($(checked).val());
+        } else {
+            selectedRadios.push(0);
+        }
     });
+
     var gender = getGenderFromQueryString();
     var base64String = packArrayToBase64(selectedRadios, gender == "female")
     var queryString = `data=${sanitizeBase64ToQueryString(base64String)}`;

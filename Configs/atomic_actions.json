@@ -1,0 +1,761 @@
+{
+  "flirty_Banter": {
+    "hisTurn": "Exchange playful, teasing words with her, telling her what you're going to do to her.",
+    "herTurn": "Exchange playful, teasing words with him, telling him what you're going to do to him.",
+    "allowedModifiers": [
+      "eye_contact",
+      "teasing_style"
+    ],
+    "roundType": [
+      "foreplay"
+    ]
+  },
+  "sensual_massage": {
+    "hisTurn": "Massage her body lovingly, applying just the right amount of pressure.",
+    "herTurn": "Massage his body lovingly, applying just the right amount of pressure.",
+    "allowedModifiers": [
+      "exploration"
+    ],
+    "roundType": [
+      "foreplay"
+    ]
+  },
+  "neck_play": {
+    "hisTurn": "Explore her neck with kisses, licks, and playful bites.",
+    "herTurn": "Explore his neck with kisses, licks, and playful bites.",
+    "allowedModifiers": [
+      "dominant_role",
+      "mouth_things",
+      "hand_things",
+      "genitals_play",
+      "bdsm_play"
+    ],
+    "roundType": [
+      "foreplay"
+    ]
+  },
+  "breast_chest_play": {
+    "hisTurn": "Use your hands and mouth to explore her breasts and chest.",
+    "herTurn": "Use your hands and mouth to explore his chest and sensitive areas.",
+    "allowedModifiers": [
+      "dominant_role",
+      "mouth_things",
+      "hand_things",
+      "genitals_play",
+      "bdsm_play"
+    ],
+    "roundType": [
+      "foreplay"
+    ]
+  },
+  "light_spanking": {
+    "hisTurn": "Spank her ass while teasing her.",
+    "herTurn": "Spank his ass while teasing him.",
+    "allowedModifiers": [
+      "dominant_role",
+      "eye_contact",
+      "furniture_play",
+      "genitals_play",
+      "bdsm_play"
+    ],
+    "roundType": [
+      "foreplay"
+    ]
+  },
+  "grinding": {
+    "hisTurn": "Grind your hips against hers, clothed or naked, building delicious friction.",
+    "herTurn": "Grind your hips against his, clothed or naked, building delicious friction.",
+    "allowedModifiers": [
+      "dominant_role",
+      "eye_contact",
+      "furniture_play",
+      "mouth_things",
+      "hand_things",
+      "bdsm_play"
+    ],
+    "roundType": [
+      "foreplay"
+    ]
+  },
+  "lap_dance": {
+    "hisTurn": "Perform a teasing lap dance for her.",
+    "herTurn": "Perform a teasing lap dance for him.",
+    "allowedModifiers": [
+      "eye_contact"
+    ],
+    "roundType": [
+      "foreplay"
+    ]
+  },
+  "hair_play": {
+    "hisTurn": "Tangle your fingers in her hair while teasing her body.",
+    "herTurn": "Tangle your fingers in his hair while teasing his body.",
+    "allowedModifiers": [
+      "dominant_role",
+      "eye_contact",
+      "genitals_play"
+    ],
+    "roundType": [
+      "foreplay"
+    ]
+  },
+  "anal_teasing": {
+    "hisTurn": "Tease her anus using your fingers, penetrating to the edge of comfort.",
+    "herTurn": "Tease his anus using your fingers, penetrating to the edge of comfort.",
+    "allowedModifiers": [
+      "dominant_role",
+      "breath_play"
+    ],
+    "roundType": [
+      "foreplay"
+    ]
+  },
+  "analingus": {
+    "hisTurn": "Use your tongue to tease and pleasure your partner's anus.",
+    "herTurn": "Use your tongue to tease and pleasure your partner's anus.",
+    "allowedModifiers": [
+      "dominant_role",
+      "breath_play",
+      "exploration"
+    ],
+    "roundType": [
+      "foreplay"
+    ]
+  },
+  "anal_toy_play": {
+    "hisTurn": "Use a toy to stimulate your partner's anus.",
+    "herTurn": "Use a toy to stimulate your partner's anus.",
+    "allowedModifiers": [
+      "dominant_role",
+      "breath_play",
+      "exploration",
+      "genitals_play"
+    ],
+    "roundType": [
+      "sex"
+    ]
+  },
+  "strip_tease": {
+    "hisTurn": "Perform a slow, seductive striptease for her, keeping her wanting more.",
+    "herTurn": "Perform a slow, seductive striptease for him, keeping him wanting more.",
+    "allowedModifiers": [
+      "eye_contact"
+    ],
+    "roundType": [
+      "foreplay"
+    ]
+  },
+  "soft_thing_tease": {
+    "hisTurn": "Use a soft fabric or object to trail over her skin, avoiding her most sensitive areas... for now.",
+    "herTurn": "Use a soft fabric or object to trail over her skin, avoiding her most sensitive areas... for now.",
+    "allowedModifiers": [
+      "eye_contact",
+      "breath_play",
+      "mouth_things",
+      "hand_things"
+    ],
+    "roundType": [
+      "foreplay"
+    ]
+  },
+  "wax_play_tease": {
+    "hisTurn": "Drip warm wax carefully over her body, focusing on less sensitive areas.",
+    "herTurn": "Drip warm wax carefully over his body, focusing on less sensitive areas.",
+    "allowedModifiers": [
+      "hand_things",
+      "genitals_play",
+      "bdsm_play"
+    ],
+    "roundType": [
+      "foreplay"
+    ]
+  },
+  "electro_play_tease": {
+    "hisTurn": "Use a safe electrostimulation device to deliver teasing jolts to her skin.",
+    "herTurn": "Use a safe electrostimulation device to deliver teasing jolts to his skin.",
+    "allowedModifiers": [
+      "dominant_role",
+      "breath_play",
+      "hand_things",
+      "genitals_play",
+      "bdsm_play"
+    ],
+    "roundType": [
+      "foreplay"
+    ]
+  },
+  "body_worship": {
+    "hisTurn": "Kiss and worship her body from head to toe, savoring every inch.",
+    "herTurn": "Kiss and worship his body from head to toe, savoring every inch.",
+    "allowedModifiers": [
+      "breath_play",
+      "mouth_things",
+      "hand_things",
+      "genitals_play"
+    ],
+    "roundType": [
+      "foreplay"
+    ]
+  },
+  "watch_and_crave": {
+    "hisTurn": "Watch her play with herself slowly, teasing yourself with anticipation and learning just how she likes it.",
+    "herTurn": "Watch him stroke himself slowly, teasing yourself with anticipation and learning just how he likes it.",
+    "allowedModifiers": [
+      "eye_contact"
+    ],
+    "roundType": [
+      "foreplay"
+    ]
+  },
+  "use_porn_to_show_preferences": {
+    "hisTurn": "Find an erotic video that turns you on and show it to her, explaining what you want to try together.",
+    "herTurn": "Find an erotic video that turns you on and show it to him, explaining what you want to try together.",
+    "allowedModifiers": [
+      "PREVENT_MODIFIERS"
+    ],
+    "roundType": [
+      "foreplay"
+    ]
+  },
+  "watch_porn_together": {
+    "hisTurn": "Pick an erotic video to watch together, then pleasure her by mimicing the actions in the video.",
+    "herTurn": "Pick an erotic video to watch together, then pleasure him by mimicing the actions in the video.",
+    "allowedModifiers": [
+      "PREVENT_MODIFIERS"
+    ],
+    "roundType": [
+      "sex",
+      "climax"
+    ]
+  },
+  "tie_them_up": {
+    "hisTurn": "Use scarves, cuffs, or anything at hand to bind her wrists and/or body and get ready to have your way with her.",
+    "herTurn": "Use scarves, cuffs, or anything at hand to bind his wrists and/or body and get ready to have your way with him.",
+    "allowedModifiers": [
+      "bdsm_play"
+    ],
+    "roundType": [
+      "foreplay",
+      "sex"
+    ]
+  },
+  "hand_play": {
+    "hisTurn": "Use your hands to pleasure her genitals erotically.",
+    "herTurn": "Use your hands to pleasure his genitals erotically.",
+    "allowedModifiers": [
+      "dominant_role",
+      "eye_contact",
+      "breath_play",
+      "mouth_things",
+      "bdsm_play"
+    ],
+    "roundType": [
+      "foreplay",
+      "sex",
+      "climax"
+    ]
+  },
+  "give_oral": {
+    "hisTurn": "Perform oral sex on her.",
+    "herTurn": "Perform oral sex on him.",
+    "allowedModifiers": [
+      "dominant_role",
+      "eye_contact",
+      "furniture_play",
+      "breath_play",
+      "exploration",
+      "genitals_play",
+      "bdsm_play"
+    ],
+    "roundType": [
+      "foreplay",
+      "sex",
+      "climax"
+    ],
+    "allowedFinishingMoves": [
+      "finish_mouth",
+      "finish_chest",
+      "finish_stomach",
+      "finish_face"
+    ]
+  },
+  "spooning_sex": {
+    "hisTurn": "Enter her from behind while lying on your sides, holding her close.",
+    "herTurn": null,
+    "allowedModifiers": [
+      "dominant_role",
+      "exploration",
+      "genitals_play",
+      "bdsm_play"
+    ],
+    "roundType": [
+      "sex",
+      "climax"
+    ],
+    "allowedFinishingMoves": [
+      "finish_creampie",
+      "finish_chest",
+      "finish_stomach",
+      "finish_face"
+    ]
+  },
+  "toy_tease": {
+    "hisTurn": "Use a toy to stimulate your partner.",
+    "herTurn": "Use a toy to stimulate your partner.",
+    "allowedModifiers": [
+      "dominant_role",
+      "eye_contact",
+      "furniture_play",
+      "kissing_play",
+      "exploration"
+    ],
+    "roundType": [
+      "foreplay",
+      "sex",
+      "climax"
+    ],
+    "allowedFinishingMoves": [
+      "finish_chest",
+      "finish_stomach",
+      "finish_face"
+    ]
+  },
+  "vr_experience": {
+    "hisTurn": "Turn on an erotic scene in a VR headest and have her pleasure you while you watch.",
+    "herTurn": "Turn on an erotic scene in a VR headest and have him pleasure you while you watch.",
+    "allowedModifiers": [
+      "dominant_role",
+      "breath_play",
+      "exploration",
+      "bdsm_play"
+    ],
+    "roundType": [
+      "sex",
+      "climax"
+    ],
+    "allowedFinishingMoves": [
+      "finish_chest",
+      "finish_stomach",
+      "finish_face"
+    ]
+  },
+  "shower_sex": {
+    "hisTurn": "Pull her into the shower and let the water heat things up between you.",
+    "herTurn": "Pull him into the shower and let the water heat things up between you.",
+    "allowedModifiers": [
+      "temperature_play",
+      "exploration"
+    ],
+    "roundType": [
+      "sex",
+      "climax"
+    ]
+  },
+  "mutual_masturbation_self": {
+    "hisTurn": "Masturbate together with your partner, pleasing yourselves individually.",
+    "herTurn": "Masturbate together with your partner, pleasing yourselves individually.",
+    "allowedModifiers": [
+      "eye_contact"
+    ],
+    "roundType": [
+      "sex",
+      "climax"
+    ],
+    "allowedFinishingMoves": [
+      "finish_chest",
+      "finish_stomach",
+      "finish_face"
+    ]
+  },
+  "mutual_masturbation_other": {
+    "hisTurn": "Pleasure your partner with your hand while they do the same to you, pleasing each other simultaneously.",
+    "herTurn": "Pleasure your partner with your hand while they do the same to you, pleasing each other simultaneously.",
+    "allowedModifiers": [
+      "eye_contact"
+    ],
+    "roundType": [
+      "sex",
+      "climax"
+    ],
+    "allowedFinishingMoves": [
+      "finish_chest",
+      "finish_stomach",
+      "finish_face"
+    ]
+  },
+  "lap_sex": {
+    "hisTurn": "Sit back and let her straddle your lap, guiding her hips as she rides you intimately.",
+    "herTurn": "Straddle his lap and ride him, using your rhythm to control the pace and depth.",
+    "allowedModifiers": [
+      "dominant_role",
+      "eye_contact",
+      "lip_trailing",
+      "kissing_play"
+    ],
+    "roundType": [
+      "sex",
+      "climax"
+    ],
+    "allowedFinishingMoves": [
+      "finish_creampie",
+      "finish_chest",
+      "finish_stomach",
+      "finish_face"
+    ]
+  },
+  "missionary": {
+    "hisTurn": "Lay on top of her and penetrate her deeply.",
+    "herTurn": null,
+    "allowedModifiers": [
+      "dominant_role",
+      "eye_contact",
+      "breath_play",
+      "lip_trailing",
+      "kissing_play",
+      "bdsm_play"
+    ],
+    "roundType": [
+      "sex",
+      "climax"
+    ],
+    "allowedFinishingMoves": [
+      "finish_creampie",
+      "finish_chest",
+      "finish_stomach",
+      "finish_face"
+    ]
+  },
+  "cowgirl_riding": {
+    "hisTurn": null,
+    "herTurn": "Get on top of him and ride him.",
+    "allowedModifiers": [
+      "dominant_role",
+      "eye_contact",
+      "kissing_play",
+      "bdsm_play"
+    ],
+    "roundType": [
+      "sex",
+      "climax"
+    ],
+    "allowedFinishingMoves": [
+      "finish_creampie",
+      "finish_chest",
+      "finish_stomach",
+      "finish_face"
+    ]
+  },
+  "reverse_cowgirl_riding": {
+    "hisTurn": null,
+    "herTurn": "Ride him while facing away, controlling rhythm and depth.",
+    "allowedModifiers": [
+      "dominant_role",
+      "hair_pulling",
+      "bdsm_play"
+    ],
+    "roundType": [
+      "sex",
+      "climax"
+    ],
+    "allowedFinishingMoves": [
+      "finish_creampie",
+      "finish_chest",
+      "finish_stomach",
+      "finish_face"
+    ]
+  },
+  "doggy_style": {
+    "hisTurn": "Penetrate her from behind while holding her firmly by the hips.",
+    "herTurn": null,
+    "allowedModifiers": [
+      "dominant_role",
+      "hair_pulling",
+      "furniture_play",
+      "exploration",
+      "genitals_play",
+      "bdsm_play"
+    ],
+    "roundType": [
+      "sex",
+      "climax"
+    ],
+    "allowedFinishingMoves": [
+      "finish_creampie",
+      "finish_chest",
+      "finish_stomach",
+      "finish_face"
+    ]
+  },
+  "standing_sex": {
+    "hisTurn": "Hold her up or stand behind her while penetrating, keeping balance and rhythm.",
+    "herTurn": null,
+    "allowedModifiers": [
+      "dominant_role",
+      "eye_contact",
+      "hair_pulling",
+      "furniture_play",
+      "breath_play",
+      "lip_trailing",
+      "kissing_play",
+      "bdsm_play"
+    ],
+    "roundType": [
+      "sex",
+      "climax"
+    ],
+    "allowedFinishingMoves": [
+      "finish_creampie",
+      "finish_chest",
+      "finish_stomach",
+      "finish_face"
+    ]
+  },
+  "wall_sex": {
+    "hisTurn": "Press her against a wall and take her passionately.",
+    "herTurn": null,
+    "allowedModifiers": [
+      "dominant_role",
+      "eye_contact",
+      "hair_pulling",
+      "breath_play",
+      "lip_trailing",
+      "kissing_play",
+      "bdsm_play"
+    ],
+    "roundType": [
+      "sex",
+      "climax"
+    ],
+    "allowedFinishingMoves": [
+      "finish_creampie",
+      "finish_chest",
+      "finish_stomach",
+      "finish_face"
+    ]
+  },
+  "legs_on_shoulders": {
+    "hisTurn": "Lay her down and lift her legs onto your shoulders and penetrate her deeply.",
+    "herTurn": null,
+    "allowedModifiers": [
+      "dominant_role",
+      "eye_contact",
+      "breath_play",
+      "lip_trailing",
+      "kissing_play",
+      "exploration",
+      "genitals_play",
+      "bdsm_play"
+    ],
+    "roundType": [
+      "sex",
+      "climax"
+    ],
+    "allowedFinishingMoves": [
+      "finish_creampie",
+      "finish_chest",
+      "finish_stomach",
+      "finish_face"
+    ]
+  },
+  "oral_69": {
+    "hisTurn": "Position yourselves in 69 for simultaneous oral pleasure.",
+    "herTurn": "Position yourselves in 69 for simultaneous oral pleasure.",
+    "allowedModifiers": [
+      "dominant_role",
+      "breath_play"
+    ],
+    "roundType": [
+      "sex",
+      "climax"
+    ],
+    "allowedFinishingMoves": [
+      "finish_mouth",
+      "finish_chest",
+      "finish_stomach",
+      "finish_face"
+    ]
+  },
+  "face_fucking_bed": {
+    "hisTurn": "With her laying down and her head tilted back, insert your cock into her mouth and control the pace.",
+    "herTurn": null,
+    "allowedModifiers": [
+      "dominant_role",
+      "eye_contact",
+      "hair_pulling",
+      "furniture_play",
+      "bdsm_play"
+    ],
+    "roundType": [
+      "sex",
+      "climax"
+    ]
+  },
+  "face_fucking": {
+    "hisTurn": "Grip her head firmly and use her mouth for your pleasure.",
+    "herTurn": null,
+    "allowedModifiers": [
+      "dominant_role",
+      "eye_contact",
+      "bdsm_play"
+    ],
+    "roundType": [
+      "sex",
+      "climax"
+    ]
+  },
+  "face_sitting": {
+    "hisTurn": null,
+    "herTurn": "Sit on his face and take full control, riding his tongue.",
+    "allowedModifiers": [
+      "dominant_role",
+      "eye_contact",
+      "exploration",
+      "genitals_play",
+      "bdsm_play"
+    ],
+    "roundType": [
+      "sex"
+    ]
+  },
+  "pegging": {
+    "hisTurn": null,
+    "herTurn": "Strap on and penetrate him, taking control and exploring his pleasure.",
+    "allowedModifiers": [
+      "dominant_role",
+      "eye_contact",
+      "hair_pulling",
+      "exploration",
+      "genitals_play",
+      "bdsm_play"
+    ],
+    "roundType": [
+      "sex"
+    ],
+    "allowedFinishingMoves": [
+      "finish_chest",
+      "finish_stomach",
+      "finish_face"
+    ]
+  },
+  "anal_sex": {
+    "hisTurn": "Penetrate her anus slowly and firmly, building trust and pleasure with every thrust.",
+    "herTurn": null,
+    "allowedModifiers": [
+      "dominant_role",
+      "exploration",
+      "genitals_play",
+      "bdsm_play"
+    ],
+    "roundType": [
+      "sex",
+      "climax"
+    ],
+    "allowedFinishingMoves": [
+      "finish_creampie",
+      "finish_chest",
+      "finish_stomach",
+      "finish_face"
+    ]
+  },
+  "titty_fucking": {
+    "hisTurn": "Press your cock between her breasts and thrust, letting her squeeze them tightly around you for maximum pleasure.",
+    "herTurn": null,
+    "allowedModifiers": [
+      "dominant_role",
+      "hair_pulling",
+      "eye_contact"
+    ],
+    "roundType": [
+      "sex",
+      "climax"
+    ]
+  },
+  "try_something_different": {
+    "hisTurn": "Try a new position you've been wanting to try or haven't done in a while.",
+    "herTurn": "Try a new position you've been wanting to try or haven't done in a while.",
+    "allowedModifiers": [
+      "exploration",
+      "genitals_play"
+    ],
+    "roundType": [
+      "sex"
+    ]
+  },
+  "try_something_random": {
+    "hisTurn": "Let the universe decide, give https://sexpositions.club/randomizer a spin.",
+    "herTurn": "Let the universe decide, give https://sexpositions.club/randomizer a spin.",
+    "allowedModifiers": [
+      "PREVENT_MODIFIERS"
+    ],
+    "roundType": [
+      "sex"
+    ]
+  },
+  "forced_over_the_edge": {
+    "hisTurn": "Take full control and push her to climax whether she’s ready or not in any intense way you choose.",
+    "herTurn": "Take full control and push him to climax whether he’s ready or not in any intense way you choose.",
+    "allowedModifiers": [
+      "dominant_role",
+      "overstimulation_play"
+    ],
+    "roundType": [
+      "climax"
+    ]
+  },
+  "passionate_kissing": {
+    "hisTurn": "Kiss her passionately, exploring her mouth and body with your hands.",
+    "herTurn": "Kiss him passionately, exploring his mouth and body with your hands.",
+    "allowedModifiers": [
+      "dominant_role",
+      "furniture_play",
+      "breath_play",
+      "kissing_play",
+      "genitals_play",
+      "bdsm_play"
+    ],
+    "roundType": [
+      "foreplay",
+      "aftercare"
+    ]
+  },
+  "aftercare_kissing": {
+    "hisTurn": "Kiss her passionately, showing her how much you appreciated the intimacy.",
+    "herTurn": "Kiss him passionately, showing him how much you appreciated the intimacy.",
+    "allowedModifiers": [
+      "PREVENT_MODIFIERS"
+    ],
+    "roundType": [
+      "aftercare"
+    ]
+  },
+  "aftercare_spooning": {
+    "hisTurn": "With you as the big spoon cuddle her warmly after your intense session.",
+    "herTurn": "With you as the big spoo cuddle him warmly after your intense session.",
+    "allowedModifiers": [
+      "PREVENT_MODIFIERS"
+    ],
+    "roundType": [
+      "aftercare"
+    ]
+  },
+  "aftercare_praise": {
+    "hisTurn": "Whisper praise and gentle affirmations into her ear after you finish.",
+    "herTurn": "Whisper praise and gentle affirmations into his ear after you finish.",
+    "allowedModifiers": [
+      "PREVENT_MODIFIERS"
+    ],
+    "roundType": [
+      "aftercare"
+    ]
+  },
+  "aftercare_pillow_talk": {
+    "hisTurn": "Pillow talk. Talk about the good and the bad during the session, how could it be made better and what would you like to see again?",
+    "herTurn": "Pillow talk. Talk about the good and the bad during the session, how could it be made better and what would you like to see again?",
+    "allowedModifiers": [
+      "PREVENT_MODIFIERS"
+    ],
+    "roundType": [
+      "aftercare"
+    ]
+  }
+}
