@@ -729,7 +729,7 @@
   },
   "aftercare_spooning": {
     "hisTurn": "With you as the big spoon cuddle her warmly after your intense session.",
-    "herTurn": "With you as the big spoo cuddle him warmly after your intense session.",
+    "herTurn": "With you as the big spoon cuddle him warmly after your intense session.",
     "allowedModifiers": [
       "PREVENT_MODIFIERS"
     ],

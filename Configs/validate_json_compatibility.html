@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Validation</title>
+</head>
+<body>
+  <h1>Quiz Validation Tool</h1>
+  
+  <p>This tool is used to verify the content of the three documents to make sure they work in sync and all the bases are covered</p>
+
+  <p>Upload the three JSON files:</p>
+  <p>QuizSection.json</p><input type="file" id="quizSectionsFile">
+  <p>atomic_action.json</p><input type="file" id="atomicActionsFile">
+  <p>other_data.json</p><input type="file" id="otherDataFile">
+  <button onclick="validate()">Validate!</button>
+
+  <h2>Results</h2>
+  <pre id="output"></pre>
+
+  <script>
+    let quizSections, atomicActions, otherData;
+
+    function readFile(fileInput, callback) {
+      const file = fileInput.files[0];
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        callback(JSON.parse(e.target.result));
+      };
+      reader.readAsText(file);
+    }
+
+    function validate() {
+      const output = document.getElementById('output');
+      output.textContent = "Loading files...\n";
+
+      if (!document.getElementById('quizSectionsFile').files.length ||
+          !document.getElementById('atomicActionsFile').files.length ||
+          !document.getElementById('otherDataFile').files.length) {
+        output.textContent = "❌ Please upload all three files.";
+        return;
+      }
+
+      Promise.all([
+        new Promise(resolve => readFile(document.getElementById('quizSectionsFile'), resolve)),
+        new Promise(resolve => readFile(document.getElementById('atomicActionsFile'), resolve)),
+        new Promise(resolve => readFile(document.getElementById('otherDataFile'), resolve))
+      ]).then(files => {
+        [quizSections, atomicActions, otherData] = files;
+        output.textContent = "Files loaded. Running validation...\n\n";
+
+        runValidation();
+      });
+    }
+
+    function runValidation() {
+      const output = document.getElementById('output');
+
+      const validAtomicActions = new Set(Object.keys(atomicActions));
+      const validModifiers = new Set([
+        ...Object.keys(otherData.modifiers || {}),
+        ...Object.keys(otherData.alwaysAvailableModifiers || {}),
+        ...Object.keys(otherData.modiferGroups?.mouth_things || {}),
+        ...Object.keys(otherData.modiferGroups?.hand_things || {})
+      ]);
+      const validFinishingMoves = new Set(Object.keys(otherData.finishingMoves || {}));
+      const validSceneTones = new Set(Object.keys(otherData.sceneTones || {}));
+
+      const usedAtomicActions = new Set();
+      const usedModifiers = new Set();
+      const usedFinishingMoves = new Set();
+      const usedSceneTones = new Set();
+
+      const invalidAtomicActions = [];
+      const invalidModifiers = [];
+      const invalidFinishingMoves = [];
+      const invalidSceneTones = [];
+
+      quizSections.sections.forEach(section => {
+        section.questions.forEach(question => {
+          (question.enabledAtomicActions || []).forEach(action => {
+            if (!validAtomicActions.has(action)) {
+              invalidAtomicActions.push(`❌ Invalid AtomicAction "${action}" in question: "${question.promptHeSees}"`);
+            } else {
+              usedAtomicActions.add(action);
+            }
+          });
+
+          (question.enabledModifiers || []).forEach(modifier => {
+            if (!validModifiers.has(modifier)) {
+              invalidModifiers.push(`❌ Invalid Modifier "${modifier}" in question: "${question.promptHeSees}"`);
+            } else {
+              usedModifiers.add(modifier);
+            }
+          });
+
+          (question.enabledFinishingMoves || []).forEach(move => {
+            if (!validFinishingMoves.has(move)) {
+              invalidFinishingMoves.push(`❌ Invalid FinishingMove "${move}" in question: "${question.promptHeSees}"`);
+            } else {
+              usedFinishingMoves.add(move);
+            }
+          });
+
+          (question.enabledSceneTones || []).forEach(tone => {
+            if (!validSceneTones.has(tone)) {
+              invalidSceneTones.push(`❌ Invalid SceneTone "${tone}" in question: "${question.promptHeSees}"`);
+            } else {
+              usedSceneTones.add(tone);
+            }
+          });
+        });
+      });
+	  
+	  const duplicateQuizQuestions = checkDuplicatePrompts(quizSections);
+
+      const unusedAtomicActions = [...validAtomicActions].filter(k => !usedAtomicActions.has(k));
+      const unusedSceneTones = [...validSceneTones].filter(k => !usedSceneTones.has(k));
+      const unusedFinishingMoves = [...validFinishingMoves].filter(k => !usedFinishingMoves.has(k));
+      const unusedModifiers = [...validModifiers].filter(k => !usedModifiers.has(k));
+
+      let result = "";
+	  
+	  result += "===== DUPLICATE QUIZ ENTRIES =====\n";
+	  result += duplicateQuizQuestions[0].length ? duplicateQuizQuestions[0].join("\n") + "\n" : "No duplicated 'promptHeSees'\n";
+	  result += duplicateQuizQuestions[1].length ? duplicateQuizQuestions[1].join("\n") + "\n" : "No duplicated 'promptSheSees'\n";
+
+      result += "===== INVALID ENTRIES =====\n";
+      result += invalidAtomicActions.length ? invalidAtomicActions.join("\n") + "\n" : "No invalid Atomic Actions\n";
+      result += invalidModifiers.length ? invalidModifiers.join("\n") + "\n" : "No invalid Modifiers\n";
+      result += invalidFinishingMoves.length ? invalidFinishingMoves.join("\n") + "\n" : "No invalid Finishing Moves\n";
+      result += invalidSceneTones.length ? invalidSceneTones.join("\n") + "\n" : "No invalid Scene Tones\n";
+
+      result += "\n===== UNUSED ENTRIES =====\n";
+      result += unusedAtomicActions.length ? `Unused Atomic Actions:\n${unusedAtomicActions.join(", ")}\n` : "No unused Atomic Actions\n";
+      result += unusedSceneTones.length ? `Unused Scene Tones:\n${unusedSceneTones.join(", ")}\n` : "No unused Scene Tones\n";
+      result += unusedFinishingMoves.length ? `Unused Finishing Moves:\n${unusedFinishingMoves.join(", ")}\n` : "No unused Finishing Moves\n";
+      result += unusedModifiers.length ? `Unused Modifiers:\n${unusedModifiers.join(", ")}\n` : "No unused Modifiers\n";
+
+      output.textContent = result;
+    }
+	
+	function checkDuplicatePrompts(quizSectionsJson) {
+	  const seenHe = new Map();
+	  const seenShe = new Map();
+	  const duplicatesHe = [];
+	  const duplicatesShe = [];
+
+	  quizSectionsJson.sections.forEach(section => {
+		section.questions.forEach(question => {
+		  const he = question.promptHeSees?.trim();
+		  const she = question.promptSheSees?.trim();
+
+		  if (he) {
+			if (seenHe.has(he)) {
+			  duplicatesHe.push(he);
+			} else {
+			  seenHe.set(he, question.id);
+			}
+		  }
+
+		  if (she) {
+			if (seenShe.has(she)) {
+			  duplicatesShe.push(she);
+			} else {
+			  seenShe.set(she, question.id);
+			}
+		  }
+		});
+	  });
+	  return [duplicatesHe, duplicatesShe];
+	}
+
+  </script>
+</body>
+</html>

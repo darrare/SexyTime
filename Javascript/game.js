@@ -33,33 +33,29 @@ async function loadData() {
     mutuallyExclusiveModifiers = otherData.mutuallyExclusiveModifiers || [];
 
     const toneSelect = document.getElementById('toneSelect');
+    toneSelect.innerHTML = '<option value="">No Scene Tone</option>'; // Clear existing options
+    
+    setRound('foreplay');
+    updateVibeButtonStyles();
+    await loadCouplesResultsFromQueryStringIfAvailable();
+    updateSceneToneOptions();
+}
+
+function updateSceneToneOptions() {
+    const toneSelect = document.getElementById('toneSelect');
+    toneSelect.innerHTML = '<option value="">No Scene Tone</option>'; // Clear existing options
+  
     for (const [id, label] of Object.entries(sceneTones)) {
+      const isAllowed = profileWhitelist.sceneTones.size === 0 || profileWhitelist.sceneTones.has(id);
+      if (isAllowed) {
         const option = document.createElement('option');
         option.value = id;
         option.textContent = label;
         toneSelect.appendChild(option);
+      }
     }
-
-    setRound('foreplay');
-    updateVibeButtonStyles();
-    loadCouplesResultsFromQueryStringIfAvailable();
-}
-
-function handleProfileUpload(event) {
-    const file = event.target.files[0];
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = function (e) {
-        try {
-            const profileData = JSON.parse(e.target.result);
-            applyProfileFiltering(profileData);
-        } catch (err) {
-            console.error("Invalid JSON uploaded:", err);
-            alert("Failed to load profile. Please upload a valid JSON file.");
-        }
-    };
-    reader.readAsText(file);
-}
+  }
+  
 
 async function loadCouplesResultsFromQueryStringIfAvailable() {
     if (!isQueryParamAvailable(window.location.href, "y") || 
@@ -75,6 +71,16 @@ async function loadCouplesResultsFromQueryStringIfAvailable() {
     var quizSectionsJson = await readQuizSectionsJson("Configs/QuizSections.json");
 
     var usefulData = buildUsefulDataCollectionFromCoupleData(yourDataArray, theirDataArray, quizSectionsJson);
+
+    // If the data couldn't be loaded, try to load from the backup as it should be the last iteration
+    // Note that I currently have to manually create this copy before I make changes to QuizSections.json
+    if (usefulData == null) {
+        quizSectionsJson = await readQuizSectionsJson("Configs/QuizSections-copy.json");
+        usefulData = buildUsefulDataCollectionFromCoupleData(yourDataArray, theirDataArray, quizSectionsJson);
+        if (usefulData != null) {
+            showNotice("Able to pull data map from the last iteration of quiz questions. You can play the game but should consider retaking the quiz!")
+        }
+    }
     if (usefulData != null) {
         applyProfileFiltering(usefulData);
     }

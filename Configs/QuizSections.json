@@ -1215,10 +1215,10 @@
         {
           "id": "117",
           "helpPrompt": "",
-          "promptHeSees": "Have your partner explore their dominant side with you?",
-          "promptSheSees": "Explore your dominant side with your partner?",
+          "promptHeSees": "Get a sex swing to unlock new positions?",
+          "promptSheSees": "Get a sex swing to unlock new positions?",
           "enabledAtomicActions": [],
-          "enabledModifiers": ["dominant_role"],
+          "enabledModifiers": [],
           "enabledFinishingMoves": [],
           "enabledSceneTones": []
         },
@@ -1771,8 +1771,8 @@
         {
           "id": "169",
           "helpPrompt": "",
-          "promptHeSees": "Do you like it when your partner vocalizes how much they want you? ",
-          "promptSheSees": "Do you like it when your partner vocalizes how much they want you? ",
+          "promptHeSees": "Do you like it when your partner vocalizes how much they want you?",
+          "promptSheSees": "Do you like vocalizing how much you want your partner?",
           "enabledAtomicActions": ["aftercare_praise", "flirty_Banter"],
           "enabledModifiers": ["praise_play"],
           "enabledFinishingMoves": [],
@@ -1780,6 +1780,16 @@
         },
         {
           "id": "170",
+          "helpPrompt": "",
+          "promptHeSees": "Do you like vocalizing how much you want your partner?",
+          "promptSheSees": "Do you like it when your partner vocalizes how much they want you?",
+          "enabledAtomicActions": ["aftercare_praise", "flirty_Banter"],
+          "enabledModifiers": ["praise_play"],
+          "enabledFinishingMoves": [],
+          "enabledSceneTones": []
+        },
+        {
+          "id": "171",
           "helpPrompt": "Eg. Running a bath, buying flowers, etc.",
           "promptHeSees": "Do you like it when your partner does romantic things for you before initiating sex?",
           "promptSheSees": "Do you want to do romantic things for your partner before initiating sex?",
@@ -1789,7 +1799,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "171",
+          "id": "172",
           "helpPrompt": "Eg. Running a bath, buying flowers, etc.",
           "promptHeSees": "Do you want to do romantic things for your partner before initiating sex?",
           "promptSheSees": "Do you like it when your partner does romantic things for you before initiating sex?",
@@ -1799,7 +1809,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "172",
+          "id": "173",
           "helpPrompt": "Eg. Lighting candles and dimming the lights. Maybe putting on some quiet background music.",
           "promptHeSees": "Do you like the mood set before sex?",
           "promptSheSees": "Do you like the mood set before sex?",
@@ -1809,7 +1819,7 @@
           "enabledSceneTones": ["music_play"]
         },
         {
-          "id": "173",
+          "id": "174",
           "helpPrompt": "",
           "promptHeSees": "Do you enjoy cuddling before or after intimacy?",
           "promptSheSees": "Do you enjoy cuddling before or after intimacy?",
@@ -1819,7 +1829,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "174",
+          "id": "175",
           "helpPrompt": "",
           "promptHeSees": "Do you feel most connected during slow, tender moments?",
           "promptSheSees": "Do you feel most connected during slow, tender moments?",
@@ -1829,7 +1839,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "175",
+          "id": "176",
           "helpPrompt": "",
           "promptHeSees": "Do you want to feel emotionally connected before getting physical?",
           "promptSheSees": "Do you want to feel emotionally connected before getting physical?",
@@ -1839,7 +1849,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "176",
+          "id": "177",
           "helpPrompt": "",
           "promptHeSees": "Do you like spontaneous sex?",
           "promptSheSees": "Do you like spontaneous sex?",
@@ -1849,7 +1859,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "177",
+          "id": "178",
           "helpPrompt": "",
           "promptHeSees": "Do you like eye contact during initial penetration?",
           "promptSheSees": "Do you like eye contact during initial penetration?",
@@ -1859,7 +1869,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "178",
+          "id": "179",
           "helpPrompt": "",
           "promptHeSees": "Do you like eye contact during sex?",
           "promptSheSees": "Do you like eye contact during sex?",
@@ -1869,7 +1879,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "179",
+          "id": "180",
           "helpPrompt": "",
           "promptHeSees": "Do you like eye contact during oral?",
           "promptSheSees": "Do you like eye contact during oral?",
@@ -1879,7 +1889,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "180",
+          "id": "181",
           "helpPrompt": "",
           "promptHeSees": "Do you like when your partner tells you what to do during sex? ",
           "promptSheSees": "Do you like telling your partner what to do during sex?",
@@ -1889,7 +1899,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "181",
+          "id": "182",
           "helpPrompt": "",
           "promptHeSees": "Do you like telling your partner what to do during sex?",
           "promptSheSees": "Do you like when your partner tells you what to do during sex? ",
@@ -1899,7 +1909,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "182",
+          "id": "183",
           "helpPrompt": "",
           "promptHeSees": "Do you get turned on by hearing your partner talk about what they want?",
           "promptSheSees": "Do you get turned on by telling your partner what you want?",
@@ -1909,7 +1919,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "183",
+          "id": "184",
           "helpPrompt": "",
           "promptHeSees": "Do you get turned on by telling your partner what you want?",
           "promptSheSees": "Do you get turned on by hearing your partner talk about what they want?",
@@ -1919,7 +1929,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "184",
+          "id": "185",
           "helpPrompt": "",
           "promptHeSees": "Do you like describing what you want to do to your partner?",
           "promptSheSees": "Do you like it when your partner describes what they want to do to you?",
@@ -1929,7 +1939,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "185",
+          "id": "186",
           "helpPrompt": "",
           "promptHeSees": "Do you like it when your partner describes what they want to do to you?",
           "promptSheSees": "Do you like describing what you want to do to your partner?",
@@ -1939,7 +1949,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "186",
+          "id": "187",
           "helpPrompt": "",
           "promptHeSees": "Do you like to be teased by your partner?",
           "promptSheSees": "Do you like teasing your partner?",
@@ -1949,7 +1959,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "187",
+          "id": "188",
           "helpPrompt": "",
           "promptHeSees": "Do you like teasing your partner?",
           "promptSheSees": "Do you like to be teased by your partner?",
@@ -1959,7 +1969,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "188",
+          "id": "189",
           "helpPrompt": "Talking about what you liked and didn't like might be awkward, but it will make every further encounter more enjoyable.",
           "promptHeSees": "Do you want to discuss the good and bad after sex?",
           "promptSheSees": "Do you want to discuss the good and bad after sex?",
@@ -1979,7 +1989,7 @@
       "isMatchable": "false",
       "questions": [
         {
-          "id": "189",
+          "id": "190",
           "helpPrompt": "",
           "promptHeSees": "Would you prefer your partner to have shaved, waxed or regularly trimmed pubic hair?",
           "promptSheSees": "Would you prefer your partner to have shaved, waxed or regularly trimmed pubic hair?",
@@ -1989,7 +1999,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "190",
+          "id": "191",
           "helpPrompt": "Eg. nose, lip, nipple, or belly button piercings.",
           "promptHeSees": "Would you find body piercings attractive on your partner?",
           "promptSheSees": "Would you find body piercings attractive on your partner?",
@@ -1999,7 +2009,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "191",
+          "id": "192",
           "helpPrompt": "",
           "promptHeSees": "Would you prefer your partner wear makeup regularly?",
           "promptSheSees": "Would you prefer your partner with facial hair?",
@@ -2009,7 +2019,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "192",
+          "id": "193",
           "helpPrompt": "",
           "promptHeSees": "Would you like it if your partner had long real or fake fingernails?",
           "promptSheSees": "Would you prefer it if your partner styled his hair instead of wearing hats?",
@@ -2019,7 +2029,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "193",
+          "id": "194",
           "helpPrompt": "",
           "promptHeSees": "Would you prefer your partner have clean shaved or waxed legs?",
           "promptSheSees": "How do you feel about your partner having body hair on the chest, back or stomach?",
@@ -2029,7 +2039,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "194",
+          "id": "195",
           "helpPrompt": "",
           "promptHeSees": "Would you find tattoos attractive on your partner?",
           "promptSheSees": "Would you find tattoos attractive on your partner?",
@@ -2039,7 +2049,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "195",
+          "id": "196",
           "helpPrompt": "Eg. Regular pedicures, nail polish, and clean.",
           "promptHeSees": "Do you find the appearance of feet appealing?",
           "promptSheSees": "Do you find the appearance of feet appealing?",
@@ -2049,7 +2059,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "196",
+          "id": "197",
           "helpPrompt": "",
           "promptHeSees": "Do you prefer your partner maintain a fit or athletic figure?",
           "promptSheSees": "Do you prefer your partner maintain a fit or athletic figure?",
@@ -2059,7 +2069,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "197",
+          "id": "198",
           "helpPrompt": "",
           "promptHeSees": "Do you prefer your partner puts in effort to look good when in public?",
           "promptSheSees": "Do you prefer your partner puts in effort to look good when in public?",
@@ -2069,7 +2079,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "198",
+          "id": "199",
           "helpPrompt": "",
           "promptHeSees": "Do you like it when your partner wears perfume?",
           "promptSheSees": "Do you like it when your partner wears cologne?",
@@ -2079,7 +2089,7 @@
           "enabledSceneTones": []
         },
         {
-          "id": "199",
+          "id": "200",
           "helpPrompt": "",
           "promptHeSees": "Do you prefer your partner practice good oral and body hygiene?",
           "promptSheSees": "Do you prefer your partner practice good oral and body hygiene?",
