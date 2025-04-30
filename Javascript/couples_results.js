@@ -3,7 +3,10 @@ $(document).ready(async function () {
   var yourData = readQueryStringDataAndGetResult(window.location.href, "y");
   var yourDataArray = yourData.dataArray;
   var gender = yourData.isFemale ? "female" : "male";
-  var theirDataArray = readQueryStringDataAndGetResult(window.location.href, "t").dataArray;
+  $('#_genderY').html(yourData.isFemale ? "She" : "He");
+  var theirData = readQueryStringDataAndGetResult(window.location.href, "t");
+  $('#_genderY').html(theirData.isFemale ? "She" : "He");
+  var theirDataArray = theirData.dataArray;
   var quizSectionsJson = await readQuizSectionsJson("Configs/QuizSections.json");
   usefulData = buildUsefulDataCollectionFromCoupleData(yourDataArray, theirDataArray, quizSectionsJson);
   initializeStaticUrlInput($('#_couplesResultsUrl'));

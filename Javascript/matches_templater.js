@@ -54,11 +54,19 @@ function generateQuestionHtml(usableDataQuestion, gender) {
     content.push(`<li class="list-group-item">`);
     content.push(`    <p><b>Question:</b> ${generateQuestionString(usableDataQuestion, gender)}</p>`);
     content.push(`    <div class="row">`);
-    content.push(`        <p class="col-6 mb-0"><b>You: </b>${matchIdMap(usableDataQuestion.yourVote)}</p>`);
-    content.push(`        <p class="col-6 mb-0"><b>Them </b>${matchIdMap(usableDataQuestion.theirVote)}</p>`);
+    content.push(`        <p class="col-6 mb-0"><b>${getYouThem(gender)} </b>${matchIdMap(usableDataQuestion.yourVote)}</p>`);
+    content.push(`        <p class="col-6 mb-0"><b>${getYouThem(gender, true)} </b>${matchIdMap(usableDataQuestion.theirVote)}</p>`);
     content.push(`    </div>`);
     content.push(`</li>`);
     return content.join("");
+}
+
+function getYouThem(gender, isReverse = false) {
+    if (gender == "female") {
+        return isReverse ? "Him" : "Her";
+    } else {
+        return isReverse ? "Her" : "Him";
+    }
 }
 
 function generateQuestionString(usableDataQuestion, gender) {
