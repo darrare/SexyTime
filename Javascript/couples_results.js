@@ -5,7 +5,7 @@ $(document).ready(async function () {
   var gender = yourData.isFemale ? "female" : "male";
   $('#_genderY').html(yourData.isFemale ? "She" : "He");
   var theirData = readQueryStringDataAndGetResult(window.location.href, "t");
-  $('#_genderY').html(theirData.isFemale ? "She" : "He");
+  $('#_genderT').html(theirData.isFemale ? "She" : "He");
   var theirDataArray = theirData.dataArray;
   var quizSectionsJson = await readQuizSectionsJson("Configs/QuizSections.json");
   usefulData = buildUsefulDataCollectionFromCoupleData(yourDataArray, theirDataArray, quizSectionsJson);
