@@ -1,5 +1,7 @@
 ### What is SexyTime?
 
+https://darrare.github.io/SexyTime/
+
 Long story short, my girlfriend and I went into an adult store and saw the card/dice games sitting on the shelf. She wanted to try them but every experience I've had in the past was lame because 9x out of 10 the game tells you to either nibble her ear, or stick it in her ass... We got talking about it, and I realized I have the power to do something to make an intimacy game that is actually good for each couple that plays it. Additionally, I remember taking a sexual compatibility quiz a long time ago so I suggested we give it a try, but it seems like every "free" quiz out there slapped with "sexual wellness" all over the page ends up giving you a $20 paywall at the end of the quiz so you can get your results... Well I thought that was bullshit. A tool to find out you and your partner's sexual compatibility shouldn't be hidden behind lock and key, especially when something like this is so damn easy to do! Hell, I wrote 90% of this with ChatGPT... 
 
 So I created this app that is entirely front-facing because I don't want to have to deal with a server and I'm cheap. Players take the quiz and combine the results to get their matches FOR FREE... They can then use the link on the match page to go to the game page that is tailored to their interests by filtering out the garbage that they aren't comfortable doing. Now I'm not going to say it's perfect, but I'm betting that 19 out of 20 rolls are going to be a prompt that the couple really enjoys doing.
