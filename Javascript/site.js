@@ -1,3 +1,25 @@
+document.addEventListener('DOMContentLoaded', () => {
+fetch('nav.html')
+    .then(response => response.text())
+    .then(html => {
+      const placeholder = document.getElementById('nav-placeholder');
+      placeholder.outerHTML = html;
+
+      // Highlight active link (as before)
+      const current = window.location.pathname.split('/').pop() || 'index.html';
+      document.querySelectorAll('.navbar-nav a').forEach(a => {
+        if (a.getAttribute('href') === current) {
+          a.classList.add('active', 'fw-bold', 'btn-light');
+          a.classList.remove('btn-outline-light');
+        }
+      });
+    })
+    .catch(err => {
+      console.error(err);
+      document.getElementById('nav-placeholder').innerHTML = '<p style="color: white; text-align: center; padding: 20px;">Nav failed to load</p>';
+    });
+});
+
 /*
   Reads the JSON file and returns the JSON object.
  */
