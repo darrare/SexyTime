@@ -1,11 +1,12 @@
 ﻿<!doctype html>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="SexyTime">
     <title>Sex Quiz for Couples - Sexy Time</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -17,50 +18,58 @@
 
     <link rel="shortcut icon" type="image/png" href="Images/favicon.png">
 </head>
+
 <body>
     <!-- NAV BAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
-  <div class="container-lg">
-    <a class="navbar-brand py-1" href="index.html">
-      <img src="Images/LogoShort.png" height="50" alt="SexyTime Logo" />
-    </a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+        <div class="container-lg">
+            <a class="navbar-brand py-1" href="index.html">
+                <img src="Images/LogoShort.png" height="50" alt="SexyTime Logo" />
+            </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" ...>
-      <span class="navbar-toggler-icon"></span>
-    </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" ...>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav gap-3">
-        <li class="nav-item">
-          <a class="nav-link btn btn-outline-light btn-sm px-4" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link btn btn-outline-light btn-sm px-4" href="igniteforeplay.html">Ignite Foreplay</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link btn btn-outline-light btn-sm px-4" href="game.html">Game</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-    
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light btn-sm px-4" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light btn-sm px-4" href="igniteforeplay.html">Ignite
+                            Foreplay</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light btn-sm px-4" href="game.html">Game</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
 
     <!-- Page Content -->
     <div id="_personalResults">
-        <!-- Urls and thanks --> 
+        <!-- Urls and thanks -->
         <div>
             <div class="row">
                 <h2 class="mt-5 mb-3 d-flex justify-content-center">🎉 You made it!</h2>
                 <p class="d-flex justify-content-center">Here is your personalized results URL!</p>
                 <div class="input-group col-md-4 col-9 justify-content-center">
                     <span class="input-group-text" id="link"><i class="fa-solid fa-link"></i></span>
-                    <input style="flex: 0 1 50%;" type="text" class="form-control form-control-lg" readonly value="" id="_personalResultUrl" data-bs-toggle="tooltip" data-bs-placement="top">
+                    <input style="flex: 0 1 50%;" type="text" class="form-control form-control-lg" readonly value=""
+                        id="_personalResultUrl" data-bs-toggle="tooltip" data-bs-placement="top">
                 </div>
-                <p class="d-flex justify-content-center mt-3">Send this URL to your partner, and have them send you theirs to input in the field below to calculate your match results!</p>
+                <p class="d-flex justify-content-center mt-3">Send this URL to your partner, and have them send you
+                    theirs to input in the field below to calculate your match results!</p>
                 <div class="input-group col-md-4 col-9 justify-content-center">
-                    <input style="flex: 0 1 50%;" type="text" class="form-control form-control-lg" id="_partnersResultUrl" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Paste your partner's url here!">
-                    <button class="input-group-text" id="link" onclick="validateEntryAndRedirectToCouplesResultsPage()"><i class="fa-solid fa-arrow-right"></i></span>
+                    <input style="flex: 0 1 50%;" type="text" class="form-control form-control-lg"
+                        id="_partnersResultUrl" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-original-title="Paste your partner's url here!">
+                    <button class="input-group-text" id="link"
+                        onclick="validateEntryAndRedirectToCouplesResultsPage()"><i
+                            class="fa-solid fa-arrow-right"></i></span>
                 </div>
                 <p class="d-flex justify-content-center mt-3">🍻 Here's to many sexy experiences ahead!</p>
             </div>
@@ -70,7 +79,8 @@
         <div class="bg-primary" style="--bs-bg-opacity: .2;">
             <div class="row">
                 <h2 class="mt-5 mb-3 d-flex justify-content-center">🍦 Freak Score 🌶️</h2>
-                <p class="d-flex justify-content-center">Your freak score is measured by how open you are to different sexual activities</p>
+                <p class="d-flex justify-content-center">Your freak score is measured by how open you are to different
+                    sexual activities</p>
             </div>
             <div class="d-flex justify-content-center">
                 <div class="col-md-4 col-9">
@@ -81,17 +91,18 @@
         </div>
 
         <!-- Preferences -->
-         <div>
+        <div>
             <div class="row">
                 <h2 id="preferences" class="mt-5 mb-3 d-flex justify-content-center">😍 Preferences</h2>
-                <p class="d-flex justify-content-center">You can see what kind of categories you vibed with, and those you didn't!</p>
-             </div>
-             <div class="d-flex justify-content-center">
+                <p class="d-flex justify-content-center">You can see what kind of categories you vibed with, and those
+                    you didn't!</p>
+            </div>
+            <div class="d-flex justify-content-center">
                 <div class="col-md-4 col-9">
                     <canvas id="_preferencesGraph"></canvas>
                 </div>
             </div>
-         </div>
+        </div>
         <script src="Javascript/personal_results_graphs.js"></script>
     </div>
     <!-- Footer -->
@@ -103,7 +114,8 @@
             <section class="mb-4">
                 <div class="row d-flex justify-content-center">
                     <p class="mb-0"><i class="fa-solid fa-lock"></i> <b>Privacy Guaranteed</b></p>
-                    <p class="small mt-0">Everything is done on the front end, so we do not ever even have access to your information!</p>
+                    <p class="small mt-0">Everything is done on the front end, so we do not ever even have access to
+                        your information!</p>
                     <p class="mb-0">❤️💦😘😍🍆🍑😉🔥🍍🤐🍩👌</p>
                 </div>
             </section>
@@ -115,4 +127,5 @@
         </div>
     </footer>
 </body>
+
 </html>
