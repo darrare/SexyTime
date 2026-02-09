@@ -1,51 +1,50 @@
-document.addEventListener('DOMContentLoaded', () => {
-fetch('nav.html')
-    .then(response => response.text())
-    .then(html => {
-      const placeholder = document.getElementById('nav-placeholder');
-      placeholder.outerHTML = html;
+document.addEventListener('DOMContentLoaded', function () {
+  // Get the current page filename (e.g. "quiz.html", "ignite-foreplay.html")
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
-      // Highlight active link (as before)
-      const current = window.location.pathname.split('/').pop() || 'index.html';
-      document.querySelectorAll('.navbar-nav a').forEach(a => {
-        if (a.getAttribute('href') === current) {
-          a.classList.add('active', 'fw-bold', 'btn-light');
-          a.classList.remove('btn-outline-light');
-        }
-      });
-    })
-    .catch(err => {
-      console.error(err);
-      document.getElementById('nav-placeholder').innerHTML = '<p style="color: white; text-align: center; padding: 20px;">Nav failed to load</p>';
-    });
+  // Find all nav links
+  const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === currentPage) {
+      link.classList.add('active', 'fw-bold');
+      link.classList.remove('btn-outline-light');     // remove the outline style
+
+      // Apply active styles using your theme colors
+      link.style.backgroundColor = 'var(--st-secondary)';  // #FF82D9 brighter pink
+      link.style.color = 'white';
+      link.style.borderColor = 'var(--st-secondary)';      // matching border
+    }
+  });
 });
 
 /*
   Reads the JSON file and returns the JSON object.
  */
-  async function readQuizSectionsJson(path) {
-    const response = await fetch(path);
-    if (!response.ok) {
-      throw new Error(`HTTP error when loading ${path}: ${response.status}`);
-    }
-    return await response.json();
+async function readQuizSectionsJson(path) {
+  const response = await fetch(path);
+  if (!response.ok) {
+    throw new Error(`HTTP error when loading ${path}: ${response.status}`);
+  }
+  return await response.json();
 }
 
 /*
  Due to overhead on tooltips, they are disabled by default.
  The following code will enable all tooltips on the page automatically.
  */
- function enableAllTooltips() {
+function enableAllTooltips() {
   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
   tooltipTriggerList.map(function (tooltipTriggerEl) {
-      return new bootstrap.Tooltip(tooltipTriggerEl)
+    return new bootstrap.Tooltip(tooltipTriggerEl)
   })
 }
 
 /*
  Shows a notice to the user. Will eventually be changed to be cleaner than just alert.
  */
- function showNotice(message) {
+function showNotice(message) {
   alert(message);
 }
 
@@ -66,23 +65,23 @@ function packArrayToBase64(arr, isFemale) {
 
   // Loop through each value in the array
   for (let i = 0; i < arr.length; i++) {
-      // Shift the current value into the correct position in the byte
-      currentByte = (currentByte << 3) | arr[i];
-      bitCount += 3;
+    // Shift the current value into the correct position in the byte
+    currentByte = (currentByte << 3) | arr[i];
+    bitCount += 3;
 
-      // If we've packed at least 8 bits (a full byte), add it to the byte array
-      if (bitCount >= 8) {
-          byteArray.push(currentByte >> (bitCount - 8));  // Extract the upper 8 bits
-          currentByte &= (1 << (bitCount - 8)) - 1;  // Keep the lower bits for the next chunk
-          bitCount -= 8;  // Reset the bit counter
-      }
+    // If we've packed at least 8 bits (a full byte), add it to the byte array
+    if (bitCount >= 8) {
+      byteArray.push(currentByte >> (bitCount - 8));  // Extract the upper 8 bits
+      currentByte &= (1 << (bitCount - 8)) - 1;  // Keep the lower bits for the next chunk
+      bitCount -= 8;  // Reset the bit counter
+    }
   }
 
   // If there are leftover bits that don't form a full 3-bit value, add invalid value
   if (bitCount > 0 && bitCount < 8) {
-      // Fill the remaining bits with the invalid value (e.g., 5 which is out of range [0,4])
-      currentByte = currentByte << (8 - bitCount) | (1 << 8 - bitCount) - 1; 
-      byteArray.push(currentByte);
+    // Fill the remaining bits with the invalid value (e.g., 5 which is out of range [0,4])
+    currentByte = currentByte << (8 - bitCount) | (1 << 8 - bitCount) - 1;
+    byteArray.push(currentByte);
   }
 
   // Convert the byte array into a Base64 string
@@ -102,16 +101,16 @@ Reads the query string and converts it to data.
 */
 function readQueryStringDataAndGetResult(url, paramName) {
   try {
-      var queryParams = new URL(url).searchParams;
-      var queryString = queryParams.get(paramName);
-      if (queryString == null) {
-          throw "Unable to pull the data from the query string.";
-      }    
-      var originalBase64String = convertSanitizedQueryStringToBase64(queryString);
-      var decodedData = decodeBase64ToArray(originalBase64String);
-      return decodedData;
+    var queryParams = new URL(url).searchParams;
+    var queryString = queryParams.get(paramName);
+    if (queryString == null) {
+      throw "Unable to pull the data from the query string.";
+    }
+    var originalBase64String = convertSanitizedQueryStringToBase64(queryString);
+    var decodedData = decodeBase64ToArray(originalBase64String);
+    return decodedData;
   } catch (error) {
-      showNotice(error);
+    showNotice(error);
   }
 }
 
@@ -149,35 +148,35 @@ function decodeBase64ToArray(base64Str) {
   var isFemale = (hiddenDataByte & (1 << 0) !== 0);
 
   for (let i = 1; i < byteArray.length; i++) {
-      // Add the byte to the current bits accumulator
-      currentBits = (currentBits << 8) | byteArray[i];
-      bitCount += 8;
+    // Add the byte to the current bits accumulator
+    currentBits = (currentBits << 8) | byteArray[i];
+    bitCount += 8;
 
-      // Extract 3-bit chunks from the current bits
-      while (bitCount >= 3) {
-          // Extract the 3-bit value
-          const value = (currentBits >> (bitCount - 3)) & 0x7; // 0x7 is binary 111
+    // Extract 3-bit chunks from the current bits
+    while (bitCount >= 3) {
+      // Extract the 3-bit value
+      const value = (currentBits >> (bitCount - 3)) & 0x7; // 0x7 is binary 111
 
-          // If we find a value of 7, it means we should stop because this is our exit condition.
-          if (value === 7) { return {isFemale, dataArray};}
-          
-          dataArray.push(value);
+      // If we find a value of 7, it means we should stop because this is our exit condition.
+      if (value === 7) { return { isFemale, dataArray }; }
 
-          // Remove the extracted bits
-          bitCount -= 3;
-      }
+      dataArray.push(value);
+
+      // Remove the extracted bits
+      bitCount -= 3;
+    }
   }
 
-  return {isFemale, dataArray};
+  return { isFemale, dataArray };
 }
 
 /*
 Returns an array that simply contains the IDs in order of the quiz sections JSON
 */
 function getQuestionIdsMapped(quizSectionsJson) {
-  return quizSectionsJson.sections.flatMap(section => 
-      section.questions.map(question => question.id)
-    );
+  return quizSectionsJson.sections.flatMap(section =>
+    section.questions.map(question => question.id)
+  );
 }
 
 /*
