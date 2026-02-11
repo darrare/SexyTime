@@ -49,7 +49,7 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-button {
+button:not(.accordion-button):not(.navbar-toggler):not(.btn) {
     margin: 4px;
     padding: 10px 20px;
     font-size: 18px;
@@ -68,12 +68,12 @@ button {
      background-color: var(--alt_blue);
 }
 
-button:hover {
+button:not(.accordion-button):not(.btn):hover {
     background-color: var(--alt_blue);
     transform: scale(1.05);
 }
 
-button.active {
+button.active:not(.accordion-button):not(.btn) {
     background-color: var(--st-secondary-hex);
     color: #ffffff;
 }
